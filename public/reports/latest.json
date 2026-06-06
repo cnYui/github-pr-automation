@@ -1,0 +1,380 @@
+{
+  "date": "2026-06-06",
+  "generatedAt": "2026-06-06T01:41:29Z",
+  "summary": {
+    "candidateCount": 10,
+    "actionableCount": 7
+  },
+  "items": [
+    {
+      "rank": 1,
+      "repository": {
+        "owner": "MemTensor",
+        "name": "MemOS",
+        "url": "https://github.com/MemTensor/MemOS",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 9601,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-05T03:13:21Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "围绕 memory/chunker 或系统解析器补回归测试，切口清晰且已有测试框架",
+        "evidence": [
+          "来源：cnYui starred",
+          "Agent memory OS，覆盖长期记忆、RAG、Skill 复用和 MCP",
+          "发现 .github/workflows/python-tests.yml、CONTRIBUTING.md、apps/memos-local-openclaw/tests",
+          "开放 issue: test_system_parser.py 的 SystemParser 初始化参数报错",
+          "本轮未按 24h Star 排序"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "CI、测试和贡献入口齐全，适合先做小范围回归用例"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 2,
+      "repository": {
+        "owner": "jackwener",
+        "name": "OpenCLI",
+        "url": "https://github.com/jackwener/OpenCLI",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 23591,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-05T19:21:00Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "可从单站点命令解析或浏览器适配器的小 bug 切入，避免改动核心架构",
+        "evidence": [
+          "来源：cnYui starred",
+          "Make Any Website into CLI & Use your logged-in browser by AI agent",
+          "发现 .github/workflows/ci.yml、CONTRIBUTING.md、docs/adapters",
+          "开放 issue: douban subject 命令无法查询电影详情",
+          "本轮未按 24h Star 排序"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "适配器边界明确，验证路径和贡献入口都存在"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 3,
+      "repository": {
+        "owner": "czlonkowski",
+        "name": "n8n-mcp",
+        "url": "https://github.com/czlonkowski/n8n-mcp",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 21560,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-03T21:39:08Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "优先补 HTTP MCP 客户端序列化和 partial workflow 更新的回归测试",
+        "evidence": [
+          "来源：cnYui starred",
+          "MCP for Claude Desktop / Claude Code / Cursor to build n8n workflows",
+          "发现 .github/workflows/test.yml、CONTRIBUTING.md、data/skills",
+          "开放 issue: nested arrays/objects mis-serialized by HTTP MCP clients",
+          "本轮未按 24h Star 排序"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "问题集中在序列化/校验层，可用测试先锁定行为"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "GLips",
+        "name": "Figma-Context-MCP",
+        "url": "https://github.com/GLips/Figma-Context-MCP",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 15003,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-05-27T22:18:23Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "围绕 MCP OAuth、telemetry redaction 或 Figma payload 限制补边界测试",
+        "evidence": [
+          "来源：cnYui starred",
+          "为 AI coding agents 提供 Figma layout context 的 MCP server",
+          "发现 .github/workflows/ci.yml、CONTRIBUTING.md、src/tests",
+          "开放 issue: MCP-spec OAuth、telemetry error message redaction",
+          "本轮未按 24h Star 排序"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "测试目录覆盖面清楚，适合先补安全和协议边界用例"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "getzep",
+        "name": "graphiti",
+        "url": "https://github.com/getzep/graphiti",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 27067,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-05T22:44:31Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "可从具体 driver 或 JSON 序列化报错切入，先写最小复现",
+        "evidence": [
+          "来源：GitHub topic:agentic-ai 搜索补充",
+          "Build Real-Time Knowledge Graphs for AI Agents",
+          "发现 .github/workflows/unit_tests.yml、CONTRIBUTING.md、examples",
+          "开放 issue: to_prompt_json crashes on datetime attribute values",
+          "本轮未按 24h Star 排序"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "问题可限制在序列化/driver 层，且 CI 与测试信号完整"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 6,
+      "repository": {
+        "owner": "CopilotKit",
+        "name": "CopilotKit",
+        "url": "https://github.com/CopilotKit/CopilotKit",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 32698,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-05T23:50:52Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "优先验证 agent hook 或 threads headers 的小范围回归，避免碰协议大改",
+        "evidence": [
+          "来源：GitHub topic:ai-agent 搜索补充",
+          "Frontend Stack for Agents & Generative UI，AG-UI Protocol 生态",
+          "发现 .github/workflows、CONTRIBUTING.md、测试信号",
+          "开放 issue: Headers not being sent on /threads requests",
+          "本轮未按 24h Star 排序"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "生态价值高，但切口可集中在回归测试和单模块修复"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "shareAI-lab",
+        "name": "Kode-CLI",
+        "url": "https://github.com/shareAI-lab/Kode-CLI",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 5103,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-05T13:59:23Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "可先处理 MCP 返回文本或新仓库版本展示这类局部行为问题",
+        "evidence": [
+          "来源：cnYui starred",
+          "面向 post-human workflows 的 agent CLI",
+          "发现 .github/workflows/ci.yml、CONTRIBUTING.md、docs/develop-zh/modules/mcp-integration.md",
+          "开放 issue: MCP 返回的文本处理报错",
+          "本轮未按 24h Star 排序"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "问题与模块边界明确，项目有 CI、测试和贡献入口"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 8,
+      "repository": {
+        "owner": "github",
+        "name": "github-mcp-server",
+        "url": "https://github.com/github/github-mcp-server",
+        "primaryLanguage": "Go"
+      },
+      "popularity": {
+        "starsTotal": 30459,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-05T14:04:26Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "示例补全",
+        "summary": "只考虑安装指南、host integration 或只读模式示例的小补充",
+        "evidence": [
+          "来源：cnYui starred",
+          "GitHub official MCP Server，Agent 工具生态基础设施",
+          "发现 .github/workflows/go.yml、CONTRIBUTING.md、docs/installation-guides",
+          "开放 PR 中已有 docs/installation 相关变更，需避免重复",
+          "本轮未按 24h Star 排序"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "官方高流量仓库已有相近文档 PR，推进前要先确认不重复"
+      },
+      "recommendation": "谨慎"
+    },
+    {
+      "rank": 9,
+      "repository": {
+        "owner": "zai-org",
+        "name": "Open-AutoGLM",
+        "url": "https://github.com/zai-org/Open-AutoGLM",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 25435,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-03-06T08:38:39Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": false,
+        "hasTests": false,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "示例补全",
+        "summary": "适合先补安装、ADB/iOS setup 或 CLI 参数说明，不宜直接碰模型和执行核心",
+        "evidence": [
+          "来源：cnYui starred",
+          "Open Phone Agent Model & Framework",
+          "发现 docs/ios_setup、examples/basic_usage.py、requirements.txt",
+          "开放 issue: 修改系统提示词不生效、滑动终止条件",
+          "本轮未按 24h Star 排序"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "项目价值高，但未确认 CI 和测试路径，代码补丁风险偏高"
+      },
+      "recommendation": "谨慎"
+    },
+    {
+      "rank": 10,
+      "repository": {
+        "owner": "agentsmd",
+        "name": "agents.md",
+        "url": "https://github.com/agentsmd/agents.md",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 22007,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-03-12T14:26:14Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": false,
+        "hasTests": false,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "如果推进，只做规范文档的小补充，例如 per-agent targeting 或上下文预算说明",
+        "evidence": [
+          "来源：cnYui starred",
+          "AGENTS.md 是 coding agents 指令文件格式，和当前项目上下文高度相关",
+          "根目录发现 LICENSE、README.md、package.json",
+          "开放 PR 中已有 context budget 和 file placement 文档变更，需先查重",
+          "本轮未按 24h Star 排序"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "规范类仓库维护口径敏感，且未发现 CI、测试或贡献指南"
+      },
+      "recommendation": "谨慎"
+    }
+  ]
+}
