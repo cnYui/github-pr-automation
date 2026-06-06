@@ -13,4 +13,5 @@
 - 2026-06-06 变更：报告 schema 与扫描器已放宽为语言不限，当前 `public/reports/latest.json` 使用 GitHub Trending daily 当前数据生成 10 个项目。
 - 2026-06-06 清理：已按用户要求删除本地候选仓库副本 `work/headroom`，释放约 2.2G 空间；当前日报 JSON 仍可能保留 headroom 的历史报告项，后续刷新报告时再更新数据。
 - 2026-06-06 Agent 刷新：按用户要求改用 Agent/MCP/Skill 相关项目口径，优先参考 `cnYui` starred repositories，Star 新增不再作为硬门槛；本轮只更新报告数据，不修改扫描器。
+- 2026-06-06 GitHub 备份：当前项目已初始化为 git 仓库并推送到 private 仓库 `cnYui/github-10-pr-pr-5-pr`；`.gitignore` 排除 `node_modules/`、`work/`、`outputs/` 和 `.env*`。
 - 2026-06-06 候选 PR：`jwasham/coding-interview-university` 推荐切入点是修复 README 中 Bloom filter 与 MIT OCW 两个有官方新地址的坏链；避开翻译、新资源、工作流升级和一次性修全部坏链，详见 `docs/ai/context/20260606-103823-jwasham-ciu-pr-angle.md`。
