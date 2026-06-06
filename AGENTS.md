@@ -15,3 +15,5 @@
 - 2026-06-06 Agent 刷新：按用户要求改用 Agent/MCP/Skill 相关项目口径，优先参考 `cnYui` starred repositories，Star 新增不再作为硬门槛；本轮只更新报告数据，不修改扫描器。
 - 2026-06-06 GitHub 备份：当前项目已初始化为 git 仓库并推送到 private 仓库 `cnYui/github-10-pr-pr-5-pr`；`.gitignore` 排除 `node_modules/`、`work/`、`outputs/` 和 `.env*`。
 - 2026-06-06 候选 PR：`jwasham/coding-interview-university` 推荐切入点是修复 README 中 Bloom filter 与 MIT OCW 两个有官方新地址的坏链；避开翻译、新资源、工作流升级和一次性修全部坏链，详见 `docs/ai/context/20260606-103823-jwasham-ciu-pr-angle.md`。
+- 2026-06-06 headroom PR 验证：PR #649 本地已通过 ruff、mypy、SSE 回归测试、`make ci-precheck-python` 与 `make ci-precheck-rust`；Docker e2e 因本机无 Docker 未跑，详见 `docs/ai/context/20260606-135045-headroom-pr-649-local-ci-record.md`。
+- 2026-06-06 候选 PR：`NousResearch/hermes-agent` 已筛选多个重复或已不复现方向，当前推荐低风险切入点为 #36289，给 `acp_adapter/__main__.py` 补入口覆盖测试；详见 `docs/ai/context/20260606-135024-hermes-agent-pr-triage-record.md`。
