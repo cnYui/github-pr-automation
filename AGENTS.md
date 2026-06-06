@@ -17,3 +17,4 @@
 - 2026-06-06 候选 PR：`jwasham/coding-interview-university` 推荐切入点是修复 README 中 Bloom filter 与 MIT OCW 两个有官方新地址的坏链；避开翻译、新资源、工作流升级和一次性修全部坏链，详见 `docs/ai/context/20260606-103823-jwasham-ciu-pr-angle.md`。
 - 2026-06-06 headroom PR 验证：PR #649 本地已通过 ruff、mypy、SSE 回归测试、`make ci-precheck-python` 与 `make ci-precheck-rust`；Docker e2e 因本机无 Docker 未跑，详见 `docs/ai/context/20260606-135045-headroom-pr-649-local-ci-record.md`。
 - 2026-06-06 候选 PR：`NousResearch/hermes-agent` 已筛选多个重复或已不复现方向，当前推荐低风险切入点为 #36289，给 `acp_adapter/__main__.py` 补入口覆盖测试；详见 `docs/ai/context/20260606-135024-hermes-agent-pr-triage-record.md`。
+- 2026-06-06 headroom PR 推送：PR #649 已更新到 `1463cce`，已在 PR 评论中同步本地验证结果；GitGuardian 远端检查通过，详见 `docs/ai/context/20260606-135426-headroom-pr-649-push-summary.md`。
