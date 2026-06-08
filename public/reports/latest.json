@@ -1,97 +1,95 @@
 {
-  "date": "2026-06-06",
-  "generatedAt": "2026-06-06T01:41:29Z",
+  "date": "2026-06-08",
+  "generatedAt": "2026-06-08T03:37:56Z",
   "summary": {
-    "candidateCount": 10,
-    "actionableCount": 7
+    "candidateCount": 6,
+    "actionableCount": 3
   },
   "items": [
     {
       "rank": 1,
       "repository": {
-        "owner": "MemTensor",
-        "name": "MemOS",
-        "url": "https://github.com/MemTensor/MemOS",
-        "primaryLanguage": "TypeScript"
+        "owner": "anthropics",
+        "name": "skills",
+        "url": "https://github.com/anthropics/skills",
+        "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 9601,
+        "starsTotal": 147657,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-06-05T03:13:21Z"
+        "lastUpdatedAt": "2026-06-08T03:36:11Z"
       },
       "health": {
-        "license": "Apache-2.0",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
+        "license": "未声明",
+        "hasCi": false,
+        "hasTests": false,
+        "hasContributing": false,
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "测试补充",
-        "summary": "围绕 memory/chunker 或系统解析器补回归测试，切口清晰且已有测试框架",
+        "category": "小 bug",
+        "summary": "修复 skill-creator 脚本在 Windows 默认 cp1252 编码下读取 UTF-8 SKILL.md 崩溃的问题",
         "evidence": [
-          "来源：cnYui starred",
-          "Agent memory OS，覆盖长期记忆、RAG、Skill 复用和 MCP",
-          "发现 .github/workflows/python-tests.yml、CONTRIBUTING.md、apps/memos-local-openclaw/tests",
-          "开放 issue: test_system_parser.py 的 SystemParser 初始化参数报错",
-          "本轮未按 24h Star 排序"
+          "来源：cnYui starred 仓库，Skill 方向高度相关",
+          "Issue #1271 仍 open，明确指出 quick_validate.py、utils.py、run_eval.py 等 read_text/write_text 缺少 encoding",
+          "open PR 查重：1271/cp1252/UnicodeDecodeError/UTF-8 均未发现重复 PR",
+          "代码搜索确认 skills/skill-creator/scripts 下至少 6 处 read_text() 命中，可用 UTF-8 skill fixture 做回归测试"
         ]
       },
       "risk": {
         "level": "低",
-        "reason": "CI、测试和贡献入口齐全，适合先做小范围回归用例"
+        "reason": "修复形态是给文本读写补 encoding=\"utf-8\"，不改变业务逻辑；风险主要是仓库缺少常规 CI/CONTRIBUTING 信号"
       },
       "recommendation": "值得继续"
     },
     {
       "rank": 2,
       "repository": {
-        "owner": "jackwener",
-        "name": "OpenCLI",
-        "url": "https://github.com/jackwener/OpenCLI",
-        "primaryLanguage": "JavaScript"
+        "owner": "ChatLab",
+        "name": "ChatLab",
+        "url": "https://github.com/ChatLab/ChatLab",
+        "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 23591,
+        "starsTotal": 6623,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-06-05T19:21:00Z"
+        "lastUpdatedAt": "2026-06-08T02:31:48Z"
       },
       "health": {
-        "license": "Apache-2.0",
+        "license": "AGPL-3.0",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": true,
+        "hasContributing": false,
         "issueActivity": "active"
       },
       "opportunity": {
         "category": "小 bug",
-        "summary": "可从单站点命令解析或浏览器适配器的小 bug 切入，避免改动核心架构",
+        "summary": "统一增量导入分析和执行阶段的 timestamp 归一化，避免字符串 timestamp 被静默跳过",
         "evidence": [
-          "来源：cnYui starred",
-          "Make Any Website into CLI & Use your logged-in browser by AI agent",
-          "发现 .github/workflows/ci.yml、CONTRIBUTING.md、docs/adapters",
-          "开放 issue: douban subject 命令无法查询电影详情",
-          "本轮未按 24h Star 排序"
+          "Issue #195 仍 open，描述 CipherTalk JSONL 中 timestamp 为字符串导致分析阶段显示新增、执行阶段导入 0 条",
+          "open PR 查重：195/timestamp/CipherTalk 未发现重复 PR",
+          "代码搜索定位 packages/node-runtime/src/import/incremental-importer.ts 的 INVALID_TIMESTAMP 检查",
+          "仓库有 release workflow、tests 目录和 pnpm test/type-check 脚本"
         ]
       },
       "risk": {
         "level": "低",
-        "reason": "适配器边界明确，验证路径和贡献入口都存在"
+        "reason": "问题边界集中在导入器的字段归一化，可用字符串 timestamp fixture 直接覆盖分析和执行一致性"
       },
       "recommendation": "值得继续"
     },
     {
       "rank": 3,
       "repository": {
-        "owner": "czlonkowski",
-        "name": "n8n-mcp",
-        "url": "https://github.com/czlonkowski/n8n-mcp",
-        "primaryLanguage": "TypeScript"
+        "owner": "coderamp-labs",
+        "name": "gitingest",
+        "url": "https://github.com/coderamp-labs/gitingest",
+        "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 21560,
+        "starsTotal": 14845,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-06-03T21:39:08Z"
+        "lastUpdatedAt": "2026-06-07T21:02:26Z"
       },
       "health": {
         "license": "MIT",
@@ -101,172 +99,23 @@
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "测试补充",
-        "summary": "优先补 HTTP MCP 客户端序列化和 partial workflow 更新的回归测试",
+        "category": "小 bug",
+        "summary": "修复二进制文件判定在 1024 字节切片边界截断 UTF-8 多字节字符时误报 [Binary file]",
         "evidence": [
-          "来源：cnYui starred",
-          "MCP for Claude Desktop / Claude Code / Cursor to build n8n workflows",
-          "发现 .github/workflows/test.yml、CONTRIBUTING.md、data/skills",
-          "开放 issue: nested arrays/objects mis-serialized by HTTP MCP clients",
-          "本轮未按 24h Star 排序"
+          "Issue #578 仍 open，给出日文/汉字在 1024 字节边界被切断后的复现描述",
+          "open PR 查重：578/Unicode chunk decoding/Binary File 未发现重复 PR",
+          "代码搜索定位 src/gitingest/schemas/filesystem.py 的 _decodes(chunk, \"utf-8\") 判定",
+          "仓库有 CI、pytest 配置、tests 目录和 CONTRIBUTING.md"
         ]
       },
       "risk": {
         "level": "低",
-        "reason": "问题集中在序列化/校验层，可用测试先锁定行为"
+        "reason": "可把 UnicodeDecodeError 的 unexpected end of data 边界视为文本并补单元测试；改动集中在文件类型判定"
       },
       "recommendation": "值得继续"
     },
     {
       "rank": 4,
-      "repository": {
-        "owner": "GLips",
-        "name": "Figma-Context-MCP",
-        "url": "https://github.com/GLips/Figma-Context-MCP",
-        "primaryLanguage": "TypeScript"
-      },
-      "popularity": {
-        "starsTotal": 15003,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-05-27T22:18:23Z"
-      },
-      "health": {
-        "license": "MIT",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "测试补充",
-        "summary": "围绕 MCP OAuth、telemetry redaction 或 Figma payload 限制补边界测试",
-        "evidence": [
-          "来源：cnYui starred",
-          "为 AI coding agents 提供 Figma layout context 的 MCP server",
-          "发现 .github/workflows/ci.yml、CONTRIBUTING.md、src/tests",
-          "开放 issue: MCP-spec OAuth、telemetry error message redaction",
-          "本轮未按 24h Star 排序"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "测试目录覆盖面清楚，适合先补安全和协议边界用例"
-      },
-      "recommendation": "值得继续"
-    },
-    {
-      "rank": 5,
-      "repository": {
-        "owner": "getzep",
-        "name": "graphiti",
-        "url": "https://github.com/getzep/graphiti",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 27067,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-06-05T22:44:31Z"
-      },
-      "health": {
-        "license": "Apache-2.0",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "小 bug",
-        "summary": "可从具体 driver 或 JSON 序列化报错切入，先写最小复现",
-        "evidence": [
-          "来源：GitHub topic:agentic-ai 搜索补充",
-          "Build Real-Time Knowledge Graphs for AI Agents",
-          "发现 .github/workflows/unit_tests.yml、CONTRIBUTING.md、examples",
-          "开放 issue: to_prompt_json crashes on datetime attribute values",
-          "本轮未按 24h Star 排序"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "问题可限制在序列化/driver 层，且 CI 与测试信号完整"
-      },
-      "recommendation": "值得继续"
-    },
-    {
-      "rank": 6,
-      "repository": {
-        "owner": "CopilotKit",
-        "name": "CopilotKit",
-        "url": "https://github.com/CopilotKit/CopilotKit",
-        "primaryLanguage": "TypeScript"
-      },
-      "popularity": {
-        "starsTotal": 32698,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-06-05T23:50:52Z"
-      },
-      "health": {
-        "license": "MIT",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "测试补充",
-        "summary": "优先验证 agent hook 或 threads headers 的小范围回归，避免碰协议大改",
-        "evidence": [
-          "来源：GitHub topic:ai-agent 搜索补充",
-          "Frontend Stack for Agents & Generative UI，AG-UI Protocol 生态",
-          "发现 .github/workflows、CONTRIBUTING.md、测试信号",
-          "开放 issue: Headers not being sent on /threads requests",
-          "本轮未按 24h Star 排序"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "生态价值高，但切口可集中在回归测试和单模块修复"
-      },
-      "recommendation": "值得继续"
-    },
-    {
-      "rank": 7,
-      "repository": {
-        "owner": "shareAI-lab",
-        "name": "Kode-CLI",
-        "url": "https://github.com/shareAI-lab/Kode-CLI",
-        "primaryLanguage": "TypeScript"
-      },
-      "popularity": {
-        "starsTotal": 5103,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-06-05T13:59:23Z"
-      },
-      "health": {
-        "license": "Apache-2.0",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "小 bug",
-        "summary": "可先处理 MCP 返回文本或新仓库版本展示这类局部行为问题",
-        "evidence": [
-          "来源：cnYui starred",
-          "面向 post-human workflows 的 agent CLI",
-          "发现 .github/workflows/ci.yml、CONTRIBUTING.md、docs/develop-zh/modules/mcp-integration.md",
-          "开放 issue: MCP 返回的文本处理报错",
-          "本轮未按 24h Star 排序"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "问题与模块边界明确，项目有 CI、测试和贡献入口"
-      },
-      "recommendation": "值得继续"
-    },
-    {
-      "rank": 8,
       "repository": {
         "owner": "github",
         "name": "github-mcp-server",
@@ -274,9 +123,9 @@
         "primaryLanguage": "Go"
       },
       "popularity": {
-        "starsTotal": 30459,
+        "starsTotal": 30508,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-06-05T14:04:26Z"
+        "lastUpdatedAt": "2026-06-08T03:31:30Z"
       },
       "health": {
         "license": "MIT",
@@ -286,93 +135,90 @@
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "示例补全",
-        "summary": "只考虑安装指南、host integration 或只读模式示例的小补充",
+        "category": "小 bug",
+        "summary": "调查 issue_write 在 state=closed 且带 labels/state_reason 时 mutation 成功但 MCP 调用不返回的问题",
         "evidence": [
-          "来源：cnYui starred",
-          "GitHub official MCP Server，Agent 工具生态基础设施",
-          "发现 .github/workflows/go.yml、CONTRIBUTING.md、docs/installation-guides",
-          "开放 PR 中已有 docs/installation 相关变更，需避免重复",
-          "本轮未按 24h Star 排序"
+          "Issue #2636 仍 open，描述 issue_write update 关闭 issue 后 JSON-RPC 调用挂起",
+          "open PR 查重：2636/issue_write state closed hang 未发现重复 PR",
+          "代码搜索定位 pkg/github/issues.go 的 UpdateIssue 和 CloseIssue mutation，已有 issues_test.go",
+          "官方仓库有 Go CI、lint、e2e 和 CONTRIBUTING.md"
         ]
       },
       "risk": {
         "level": "中",
-        "reason": "官方高流量仓库已有相近文档 PR，推进前要先确认不重复"
+        "reason": "涉及 GraphQL close mutation、labels 更新和 MCP 响应路径，需先用 mock 测出 hang 的根因，不能只按 issue 猜测改"
       },
       "recommendation": "谨慎"
     },
     {
-      "rank": 9,
+      "rank": 5,
       "repository": {
-        "owner": "zai-org",
-        "name": "Open-AutoGLM",
-        "url": "https://github.com/zai-org/Open-AutoGLM",
-        "primaryLanguage": "Python"
+        "owner": "modelcontextprotocol",
+        "name": "servers",
+        "url": "https://github.com/modelcontextprotocol/servers",
+        "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 25435,
+        "starsTotal": 86873,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-03-06T08:38:39Z"
+        "lastUpdatedAt": "2026-06-08T03:15:11Z"
       },
       "health": {
-        "license": "Apache-2.0",
-        "hasCi": false,
-        "hasTests": false,
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
         "hasContributing": true,
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "示例补全",
-        "summary": "适合先补安装、ADB/iOS setup 或 CLI 参数说明，不宜直接碰模型和执行核心",
+        "category": "CI/类型错误",
+        "summary": "处理 zod 同时声明为 dependency 和 peerDependency 导致 pnpm strict isolation 下运行时缺包的问题",
         "evidence": [
-          "来源：cnYui starred",
-          "Open Phone Agent Model & Framework",
-          "发现 docs/ios_setup、examples/basic_usage.py、requirements.txt",
-          "开放 issue: 修改系统提示词不生效、滑动终止条件",
-          "本轮未按 24h Star 排序"
+          "Issue #4288 仍 open，复现为 @modelcontextprotocol/server-sequential-thinking 在 pnpm strict/global virtual store 下 ERR_MODULE_NOT_FOUND",
+          "open PR 查重：4288/zod peerDependencies/ERR_MODULE_NOT_FOUND 未发现重复 PR",
+          "仓库有 TypeScript workflow、release workflow 和 CONTRIBUTING.md",
+          "变更可能集中在 package.json 依赖声明和 lockfile，但需要确认 monorepo 发布策略"
         ]
       },
       "risk": {
         "level": "中",
-        "reason": "项目价值高，但未确认 CI 和测试路径，代码补丁风险偏高"
+        "reason": "表面是依赖声明修复，但官方多包仓库可能有生成/发布约束，提交前必须先确认影响哪些 package"
       },
       "recommendation": "谨慎"
     },
     {
-      "rank": 10,
+      "rank": 6,
       "repository": {
-        "owner": "agentsmd",
-        "name": "agents.md",
-        "url": "https://github.com/agentsmd/agents.md",
+        "owner": "upstash",
+        "name": "context7",
+        "url": "https://github.com/upstash/context7",
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 22007,
+        "starsTotal": 56950,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-03-12T14:26:14Z"
+        "lastUpdatedAt": "2026-06-08T03:29:32Z"
       },
       "health": {
         "license": "MIT",
-        "hasCi": false,
-        "hasTests": false,
+        "hasCi": true,
+        "hasTests": true,
         "hasContributing": false,
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "文档缺口",
-        "summary": "如果推进，只做规范文档的小补充，例如 per-agent targeting 或上下文预算说明",
+        "category": "小 bug",
+        "summary": "评估是否为 MCP server 补 prompts/list 和 resources/list 的空响应以提升客户端兼容性",
         "evidence": [
-          "来源：cnYui starred",
-          "AGENTS.md 是 coding agents 指令文件格式，和当前项目上下文高度相关",
-          "根目录发现 LICENSE、README.md、package.json",
-          "开放 PR 中已有 context budget 和 file placement 文档变更，需先查重",
-          "本轮未按 24h Star 排序"
+          "Issue #2527 仍 open，建议实现 ListPromptsRequestSchema 和 ListResourcesRequestSchema 的空列表返回",
+          "open PR 查重：2527/prompts/list/resources/list 未发现重复 PR",
+          "维护者评论称 Opencode 下可用，说明复现条件需要先澄清",
+          "仓库有 test workflow、changeset-check 和 pnpm workspace"
         ]
       },
       "risk": {
         "level": "中",
-        "reason": "规范类仓库维护口径敏感，且未发现 CI、测试或贡献指南"
+        "reason": "issue 的复现被维护者追问，直接改代码可能不被接受；应先复现客户端兼容性问题或补最小 failing test"
       },
       "recommendation": "谨慎"
     }
