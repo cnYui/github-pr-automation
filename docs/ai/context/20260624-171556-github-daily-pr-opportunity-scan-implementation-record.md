@@ -36,6 +36,12 @@
 - `python C:\Users\yui\.codex\skills\.system\skill-creator\scripts\quick_validate.py C:\Users\yui\.codex\skills\github-daily-pr-opportunity-scan`
 - `python -m py_compile C:\Users\yui\.codex\skills\github-daily-pr-opportunity-scan\scripts\find_candidates.py`
 
+## 未作为绿灯依据的验证
+
+- `npm test` 会把 `work/**` 目录下的外部仓测试一并跑起来。
+- 当前完整套件因此出现大量与本轮改动无关的红灯和噪声，不适合作为本任务的 merge-ready 信号。
+- 本轮只把当前仓自有扫描器与看板相关测试作为通过依据。
+
 ## 真实调用结果
 
 - 直接运行 Skill 脚本时，当前环境没有显式 `GITHUB_TOKEN`，脚本按预期明确报错 `缺少 GITHUB_TOKEN`。
