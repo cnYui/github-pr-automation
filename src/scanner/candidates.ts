@@ -1,5 +1,10 @@
 export type SupportedLanguage = string;
 
+export type CandidateSelectionInput = {
+  languages: SupportedLanguage[];
+  pushedAfter: string;
+};
+
 export type RepositoryCandidate = {
   fullName: string;
   owner: string;
@@ -14,13 +19,15 @@ export type RepositoryCandidate = {
 
 export const selectCandidateRepositories = (
   repositories: RepositoryCandidate[],
-  languages: SupportedLanguage[]
+  input: CandidateSelectionInput
 ): RepositoryCandidate[] => {
-  const allowed = new Set<string>(languages);
+  const allowed = new Set<string>(input.languages);
+  const pushedAfter = Date.parse(input.pushedAfter);
 
   return repositories
     .filter((repository) => !repository.archived)
     .filter((repository) => repository.language !== null)
     .filter((repository) => allowed.size === 0 || allowed.has(repository.language ?? ''))
+    .filter((repository) => Date.parse(repository.pushedAt) >= pushedAfter)
     .sort((left, right) => right.starsTotal - left.starsTotal);
 };

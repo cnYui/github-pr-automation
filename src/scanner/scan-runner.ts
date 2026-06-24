@@ -34,7 +34,12 @@ const writeSnapshotFiles = async (
 export const runScan = async (input: RunScanInput): Promise<void> => {
   const languages = input.languages ?? [];
   const rawCandidates = await input.client.searchRepositories(languages, input.limit ?? 30);
-  const candidates = selectCandidateRepositories(rawCandidates, languages).slice(0, 10);
+  const pushedAfter = new Date(input.generatedAt);
+  pushedAfter.setDate(pushedAfter.getDate() - 180);
+  const candidates = selectCandidateRepositories(rawCandidates, {
+    languages,
+    pushedAfter: pushedAfter.toISOString().slice(0, 10)
+  }).slice(0, 10);
   const currentSnapshot = candidates.map((candidate) => ({
     fullName: candidate.fullName,
     starsTotal: candidate.starsTotal

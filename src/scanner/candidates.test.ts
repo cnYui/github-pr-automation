@@ -36,7 +36,10 @@ describe('selectCandidateRepositories', () => {
           pushedAt: '2026-06-04T10:00:00Z'
         }
       ],
-      ['TypeScript', 'JavaScript', 'Python']
+      {
+        languages: ['TypeScript', 'JavaScript', 'Python'],
+        pushedAfter: '2026-01-01'
+      }
     );
 
     expect(result.map((item) => item.fullName)).toEqual(['a/ts']);
@@ -66,9 +69,45 @@ describe('selectCandidateRepositories', () => {
           pushedAt: '2026-06-04T10:00:00Z'
         }
       ],
-      []
+      {
+        languages: [],
+        pushedAfter: '2026-01-01'
+      }
     );
 
     expect(result.map((item) => item.fullName)).toEqual(['a/rust', 'b/go']);
+  });
+
+  it('过滤长期不活跃仓库，即使总 Star 很高也不保留', () => {
+    const result = selectCandidateRepositories(
+      [
+        {
+          fullName: 'a/active',
+          owner: 'a',
+          name: 'active',
+          url: 'https://github.com/a/active',
+          language: 'TypeScript',
+          archived: false,
+          starsTotal: 300,
+          pushedAt: '2026-06-10T10:00:00Z'
+        },
+        {
+          fullName: 'b/stale',
+          owner: 'b',
+          name: 'stale',
+          url: 'https://github.com/b/stale',
+          language: 'TypeScript',
+          archived: false,
+          starsTotal: 8000,
+          pushedAt: '2025-01-01T10:00:00Z'
+        }
+      ],
+      {
+        languages: ['TypeScript'],
+        pushedAfter: '2026-01-01'
+      }
+    );
+
+    expect(result.map((item) => item.fullName)).toEqual(['a/active']);
   });
 });

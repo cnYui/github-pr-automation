@@ -1,5 +1,6 @@
 import type { RepositoryCandidate, SupportedLanguage } from './candidates';
 import type { RepositorySignalsInput } from './repository-signals';
+import { buildSearchQueries } from './search-templates';
 
 export type GitHubClient = {
   searchRepositories: (languages: SupportedLanguage[], limit: number) => Promise<RepositoryCandidate[]>;
@@ -46,9 +47,12 @@ const uniqueByFullName = (repositories: RepositoryCandidate[]): RepositoryCandid
 export const createGitHubClient = (token: string): GitHubClient => ({
   async searchRepositories(languages, limit) {
     const perLanguageLimit = Math.max(limit, 10);
-    const searchQueries = languages.length > 0
-      ? languages.map((language) => `language:${language} stars:>500 pushed:>2026-01-01 archived:false`)
-      : ['stars:>500 pushed:>2026-01-01 archived:false'];
+    const pushedAfter = new Date();
+    pushedAfter.setDate(pushedAfter.getDate() - 180);
+    const searchQueries = buildSearchQueries({
+      pushedAfter: pushedAfter.toISOString().slice(0, 10),
+      languages
+    });
     const results = await Promise.all(
       searchQueries.map(async (searchQuery) => {
         const query = encodeURIComponent(searchQuery);
