@@ -1,0 +1,354 @@
+{
+  "date": "2026-06-24",
+  "generatedAt": "2026-06-24T08:25:33.767Z",
+  "summary": {
+    "candidateCount": 10,
+    "actionableCount": 2
+  },
+  "items": [
+    {
+      "rank": 1,
+      "repository": {
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 107392,
+        "starsAdded24h": 20,
+        "lastUpdatedAt": "2026-06-24T07:07:42Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat: support Kimi Code providers",
+          "feat(usage): support multi-request usage script config"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 2,
+      "repository": {
+        "owner": "affaan-m",
+        "name": "ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 220800,
+        "starsAdded24h": 4,
+        "lastUpdatedAt": "2026-06-22T04:55:54Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "refactor(commands): remove duplicated content in skill-create and learn-eval",
+          "feat(skills): make tdd-workflow test-runner aware (npm/pnpm/yarn/bun)"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 3,
+      "repository": {
+        "owner": "yt-dlp",
+        "name": "yt-dlp",
+        "url": "https://github.com/yt-dlp/yt-dlp",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 172970,
+        "starsAdded24h": 2,
+        "lastUpdatedAt": "2026-06-21T22:49:35Z"
+      },
+      "health": {
+        "license": "Unlicense",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "[ie/aenetworks] Fix aenetworks IE",
+          "Add Zen Browser cookies support"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 146390,
+        "starsAdded24h": 2,
+        "lastUpdatedAt": "2026-06-24T08:23:10Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: Lindorm vector store errors caused by the update of opensearch-py",
+          "chore(deps): bump dep versions for CVE fixes"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 193849,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-24T08:24:45Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "quiet"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "evidence": [
+          ".agents/skills/spec-driven-development/SKILL.md",
+          ".claude/README.md",
+          ".claude/plugins/n8n/README.md"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 6,
+      "repository": {
+        "owner": "ohmyzsh",
+        "name": "ohmyzsh",
+        "url": "https://github.com/ohmyzsh/ohmyzsh",
+        "primaryLanguage": "Shell"
+      },
+      "popularity": {
+        "starsTotal": 188218,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-21T12:52:10Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(josh): escape % in branch before computing branch_size",
+          "chore(deps): bump actions/checkout from 6.0.3 to 7.0.0"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "Snailclimb",
+        "name": "JavaGuide",
+        "url": "https://github.com/Snailclimb/JavaGuide",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 156567,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-17T07:06:40Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "evidence": [
+          ".github/workflows/test.yml",
+          "README.md",
+          "README_EN.md",
+          "希望可以隐藏左右的目录",
+          "JavaGuide for Enligsh version"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 8,
+      "repository": {
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 142814,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-23T21:35:46Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: workspace models bulk actions and search pagination",
+          "fix: hide workspace models from model selector when base model is unavailable"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 9,
+      "repository": {
+        "owner": "google-gemini",
+        "name": "gemini-cli",
+        "url": "https://github.com/google-gemini/gemini-cli",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 105524,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-24T04:11:06Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "Feat/tool registry discovery",
+          "fix(mcp): add SSRF protection to OAuth metadata discovery"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 10,
+      "repository": {
+        "owner": "puppeteer",
+        "name": "puppeteer",
+        "url": "https://github.com/puppeteer/puppeteer",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 95214,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-24T08:01:21Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "chore: release main",
+          "fix: provide correct creation time for screen recordings"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    }
+  ]
+}

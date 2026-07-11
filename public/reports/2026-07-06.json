@@ -1,0 +1,353 @@
+{
+  "date": "2026-07-06",
+  "generatedAt": "2026-07-06T06:41:04.570Z",
+  "summary": {
+    "candidateCount": 10,
+    "actionableCount": 1
+  },
+  "items": [
+    {
+      "rank": 1,
+      "repository": {
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 113652,
+        "starsAdded24h": 3902,
+        "lastUpdatedAt": "2026-07-06T01:11:56Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "[feat] 新增 “恢复 Codex Desktop 侧边栏历史记录” 工具，入口位于 设置 -> Codex 应用增强。",
+          "feat(provider): 跨应用复制 / 导入导出 / 统一供应商权限管控 (closes #4599)"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 2,
+      "repository": {
+        "owner": "affaan-m",
+        "name": "ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 226402,
+        "starsAdded24h": 3598,
+        "lastUpdatedAt": "2026-07-06T04:55:16Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "chore(deps): update anthropic requirement from >=0.111.0 to >=0.116.0",
+          "chore(deps): update openai requirement from >=1.30.0 to >=2.44.0"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 3,
+      "repository": {
+        "owner": "yt-dlp",
+        "name": "yt-dlp",
+        "url": "https://github.com/yt-dlp/yt-dlp",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 175509,
+        "starsAdded24h": 1643,
+        "lastUpdatedAt": "2026-07-04T22:41:31Z"
+      },
+      "health": {
+        "license": "Unlicense",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "[ie/americastestkitchen] Fix season/series extraction",
+          "[misc] Fix third party license information"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 144369,
+        "starsAdded24h": 1084,
+        "lastUpdatedAt": "2026-07-02T17:38:23Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: resolve workspace model ID to base model on delete from model selector",
+          "fix(retrieval): close Playwright pages and browser on failure or completion in SafePlaywrightURLLoader"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 195348,
+        "starsAdded24h": 1015,
+        "lastUpdatedAt": "2026-07-06T06:38:51Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(core): Return empty form values when capturing browser secrets (no-changelog)",
+          "Reframe evals"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 6,
+      "repository": {
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 147828,
+        "starsAdded24h": 1015,
+        "lastUpdatedAt": "2026-07-06T06:40:33Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "docs(dify-ui): clarify radio composition stories",
+          "test: more caplog"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "google-gemini",
+        "name": "gemini-cli",
+        "url": "https://github.com/google-gemini/gemini-cli",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 105787,
+        "starsAdded24h": 176,
+        "lastUpdatedAt": "2026-07-06T01:31:22Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(core): preserve escape sequences in string literals for modern models",
+          "chore/release: bump version to 0.51.0-nightly.20260706.gf7af4e518"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 8,
+      "repository": {
+        "owner": "Snailclimb",
+        "name": "JavaGuide",
+        "url": "https://github.com/Snailclimb/JavaGuide",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 156818,
+        "starsAdded24h": 159,
+        "lastUpdatedAt": "2026-06-28T22:50:31Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "evidence": [
+          ".github/workflows/test.yml",
+          "README.md",
+          "README_EN.md",
+          "勘误 SSE 协议描述中“传输层仍是 HTTP”及换行符格式表述有误",
+          "大模型部分 「上下文窗口：模型在“补”之前能看到多少文本。」 这句话感觉不是很准确，可以适当修正"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 9,
+      "repository": {
+        "owner": "puppeteer",
+        "name": "puppeteer",
+        "url": "https://github.com/puppeteer/puppeteer",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 95282,
+        "starsAdded24h": 21,
+        "lastUpdatedAt": "2026-07-05T02:04:35Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "chore(deps): bump the all group with 5 updates",
+          "chore(deps): bump docusaurus-plugin-copy-page-button from 0.8.3 to 0.8.4 in /website in the all group"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 10,
+      "repository": {
+        "owner": "ohmyzsh",
+        "name": "ohmyzsh",
+        "url": "https://github.com/ohmyzsh/ohmyzsh",
+        "primaryLanguage": "Shell"
+      },
+      "popularity": {
+        "starsTotal": 188415,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-05T12:52:24Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat(docker-compose): add config alias",
+          "chore(deps): bump github/codeql-action/upload-sarif from 4.36.2 to 4.36.3"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    }
+  ]
+}

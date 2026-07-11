@@ -1,131 +1,134 @@
 {
-  "date": "2026-06-08",
-  "generatedAt": "2026-06-08T03:37:56Z",
+  "date": "2026-07-11",
+  "generatedAt": "2026-07-11T02:14:44Z",
   "summary": {
-    "candidateCount": 6,
-    "actionableCount": 3
+    "candidateCount": 10,
+    "actionableCount": 4
   },
   "items": [
     {
       "rank": 1,
       "repository": {
-        "owner": "anthropics",
-        "name": "skills",
-        "url": "https://github.com/anthropics/skills",
-        "primaryLanguage": "Python"
+        "owner": "alfredoperez",
+        "name": "speckit-companion",
+        "url": "https://github.com/alfredoperez/speckit-companion",
+        "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 147657,
+        "starsTotal": 70,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-06-08T03:36:11Z"
+        "lastUpdatedAt": "2026-07-11T01:36:51Z"
       },
       "health": {
-        "license": "未声明",
-        "hasCi": false,
-        "hasTests": false,
-        "hasContributing": false,
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
         "issueActivity": "active"
       },
       "opportunity": {
         "category": "小 bug",
-        "summary": "修复 skill-creator 脚本在 Windows 默认 cp1252 编码下读取 UTF-8 SKILL.md 崩溃的问题",
+        "summary": "主推 #419：归一化 custom workflow step command 的前导 slash，避免按钮发送 //to-spec",
         "evidence": [
-          "来源：cnYui starred 仓库，Skill 方向高度相关",
-          "Issue #1271 仍 open，明确指出 quick_validate.py、utils.py、run_eval.py 等 read_text/write_text 缺少 encoding",
-          "open PR 查重：1271/cp1252/UnicodeDecodeError/UTF-8 均未发现重复 PR",
-          "代码搜索确认 skills/skill-creator/scripts 下至少 6 处 read_text() 命中，可用 UTF-8 skill fixture 做回归测试"
+          "issue #419 仍 open，给出复现、acceptance criteria 和具体代码路径",
+          "open PR 列表为空，未发现同向修复",
+          "问题边界集中在 src/features/specs/specCommands.ts 与 specEditorProvider.ts 的命令拼接",
+          "现有 customCommandConfig 已有前导 slash 归一化模式，可复用设计",
+          "仓库有 Jest/Vitest 测试和 VS Code extension 测试结构"
         ]
       },
       "risk": {
         "level": "低",
-        "reason": "修复形态是给文本读写补 encoding=\"utf-8\"，不改变业务逻辑；风险主要是仓库缺少常规 CI/CONTRIBUTING 信号"
+        "reason": "改动可限制在命令规范化与 schema 文档，回归测试能覆盖带 slash 和不带 slash 两条路径"
       },
       "recommendation": "值得继续"
     },
     {
       "rank": 2,
       "repository": {
-        "owner": "ChatLab",
-        "name": "ChatLab",
-        "url": "https://github.com/ChatLab/ChatLab",
-        "primaryLanguage": "TypeScript"
+        "owner": "PerpetualSoftware",
+        "name": "pad",
+        "url": "https://github.com/PerpetualSoftware/pad",
+        "primaryLanguage": "Go"
       },
       "popularity": {
-        "starsTotal": 6623,
+        "starsTotal": 90,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-06-08T02:31:48Z"
+        "lastUpdatedAt": "2026-07-11T02:04:24Z"
       },
       "health": {
-        "license": "AGPL-3.0",
+        "license": "Apache-2.0",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": false,
+        "hasContributing": true,
         "issueActivity": "active"
       },
       "opportunity": {
         "category": "小 bug",
-        "summary": "统一增量导入分析和执行阶段的 timestamp 归一化，避免字符串 timestamp 被静默跳过",
+        "summary": "主推 #902：让 pad item comment 的 not-found 错误也带 ref 与 workspace",
         "evidence": [
-          "Issue #195 仍 open，描述 CipherTalk JSONL 中 timestamp 为字符串导致分析阶段显示新增、执行阶段导入 0 条",
-          "open PR 查重：195/timestamp/CipherTalk 未发现重复 PR",
-          "代码搜索定位 packages/node-runtime/src/import/incremental-importer.ts 的 INVALID_TIMESTAMP 检查",
-          "仓库有 release workflow、tests 目录和 pnpm test/type-check 脚本"
+          "issue #902 仍 open，明确指出 CreateComment 未复用 wrapItemNotFound",
+          "open PR 主要是依赖更新和 SafeSkill badge，未覆盖 #902",
+          "指针给到 internal/cli/client.go 与 internal/cli/item_notfound_test.go",
+          "同类 GetItem/UpdateItem/DeleteItem 已有一行模式可复用",
+          "仓库有 Go 测试和 Makefile，可跑目标测试与 go test"
         ]
       },
       "risk": {
         "level": "低",
-        "reason": "问题边界集中在导入器的字段归一化，可用字符串 timestamp fixture 直接覆盖分析和执行一致性"
+        "reason": "属于现有错误包装逻辑的遗漏补齐，不改变 API 语义，验证路径清晰"
       },
       "recommendation": "值得继续"
     },
     {
       "rank": 3,
       "repository": {
-        "owner": "coderamp-labs",
-        "name": "gitingest",
-        "url": "https://github.com/coderamp-labs/gitingest",
-        "primaryLanguage": "Python"
+        "owner": "h5i-dev",
+        "name": "h5i",
+        "url": "https://github.com/h5i-dev/h5i",
+        "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 14845,
+        "starsTotal": 460,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-06-07T21:02:26Z"
+        "lastUpdatedAt": "2026-07-11T02:09:46Z"
       },
       "health": {
-        "license": "MIT",
+        "license": "Apache-2.0",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "小 bug",
-        "summary": "修复二进制文件判定在 1024 字节切片边界截断 UTF-8 多字节字符时误报 [Binary file]",
+        "category": "示例补全",
+        "summary": "主推 #204：新增 phpunit output filter 与 inline golden tests",
         "evidence": [
-          "Issue #578 仍 open，给出日文/汉字在 1024 字节边界被切断后的复现描述",
-          "open PR 查重：578/Unicode chunk decoding/Binary File 未发现重复 PR",
-          "代码搜索定位 src/gitingest/schemas/filesystem.py 的 _decodes(chunk, \"utf-8\") 判定",
-          "仓库有 CI、pytest 配置、tests 目录和 CONTRIBUTING.md"
+          "issue #204 仍 open，acceptance criteria 明确为新增 assets/filters/phpunit.toml",
+          "open PR #266 覆盖 bun，#273 覆盖 vibe tests，未覆盖 phpunit",
+          "仓库已有大量 assets/filters/*.toml 可照现有声明式格式实现",
+          "issue 指定 cargo test builtin_golden_tests_pass 与 cargo test --test filter_quality 验证",
+          "不需要改核心 Rust 逻辑，主要是过滤规则和黄金样例"
         ]
       },
       "risk": {
         "level": "低",
-        "reason": "可把 UnicodeDecodeError 的 unexpected end of data 边界视为文本并补单元测试；改动集中在文件类型判定"
+        "reason": "新增独立 TOML filter，失败面小；主要风险是正则过度过滤，需要用失败输出样例守住信号"
       },
       "recommendation": "值得继续"
     },
     {
       "rank": 4,
       "repository": {
-        "owner": "github",
-        "name": "github-mcp-server",
-        "url": "https://github.com/github/github-mcp-server",
-        "primaryLanguage": "Go"
+        "owner": "Justin0504",
+        "name": "Aegis",
+        "url": "https://github.com/Justin0504/Aegis",
+        "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 30508,
+        "starsTotal": 363,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-06-08T03:31:30Z"
+        "lastUpdatedAt": "2026-07-11T02:09:23Z"
       },
       "health": {
         "license": "MIT",
@@ -136,68 +139,33 @@
       },
       "opportunity": {
         "category": "小 bug",
-        "summary": "调查 issue_write 在 state=closed 且带 labels/state_reason 时 mutation 成功但 MCP 调用不返回的问题",
+        "summary": "主推 #2：gateway-mcp 初始化时补建 agent_profiles 表，避免 ProfileManager 启动即崩",
         "evidence": [
-          "Issue #2636 仍 open，描述 issue_write update 关闭 issue 后 JSON-RPC 调用挂起",
-          "open PR 查重：2636/issue_write state closed hang 未发现重复 PR",
-          "代码搜索定位 pkg/github/issues.go 的 UpdateIssue 和 CloseIssue mutation，已有 issues_test.go",
-          "官方仓库有 Go CI、lint、e2e 和 CONTRIBUTING.md"
+          "issue #2 仍 open，给出 SqliteError、根因和 CREATE TABLE 结构",
+          "open PR #3 是 CI 测试步骤，#5 是 attack-pattern detector，未覆盖 agent_profiles 表",
+          "代码树包含 packages/gateway-mcp/src/db/database.ts 与 profile-manager 相关服务",
+          "packages/gateway-mcp 下已有大量 Vitest 测试，可新增数据库初始化回归测试",
+          "问题可在本地 SQLite 初始化路径验证，不依赖云服务"
         ]
       },
       "risk": {
-        "level": "中",
-        "reason": "涉及 GraphQL close mutation、labels 更新和 MCP 响应路径，需先用 mock 测出 hang 的根因，不能只按 issue 猜测改"
+        "level": "低",
+        "reason": "表结构由现有 ProfileManager 读写字段反推，需注意默认值与既有迁移/初始化风格一致"
       },
-      "recommendation": "谨慎"
+      "recommendation": "值得继续"
     },
     {
       "rank": 5,
       "repository": {
-        "owner": "modelcontextprotocol",
-        "name": "servers",
-        "url": "https://github.com/modelcontextprotocol/servers",
-        "primaryLanguage": "TypeScript"
+        "owner": "bgreenwell",
+        "name": "xleak",
+        "url": "https://github.com/bgreenwell/xleak",
+        "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 86873,
+        "starsTotal": 1430,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-06-08T03:15:11Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "CI/类型错误",
-        "summary": "处理 zod 同时声明为 dependency 和 peerDependency 导致 pnpm strict isolation 下运行时缺包的问题",
-        "evidence": [
-          "Issue #4288 仍 open，复现为 @modelcontextprotocol/server-sequential-thinking 在 pnpm strict/global virtual store 下 ERR_MODULE_NOT_FOUND",
-          "open PR 查重：4288/zod peerDependencies/ERR_MODULE_NOT_FOUND 未发现重复 PR",
-          "仓库有 TypeScript workflow、release workflow 和 CONTRIBUTING.md",
-          "变更可能集中在 package.json 依赖声明和 lockfile，但需要确认 monorepo 发布策略"
-        ]
-      },
-      "risk": {
-        "level": "中",
-        "reason": "表面是依赖声明修复，但官方多包仓库可能有生成/发布约束，提交前必须先确认影响哪些 package"
-      },
-      "recommendation": "谨慎"
-    },
-    {
-      "rank": 6,
-      "repository": {
-        "owner": "upstash",
-        "name": "context7",
-        "url": "https://github.com/upstash/context7",
-        "primaryLanguage": "TypeScript"
-      },
-      "popularity": {
-        "starsTotal": 56950,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-06-08T03:29:32Z"
+        "lastUpdatedAt": "2026-07-11T02:01:47Z"
       },
       "health": {
         "license": "MIT",
@@ -208,19 +176,205 @@
       },
       "opportunity": {
         "category": "小 bug",
-        "summary": "评估是否为 MCP server 补 prompts/list 和 resources/list 的空响应以提升客户端兼容性",
+        "summary": "谨慎推进 #55：远距离跳转后水平滚动应一次性把 cursor 带回可视窗口",
         "evidence": [
-          "Issue #2527 仍 open，建议实现 ListPromptsRequestSchema 和 ListResourcesRequestSchema 的空列表返回",
-          "open PR 查重：2527/prompts/list/resources/list 未发现重复 PR",
-          "维护者评论称 Opencode 下可用，说明复现条件需要先澄清",
-          "仓库有 test workflow、changeset-check 和 pnpm workspace"
+          "issue #55 仍 open，描述 update_horizontal_scroll 每帧只 +1 的卡顿路径",
+          "open PR #65/#66/#57/#60 分别覆盖 #50/#54/#56，未覆盖 #55",
+          "当前维护者很活跃，相关 TUI bug 可能被快速处理",
+          "代码位置从 src/tui.rs 可能已迁到 src/tui/state.rs，需先以 main 为准定位",
+          "可通过状态函数测试或轻量 TUI 状态回归验证"
         ]
       },
       "risk": {
         "level": "中",
-        "reason": "issue 的复现被维护者追问，直接改代码可能不被接受；应先复现客户端兼容性问题或补最小 failing test"
+        "reason": "逻辑不大，但 TUI 状态行为容易受近期重构影响，提交前要先同步 main 并确认没有维护者本地修复"
       },
       "recommendation": "谨慎"
+    },
+    {
+      "rank": 6,
+      "repository": {
+        "owner": "microsoft",
+        "name": "mcp",
+        "url": "https://github.com/microsoft/mcp",
+        "primaryLanguage": "C#"
+      },
+      "popularity": {
+        "starsTotal": 3439,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-10T20:39:35Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "谨慎推进 #2978 或 #2982：补齐 Azure MCP 命令文档与 e2e prompt 中的参数约束",
+        "evidence": [
+          "issue #2978/#2982 均为 2026-07 新增 doc-gap，正文含实施步骤和验证命令",
+          "open PR 列表未见 FoundryExtensions resource-group 或 ResourceHealth tracking-id/filter 同向文档修复",
+          "修改面集中在 servers/Azure.Mcp.Server/docs/azmcp-commands.md 与 e2eTestPrompts.md",
+          "仓库体量大且 issue 带 copilot 标签，可能被内部自动化或维护者接管",
+          "验证需要 dotnet build/test 与 cspell，耗时高于普通 doc-only PR"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "切口明确但仓库大、CI 重、自动 doc-gap 流程活跃，适合谨慎选择一个最小文档项"
+      },
+      "recommendation": "谨慎"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "lerd-env",
+        "name": "lerd",
+        "url": "https://github.com/lerd-env/lerd",
+        "primaryLanguage": "Go"
+      },
+      "popularity": {
+        "starsTotal": 734,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-11T01:57:06Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "谨慎推进 #842：标准化 ext-opcache 与 ext-zend-opcache 的 composer 平台扩展名称",
+        "evidence": [
+          "issue #842 仍 open，明确指出 composer platform 使用 ext-zend-opcache 而 lerd 检查 ext-opcache",
+          "open PR 仅见 #857 dashboard 磁盘清理，不覆盖扩展名归一化",
+          "问题集中在 park 的 missing extension 比较逻辑",
+          "issue 建议审计 bundled names，不能只硬编码一个 case",
+          "本地验证可能需要 PHP/FPM 或 fixture 化 composer platform 输出"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "根因清楚，但正确修复要确认扩展名映射边界，验证环境比普通单测重"
+      },
+      "recommendation": "谨慎"
+    },
+    {
+      "rank": 8,
+      "repository": {
+        "owner": "PagerDuty",
+        "name": "pagerduty-mcp-server",
+        "url": "https://github.com/PagerDuty/pagerduty-mcp-server",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 73,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-10T20:33:34Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "谨慎推进 #115：先加工具 schema footprint 测量/回归测试，再评估 schema 精简",
+        "evidence": [
+          "issue #115 仍 open，提供 FastMCP list_tools() 测量脚本和具体体积数据",
+          "open PR 列表未见 schema footprint 专项修复",
+          "问题价值高，但可能涉及 Pydantic schema、tool docstring 和 wrapper model 设计",
+          "直接大改工具分组风险高，首 PR 更适合补测量基线或最重工具的安全精简",
+          "验证需要 uv/python 测试与工具 schema JSON 尺寸断言"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "范围容易膨胀；建议先做小型可量化测试 PR，而不是一次性重构所有工具 schema"
+      },
+      "recommendation": "谨慎"
+    },
+    {
+      "rank": 9,
+      "repository": {
+        "owner": "coddingtonbear",
+        "name": "obsidian-local-rest-api",
+        "url": "https://github.com/coddingtonbear/obsidian-local-rest-api",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 2629,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-11T02:08:46Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "跳过 #282：维护者确认根因在上游 markdown-patch，且上游 issue #15 已修复",
+        "evidence": [
+          "obsidian-local-rest-api#282 仍 open，但维护者评论说明应等待 markdown-patch 修复和依赖发布",
+          "维护者已关闭本仓 PR #287，明确不走本仓直接修复",
+          "coddingtonbear/markdown-patch#15 已在 2026-07-10 23:20 UTC 标记 fixed in fc2cd2b",
+          "当前最佳动作是等待 npm 发布或依赖自动解析，不适合重复开 PR",
+          "直接改本仓会违背维护者刚给出的方向"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "根因已被上游修复，继续在消费仓提交修复会造成重复或方向冲突"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 10,
+      "repository": {
+        "owner": "escoffier-labs",
+        "name": "brigade",
+        "url": "https://github.com/escoffier-labs/brigade",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 59,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-11T02:09:04Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "跳过 #196：security scan 排除路径遍历问题已被 open PR #200 覆盖",
+        "evidence": [
+          "issue #196 描述 exclude_paths/include_paths 应在遍历前裁剪",
+          "open PR #200 标题为 fix: bound security scanning and cache work brief health，时间为 2026-07-11",
+          "PR #200 明显覆盖 security scanning bound/exclude 类方向",
+          "继续提交同向 PR 会打扰维护者并制造重复评审",
+          "可等待 #200 合并后再看是否有后续小缺口"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有实时 open PR 覆盖核心问题，当前不应重复推进"
+      },
+      "recommendation": "跳过"
     }
   ]
 }

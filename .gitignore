@@ -1,6 +1,8 @@
 node_modules/
 work/
 outputs/
+data/
+~/
 
 .env
 .env.*
@@ -12,3 +14,5 @@ outputs/
 .cache/
 .vite/
 coverage/
+**/__pycache__/
+*.py[cod]

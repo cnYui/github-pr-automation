@@ -1,0 +1,290 @@
+{
+  "date": "2026-06-27",
+  "generatedAt": "2026-06-27T10:55:51.047Z",
+  "summary": {
+    "candidateCount": 8,
+    "actionableCount": 3
+  },
+  "items": [
+    {
+      "rank": 1,
+      "repository": {
+        "owner": "holon-run",
+        "name": "holon",
+        "url": "https://github.com/holon-run/holon",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 125,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-27T09:59:07Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "主推 #2002：为 apply_patch diff header 的 a//absolute/path 兼容补最小修复；备选 #2028 调整 unknown model fallback 预算常量",
+        "evidence": [
+          "issue #2002 指向 src/tool/apply_patch.rs 的 strip_diff_prefix 绝对路径兼容问题",
+          "issue #2028 指向 src/model_catalog.rs 的 64000 fallback 过低问题",
+          "仓库有 Cargo.toml、tests/、Makefile 和 CI workflow"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "问题定位到单文件函数或常量，Rust 单测可本地验证，当前无 open PR 覆盖 #2002"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 2,
+      "repository": {
+        "owner": "Muvon",
+        "name": "octocode",
+        "url": "https://github.com/Muvon/octocode",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 408,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-27T10:13:37Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "推进 #50：为 C++20 module 扩展名 .cppm/.ixx/.mxx/.ccm/.cxxm 补语言识别",
+        "evidence": [
+          "issue #50 明确列出 C++ module 新扩展名",
+          "仓库已有 src/indexer/languages/java_test.rs、php_test.rs、swift_test.rs 这类语言索引测试",
+          "open PR 只有 #39 GraphRAG 文档方向，不覆盖该扩展名问题"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "切口可限制在扩展名映射和目标语言测试，不需要外部服务"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 3,
+      "repository": {
+        "owner": "alexei-led",
+        "name": "ccgram",
+        "url": "https://github.com/alexei-led/ccgram",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 183,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-27T10:16:21Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "推进 #107：tmux rename-window 后不要重放完整历史 transcript",
+        "evidence": [
+          "issue #107 有明确复现步骤和期望行为",
+          "仓库有 tests/ccgram/test_session_monitor.py、test_monitor_state.py、test_multiplexer_tmux.py",
+          "当前无 open PR"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "可先用 monitor/session 状态单测复现内存 offset 失效，不需要真实 Telegram"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "fujibee",
+        "name": "agmsg",
+        "url": "https://github.com/fujibee/agmsg",
+        "primaryLanguage": "Shell"
+      },
+      "popularity": {
+        "starsTotal": 900,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-27T10:10:14Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "谨慎推进 #230：为 send.sh 增加可配置长消息 warning，而不是默认拒绝",
+        "evidence": [
+          "issue #230 明确要求先决定 warning 与 opt-in cap 策略",
+          "仓库有 scripts/send.sh 和 Bats 测试目录 tests/",
+          "open PR 很多，需避免碰 #225/#228 等已有修复方向"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "维护者要求先做策略决策，直接实现硬限制会违背 issue 约束"
+      },
+      "recommendation": "谨慎"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "tomasz-tomczyk",
+        "name": "crit",
+        "url": "https://github.com/tomasz-tomczyk/crit",
+        "primaryLanguage": "Go"
+      },
+      "popularity": {
+        "starsTotal": 589,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-27T10:41:19Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "示例补全",
+        "summary": "谨慎推进 #537：在 stack UI 加 base/target/range 标记和短 commit hash",
+        "evidence": [
+          "issue #537 标记 help wanted，需求边界清楚",
+          "仓库有 Go、web、test/e2e 和 GitHub test workflow",
+          "open PR #618/#694 不覆盖该 UI 方向"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "UI 变更需要理解现有交互和快照/e2e 口径，切口比纯后端 bug 大"
+      },
+      "recommendation": "谨慎"
+    },
+    {
+      "rank": 6,
+      "repository": {
+        "owner": "rvben",
+        "name": "rumdl",
+        "url": "https://github.com/rvben/rumdl",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 1290,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-27T10:29:57Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "暂不推进 #655：shuck built-in 依赖上游先支持 stdin",
+        "evidence": [
+          "maintainer 评论说明 shuck check 当前不能从 stdin 读取",
+          "上游跟踪为 ewhauser/shuck#1123",
+          "rumdl 侧一行 registry entry 需要等待上游能力"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "当前阻塞在外部项目能力，直接 PR 会不可运行"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "0xMassi",
+        "name": "webclaw",
+        "url": "https://github.com/0xMassi/webclaw",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 1574,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-27T10:33:08Z"
+      },
+      "health": {
+        "license": "AGPL-3.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "CI/类型错误",
+        "summary": "暂不推进 #73：Linux glibc release binary 问题已有 PR #74 覆盖",
+        "evidence": [
+          "issue #73 指向 ubuntu/debian glibc 兼容问题",
+          "open PR #74 已修改 release CI 到 ubuntu-22.04",
+          "重复提交会干扰维护者评审"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "同方向已有开放 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 8,
+      "repository": {
+        "owner": "max-sixty",
+        "name": "worktrunk",
+        "url": "https://github.com/max-sixty/worktrunk",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 5630,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-27T09:55:37Z"
+      },
+      "health": {
+        "license": "Other",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "暂不推进 #3269：picker auto-refresh flake 已有多个相近 PR 在处理",
+        "evidence": [
+          "issue #3269 跟踪恢复被 ignore 的 picker auto-refresh 测试",
+          "open PR #3265/#3270/#3271 都在处理 picker/PTY 测试稳定性",
+          "仓库 open PR 密度高，重复风险很高"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有多条相近测试 PR，且当前变更窗口拥挤"
+      },
+      "recommendation": "跳过"
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "date": "2026-06-28",
+  "generatedAt": "2026-06-28T11:13:19Z",
+  "summary": {
+    "candidateCount": 8,
+    "actionableCount": 4
+  },
+  "items": [
+    {
+      "rank": 1,
+      "repository": {
+        "owner": "yvgude",
+        "name": "lean-ctx",
+        "url": "https://github.com/yvgude/lean-ctx",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 2986,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-28T10:20:32Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "主推 #594：统一 CLI 与 MCP 读取 config.toml 的路径，避免 CLI 校验和 MCP 运行看到两份配置",
+        "evidence": [
+          "issue #594 明确复现 CLI 使用 ~/.config/lean-ctx/config.toml，MCP 使用 ~/.local/share/lean-ctx/config.toml",
+          "仓库当前无 open PR，未发现 config path 同向修复",
+          "仓库有 Cargo/Rust 客户端、MCP 配置文档和多层测试目录"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "问题边界集中在路径解析与配置加载，可用单元测试覆盖 CLI/MCP 共用路径"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 2,
+      "repository": {
+        "owner": "repowise-dev",
+        "name": "repowise",
+        "url": "https://github.com/repowise-dev/repowise",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 2583,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-28T09:39:27Z"
+      },
+      "health": {
+        "license": "Other",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "主推 #371：语言使用区过滤 JSON/YAML/TOML 等配置类语言；备选 #357 修复 docs search bar GitHub logo 重复",
+        "evidence": [
+          "issue #371 标记 good first issue，正文明确要求像 GitHub 语言统计一样隐藏 json/yaml/toml",
+          "open PR 查重未发现 Language usage 或 docs search logo 同向 PR",
+          "代码树包含 packages/ui/src/dashboard/language-donut.tsx、packages/web/src/components/stats 和 UI 测试"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "切口可限制在展示层过滤规则和小型 UI 测试，不需要外部服务"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 3,
+      "repository": {
+        "owner": "fitlab-ai",
+        "name": "agent-infra",
+        "url": "https://github.com/fitlab-ai/agent-infra",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 77,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-28T09:43:43Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "CI/类型错误",
+        "summary": "推进 #544：统一 task.md frontmatter 的 status 枚举，并清理 create-task/import-issue 写入但无人读取的冗余字段",
+        "evidence": [
+          "issue #544 指出模板、create-task 写入和 validate-artifact.js 校验的 status 枚举不一致",
+          "仓库当前无 open PR，未发现 frontmatter/status enum 同向修复",
+          "代码树包含 .agents/templates、.agents/scripts/validate-artifact.js、create-task/import-issue/block-task 技能与校验配置"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "属于元数据契约修复，可用现有 validate-artifact 和技能 fixture 做本地验证"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "xintaofei",
+        "name": "codeg",
+        "url": "https://github.com/xintaofei/codeg",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 1840,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-28T11:02:33Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "主推 #273：修正 agent 运行时长统计；备选 #270 调查 loop 输出不连续刷新",
+        "evidence": [
+          "issue #273 用截图对比 CodeG 与 cc-switch 的实际开始/结束时间，指出运行时长统计有误",
+          "open PR 中未发现 duration、运行时长、loop 同向修复；现有 #309 是聊天命令 allowlist 安全方向",
+          "代码树包含 status-bar-stats、active-session-details、format-elapsed 测试和 session stats context"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "主推切口可先收窄为时间差计算和展示测试；不需要真实启动 Claude Code"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "VintLin",
+        "name": "skill-flow",
+        "url": "https://github.com/VintLin/skill-flow",
+        "primaryLanguage": "Swift"
+      },
+      "popularity": {
+        "starsTotal": 246,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-28T10:17:20Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "示例补全",
+        "summary": "谨慎推进 #8：先做 CLI/source scanner 识别 commands/agents/hooks/output-styles 的薄切片，再评估 customTargets 多资产映射",
+        "evidence": [
+          "issue #8 明确列出 skills/ 以外的 commands/ 被忽略，且 customTargets 写死到 /skills",
+          "仓库当前无 open PR，未发现 commands/customTargets 同向修复",
+          "代码树包含 apps/cli/src/tests/source-parsing-compatibility.test.ts、target-definitions.test.ts 和 import-manifest-command.test.ts"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "完整需求涉及数据模型和 UI，建议首 PR 只做 scanner/manifest 可测试薄切片"
+      },
+      "recommendation": "谨慎"
+    },
+    {
+      "rank": 6,
+      "repository": {
+        "owner": "archestra-ai",
+        "name": "archestra",
+        "url": "https://github.com/archestra-ai/archestra",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 3890,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-28T10:23:59Z"
+      },
+      "health": {
+        "license": "Other",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "谨慎推进 #5948：为 SSE headers 已提交后、usage chunk 前失败的 LLM stream 补交互记录持久化",
+        "evidence": [
+          "issue #5948 提供了 backend Vitest/PGLite 复现：OpenAI stream 在 usage 前 throw 后 interactions 长度仍为 0",
+          "代码树包含 platform/backend/src/routes/proxy/llm-proxy-handler.test.ts 和 interactions 相关迁移/测试",
+          "open PR 搜索未发现直接记录 mid-stream LLM failure interaction 的修复，但仓库 open PR 密度高"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "复现很清楚，但仓库体量和并行 PR 很多，需先跑目标 backend 测试确认不撞现有流处理改动"
+      },
+      "recommendation": "谨慎"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "HelpCode-ai",
+        "name": "anythingmcp",
+        "url": "https://github.com/HelpCode-ai/anythingmcp",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 134,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-28T11:06:00Z"
+      },
+      "health": {
+        "license": "AGPL-3.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "示例补全",
+        "summary": "谨慎推进 #180：新增 ENCRYPTION_KEY rotation CLI，替代手动导出/擦除/重导入密钥流程",
+        "evidence": [
+          "issue #180 给出脚本路径、事务语义、密钥长度校验、SECURITY.md 更新和测试要求",
+          "open PR 查重未发现 ENCRYPTION_KEY rotation/rotate 同向 PR",
+          "代码树包含 packages/backend/src/common/crypto/encryption.util.ts、Prisma migration、backend scripts 和 connector specs"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "安全价值高但需要数据库事务和多 credential 类型测试，适合作为中等切口而不是最快 PR"
+      },
+      "recommendation": "谨慎"
+    },
+    {
+      "rank": 8,
+      "repository": {
+        "owner": "zzet",
+        "name": "gortex",
+        "url": "https://github.com/zzet/gortex",
+        "primaryLanguage": "Go"
+      },
+      "popularity": {
+        "starsTotal": 764,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-06-28T10:29:05Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "谨慎推进 #118：补充与 codegraph 的对比表，作为 README/docs 小切口",
+        "evidence": [
+          "issue #118 标题明确要求 Add compare table with codegraph，但正文为空，需先从 README/docs 现状收窄",
+          "open PR 查重未发现 compare table/codegraph 同向 PR",
+          "代码树包含 CONTRIBUTING.md、Makefile、CI workflow 和大量 Go 测试，文档改动可用 grep/diff 验证"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "issue 需求过短，动手前应先确认比较维度，避免写成主观营销文案"
+      },
+      "recommendation": "谨慎"
+    }
+  ]
+}
