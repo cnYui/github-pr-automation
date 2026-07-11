@@ -6,6 +6,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "scan": "tsx src/scanner/cli.ts",
+    "pipeline": "tsx src/pipeline/cli.ts",
+    "skills:install": "tsx src/skills/install.ts",
+    "typecheck": "tsc --noEmit",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"

@@ -1,0 +1,7 @@
+{
+  "maxCandidates": 10,
+  "maxPrsPerRun": 2,
+  "leaseMinutes": 240,
+  "stateRoot": "data/pipeline",
+  "workspaceRoot": "work/opportunity-pipeline"
+}

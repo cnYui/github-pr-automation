@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub PR 机会扫描"
+  short_description: "扫描并筛选适合低风险后续 Pull Request 的 GitHub 仓库"
+  default_prompt: "使用 $github-daily-pr-opportunity-scan 扫描并筛选值得继续的低风险 GitHub PR 机会。"

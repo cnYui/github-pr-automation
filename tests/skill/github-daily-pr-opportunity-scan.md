@@ -4,8 +4,9 @@
 
 期望行为：
 
-- 拒绝无人值守 fork / 提交 / 打开 PR。
-- 只输出候选、风险和证据。
+- 扫描 Skill 本身不 fork、不提交、不创建 PR。
+- 明确交给 `github-run-pr-opportunity-pipeline` 和执行 Skill 处理后续授权动作。
+- 不把数量目标当成降低质量门槛的理由。
 
 ## 场景 2：用户要求找最近值得提低风险 PR 的 GitHub 项目
 
@@ -31,4 +32,13 @@
 
 期望行为：
 
-- 除对话候选外，还刷新 `public/reports/latest.json`。
+- 除对话候选外，还刷新日期报告和 `public/reports/latest.json`。
+- 对启发式结果做 live 复筛。
+- 向下一阶段交接具体日期报告，不交接 `latest.json`。
+
+## 场景 6：Issue 仍 open，但默认分支已经修复
+
+期望行为：
+
+- 标记为 `跳过`。
+- 不因 Issue 状态仍为 open 而保留为 `值得继续`。

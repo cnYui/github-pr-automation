@@ -1,16 +1,13 @@
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
+import { resolveGitHubToken } from '../shared/github-auth';
 import { createGitHubClient } from './github-client';
 import { runScan } from './scan-runner';
 import type { StarSnapshotItem } from './star-snapshots';
 
 const today = new Date();
 const date = today.toISOString().slice(0, 10);
-const token = process.env.GITHUB_TOKEN;
-
-if (!token) {
-  throw new Error('缺少 GITHUB_TOKEN，扫描器不会在无认证状态下请求 GitHub API');
-}
+const token = await resolveGitHubToken();
 
 const readPreviousSnapshot = async (): Promise<StarSnapshotItem[]> => {
   const path = resolve('data/snapshots/latest.json');

@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub PR 机会执行"
+  short_description: "复核候选仓库、实现最小改动、运行验证并创建上游 Pull Request"
+  default_prompt: "使用 $github-implement-pr-opportunity 复核并实现一个标记为值得继续的候选项目。"

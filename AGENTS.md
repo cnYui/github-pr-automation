@@ -65,3 +65,5 @@
 - 2026-07-11 主控仓库方向：将仓库改名为 `github-pr-automation`，保留扫描、执行、编排三个独立 Skill，由一个 cron 在同一次运行中串联；仓内 `skills/` 是 Skill 唯一源码，安装目录只作为同步产物。
 - 2026-07-11 自动执行授权：`值得继续` 只允许进入 live preflight；复核通过后允许 clone、fork、修改、验证、commit、push 和创建 PR，禁止自动 merge。内部记录使用中文，上游内容遵循目标仓库的主要沟通语言。
 - 2026-07-11 持久化边界：每轮使用不可变候选快照、lease、current run 和 ledger 支持并发保护、失败恢复和跨日去重；`work/` 与 `data/` 不进入 Git，公开报告和上下文文档继续版本管理。设计与计划见 `docs/ai/context/20260711-200238-github-pr-automation-repository-design.md` 和 `docs/ai/context/20260711-200238-github-pr-automation-repository-plan.md`。
+- 2026-07-11 流水线实现：三个 Skill 已纳入仓库并安装；新增认证回退、不可变候选快照、独立 `leaseId`、执行上下文、`publishing` 对账状态和 ledger 去重。34 项测试、类型检查、构建、Skill 校验和无远程写入 dry-run 均通过，详见 `docs/ai/context/20260711-204135-github-pr-automation-pipeline-implementation-record.md`。
+- 2026-07-11 GitHub 工具边界：`gh` 负责认证、仓库/Fork/PR/Review/checks 等远程操作；本地修改、测试、分支、commit 和 push 必须组合 Codex、项目工具链与标准 `git`。自动化始终禁止自动 merge。
