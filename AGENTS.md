@@ -68,3 +68,4 @@
 - 2026-07-11 流水线实现：三个 Skill 已纳入仓库并安装；新增认证回退、不可变候选快照、独立 `leaseId`、执行上下文、`publishing` 对账状态和 ledger 去重。34 项测试、类型检查、构建、Skill 校验和无远程写入 dry-run 均通过，详见 `docs/ai/context/20260711-204135-github-pr-automation-pipeline-implementation-record.md`。
 - 2026-07-11 GitHub 工具边界：`gh` 负责认证、仓库/Fork/PR/Review/checks 等远程操作；本地修改、测试、分支、commit 和 push 必须组合 Codex、项目工具链与标准 `git`。自动化始终禁止自动 merge。
 - 2026-07-11 主控仓库迁移完成：GitHub 仓库为 `cnYui/github-pr-automation`，本地主路径为 `D:\CodeWorkSpace\github-pr-automation`；`work/`、`data/` 和本地依赖已完整迁入，现有 `cnyui-pr` 自动化也已保持原频率并改绑新路径。旧路径仅因 Codex 进程监听空 `.codex` 目录而暂时保留，重启 Codex 后可删除，不再作为主控仓使用。详见 `docs/ai/context/20260711-210903-github-pr-automation-repository-migration-record.md`。
+- 2026-07-11 流水线真实运行：Run `20260711123938-745dbd` 完整创建 `CognizenOrg/compatcanary#6` 与 `briandconnelly/skills#52`，随后正常关闭并释放租约。已确认主路径可用，但扫描 CLI、报告覆盖、API 韧性、lease heartbeat、跨阶段一致性、Fork remote 和外部 Fork CI 审批仍需修复，详见 `docs/ai/context/20260711-223528-github-pr-automation-live-run-record.md`。

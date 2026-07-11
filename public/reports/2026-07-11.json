@@ -1,23 +1,23 @@
 {
   "date": "2026-07-11",
-  "generatedAt": "2026-07-11T02:14:44Z",
+  "generatedAt": "2026-07-11T12:39:17.959Z",
   "summary": {
-    "candidateCount": 10,
-    "actionableCount": 4
+    "candidateCount": 9,
+    "actionableCount": 2
   },
   "items": [
     {
       "rank": 1,
       "repository": {
-        "owner": "alfredoperez",
-        "name": "speckit-companion",
-        "url": "https://github.com/alfredoperez/speckit-companion",
-        "primaryLanguage": "TypeScript"
+        "owner": "CognizenOrg",
+        "name": "compatcanary",
+        "url": "https://github.com/CognizenOrg/compatcanary",
+        "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 70,
+        "starsTotal": 0,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-11T01:36:51Z"
+        "lastUpdatedAt": "2026-07-11T11:33:16Z"
       },
       "health": {
         "license": "MIT",
@@ -28,70 +28,70 @@
       },
       "opportunity": {
         "category": "小 bug",
-        "summary": "主推 #419：归一化 custom workflow step command 的前导 slash，避免按钮发送 //to-spec",
+        "summary": "#5：新增离线 --list-probes，按 profile 输出可用 probe 且不要求 URL、model 或凭据",
         "evidence": [
-          "issue #419 仍 open，给出复现、acceptance criteria 和具体代码路径",
-          "open PR 列表为空，未发现同向修复",
-          "问题边界集中在 src/features/specs/specCommands.ts 与 specEditorProvider.ts 的命令拼接",
-          "现有 customCommandConfig 已有前导 slash 归一化模式，可复用设计",
-          "仓库有 Jest/Vitest 测试和 VS Code extension 测试结构"
+          "Issue #5 仍 open、无 assignee 和评论，由维护者标记 good first issue 与 help wanted",
+          "默认分支 3b46c515 尚无 list-probes/listProbes，src/cli.js 当前会先校验在线扫描参数",
+          "开放 PR 为 0，probe/probes/list 方向搜索也无重复 PR",
+          "仓库仅约 87 个文件，已有 args、CLI、probe 数据和子进程测试模式可复用",
+          "贡献规则要求先留认领评论并提交 focused PR，不要求等待批准"
         ]
       },
       "risk": {
         "level": "低",
-        "reason": "改动可限制在命令规范化与 schema 文档，回归测试能覆盖带 slash 和不带 slash 两条路径"
+        "reason": "实现与验证边界清楚；主要风险是仓库较新，尚无外部贡献接受历史"
       },
       "recommendation": "值得继续"
     },
     {
       "rank": 2,
       "repository": {
-        "owner": "PerpetualSoftware",
-        "name": "pad",
-        "url": "https://github.com/PerpetualSoftware/pad",
-        "primaryLanguage": "Go"
+        "owner": "briandconnelly",
+        "name": "skills",
+        "url": "https://github.com/briandconnelly/skills",
+        "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 90,
+        "starsTotal": 0,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-11T02:04:24Z"
+        "lastUpdatedAt": "2026-07-08T17:25:55Z"
       },
       "health": {
-        "license": "Apache-2.0",
+        "license": "NOASSERTION",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": true,
+        "hasContributing": false,
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "小 bug",
-        "summary": "主推 #902：让 pad item comment 的 not-found 错误也带 ref 与 workspace",
+        "category": "文档缺口",
+        "summary": "#51：恢复 agent-friendly-mcp 文档的一句一行规范，只插入换行且不改词语",
         "evidence": [
-          "issue #902 仍 open，明确指出 CreateComment 未复用 wrapItemNotFound",
-          "open PR 主要是依赖更新和 SafeSkill badge，未覆盖 #902",
-          "指针给到 internal/cli/client.go 与 internal/cli/item_notfound_test.go",
-          "同类 GetItem/UpdateItem/DeleteItem 已有一行模式可复用",
-          "仓库有 Go 测试和 Makefile，可跑目标测试与 go test"
+          "Issue #51 仍 open、无人认领且无评论，由维护者本人创建并列出具体违规位置",
+          "默认分支 f8a1a4e0 仍有多句同线；历史 style commit 证明维护者认可该规范",
+          "唯一开放 PR #25 与 agent-friendly-mcp 无关，精确方向无重复 PR",
+          "AGENTS.md 只要求 Markdown 一句一行和 Conventional Commits，prek CI 最近通过",
+          "本机具备 uv、Python、Git 和 Bash，可做词序不变、JSON fence、frontmatter 与 prek 验证"
         ]
       },
       "risk": {
-        "level": "低",
-        "reason": "属于现有错误包装逻辑的遗漏补齐，不改变 API 语义，验证路径清晰"
+        "level": "中",
+        "reason": "cnYui/skills fork 名冲突需自定义 fork；Issue 原 JSON 验证命令在 main 已基线失败，且相邻 Issue 可能改同一文档"
       },
       "recommendation": "值得继续"
     },
     {
       "rank": 3,
       "repository": {
-        "owner": "h5i-dev",
-        "name": "h5i",
-        "url": "https://github.com/h5i-dev/h5i",
-        "primaryLanguage": "Rust"
+        "owner": "zycaskevin",
+        "name": "Vault-Agent-Memory",
+        "url": "https://github.com/zycaskevin/Vault-Agent-Memory",
+        "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 460,
+        "starsTotal": 41,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-11T02:09:46Z"
+        "lastUpdatedAt": "2026-07-11T07:38:38Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -102,73 +102,35 @@
       },
       "opportunity": {
         "category": "示例补全",
-        "summary": "主推 #204：新增 phpunit output filter 与 inline golden tests",
+        "summary": "#392：增加 Hermes Agent 最小可用 quickstart 与文档 smoke test",
         "evidence": [
-          "issue #204 仍 open，acceptance criteria 明确为新增 assets/filters/phpunit.toml",
-          "open PR #266 覆盖 bun，#273 覆盖 vibe tests，未覆盖 phpunit",
-          "仓库已有大量 assets/filters/*.toml 可照现有声明式格式实现",
-          "issue 指定 cargo test builtin_golden_tests_pass 与 cargo test --test filter_quality 验证",
-          "不需要改核心 Rust 逻辑，主要是过滤规则和黄金样例"
+          "Issue #392 由维护者创建，仍 open、无 assignee、无开放 PR",
+          "默认分支有通用 Hermes 说明，但尚无 Issue 要求的最小 quickstart",
+          "CONTRIBUTING 明确允许小型 docs PR 直接提交，并给出 readme_command_smoke.py 验证",
+          "仓库活跃且规则清楚，示例必须使用假数据和 candidate-first 写入"
         ]
       },
       "risk": {
-        "level": "低",
-        "reason": "新增独立 TOML filter，失败面小；主要风险是正则过度过滤，需要用失败输出样例守住信号"
+        "level": "中",
+        "reason": "文档需要与 Hermes 实际配置和多个现有集成页面保持一致，范围高于本轮前两个候选"
       },
-      "recommendation": "值得继续"
+      "recommendation": "谨慎"
     },
     {
       "rank": 4,
       "repository": {
-        "owner": "Justin0504",
-        "name": "Aegis",
-        "url": "https://github.com/Justin0504/Aegis",
+        "owner": "mherod",
+        "name": "resect",
+        "url": "https://github.com/mherod/resect",
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 363,
+        "starsTotal": 1,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-11T02:09:23Z"
+        "lastUpdatedAt": "2026-07-11T05:00:31Z"
       },
       "health": {
-        "license": "MIT",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "小 bug",
-        "summary": "主推 #2：gateway-mcp 初始化时补建 agent_profiles 表，避免 ProfileManager 启动即崩",
-        "evidence": [
-          "issue #2 仍 open，给出 SqliteError、根因和 CREATE TABLE 结构",
-          "open PR #3 是 CI 测试步骤，#5 是 attack-pattern detector，未覆盖 agent_profiles 表",
-          "代码树包含 packages/gateway-mcp/src/db/database.ts 与 profile-manager 相关服务",
-          "packages/gateway-mcp 下已有大量 Vitest 测试，可新增数据库初始化回归测试",
-          "问题可在本地 SQLite 初始化路径验证，不依赖云服务"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "表结构由现有 ProfileManager 读写字段反推，需注意默认值与既有迁移/初始化风格一致"
-      },
-      "recommendation": "值得继续"
-    },
-    {
-      "rank": 5,
-      "repository": {
-        "owner": "bgreenwell",
-        "name": "xleak",
-        "url": "https://github.com/bgreenwell/xleak",
-        "primaryLanguage": "Rust"
-      },
-      "popularity": {
-        "starsTotal": 1430,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-11T02:01:47Z"
-      },
-      "health": {
-        "license": "MIT",
+        "license": "Other",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": false,
@@ -176,36 +138,104 @@
       },
       "opportunity": {
         "category": "小 bug",
-        "summary": "谨慎推进 #55：远距离跳转后水平滚动应一次性把 cursor 带回可视窗口",
+        "summary": "跳过 #141：另一位贡献者已经公开认领四个命令的 --json 实现",
         "evidence": [
-          "issue #55 仍 open，描述 update_horizontal_scroll 每帧只 +1 的卡顿路径",
-          "open PR #65/#66/#57/#60 分别覆盖 #50/#54/#56，未覆盖 #55",
-          "当前维护者很活跃，相关 TUI bug 可能被快速处理",
-          "代码位置从 src/tui.rs 可能已迁到 src/tui/state.rs，需先以 main 为准定位",
-          "可通过状态函数测试或轻量 TUI 状态回归验证"
+          "Issue #141 仍 open 且默认分支尚未实现，但已有贡献者留言说明将完成同一完整范围",
+          "一次改四个命令、帮助、README 与测试，已不是最小无冲突切口",
+          "继续推进会制造社会层面的重复工作，即使当前尚无开放 PR"
         ]
       },
       "risk": {
-        "level": "中",
-        "reason": "逻辑不大，但 TUI 状态行为容易受近期重构影响，提交前要先同步 main 并确认没有维护者本地修复"
+        "level": "高",
+        "reason": "方向已被其他贡献者认领，不能只因开放 PR 为 0 就重复实现"
       },
-      "recommendation": "谨慎"
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "mrwadams",
+        "name": "stride-gpt",
+        "url": "https://github.com/mrwadams/stride-gpt",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 1074,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-11T06:57:57Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "跳过 #144：已有三个 ready PR 实现 --version 与 TUI 版本展示",
+        "evidence": [
+          "开放 PR #145、#146、#147 均明确 Fixes/Closes #144",
+          "默认分支尚未修复不代表机会仍空闲，维护者已在处理同方向贡献",
+          "提交第四个 PR 的接受概率接近零"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有多个直接重复 PR"
+      },
+      "recommendation": "跳过"
     },
     {
       "rank": 6,
       "repository": {
-        "owner": "microsoft",
-        "name": "mcp",
-        "url": "https://github.com/microsoft/mcp",
-        "primaryLanguage": "C#"
+        "owner": "felmonon",
+        "name": "msw-inspector",
+        "url": "https://github.com/felmonon/msw-inspector",
+        "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 3439,
+        "starsTotal": 0,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-10T20:39:35Z"
+        "lastUpdatedAt": "2026-07-10T11:05:35Z"
       },
       "health": {
         "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "示例补全",
+        "summary": "跳过 #30：已有认领评论和开放 PR #47 完整覆盖 Playwright + MSW 示例",
+        "evidence": [
+          "贡献者已在 Issue 留言认领并报告本地 npm run check 通过",
+          "开放 PR #47 标题与正文明确 Fixes #30",
+          "继续提交会直接重复现有评审"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有直接重复 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "tldr-pages",
+        "name": "tldr",
+        "url": "https://github.com/tldr-pages/tldr",
+        "primaryLanguage": "Markdown"
+      },
+      "popularity": {
+        "starsTotal": 63084,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-11T12:28:44Z"
+      },
+      "health": {
+        "license": "Other",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
@@ -213,73 +243,34 @@
       },
       "opportunity": {
         "category": "文档缺口",
-        "summary": "谨慎推进 #2978 或 #2982：补齐 Azure MCP 命令文档与 e2e prompt 中的参数约束",
+        "summary": "跳过 #14001：维护者正在同一小时连续提交 Proxmox 子命令页面",
         "evidence": [
-          "issue #2978/#2982 均为 2026-07 新增 doc-gap，正文含实施步骤和验证命令",
-          "open PR 列表未见 FoundryExtensions resource-group 或 ResourceHealth tracking-id/filter 同向文档修复",
-          "修改面集中在 servers/Azure.Mcp.Server/docs/azmcp-commands.md 与 e2eTestPrompts.md",
-          "仓库体量大且 issue 带 copilot 标签，可能被内部自动化或维护者接管",
-          "验证需要 dotnet build/test 与 cspell，耗时高于普通 doc-only PR"
+          "开放 PR #23137 至 #23149 已覆盖 pct 多个剩余子命令",
+          "Issue 是大型追踪清单而非单一未占用切口",
+          "在维护者批量推进期间选择未勾选项容易立即冲突"
         ]
       },
       "risk": {
-        "level": "中",
-        "reason": "切口明确但仓库大、CI 重、自动 doc-gap 流程活跃，适合谨慎选择一个最小文档项"
+        "level": "高",
+        "reason": "同一追踪 Issue 正在高频并行推进，实时冲突风险高"
       },
-      "recommendation": "谨慎"
-    },
-    {
-      "rank": 7,
-      "repository": {
-        "owner": "lerd-env",
-        "name": "lerd",
-        "url": "https://github.com/lerd-env/lerd",
-        "primaryLanguage": "Go"
-      },
-      "popularity": {
-        "starsTotal": 734,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-11T01:57:06Z"
-      },
-      "health": {
-        "license": "MIT",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "小 bug",
-        "summary": "谨慎推进 #842：标准化 ext-opcache 与 ext-zend-opcache 的 composer 平台扩展名称",
-        "evidence": [
-          "issue #842 仍 open，明确指出 composer platform 使用 ext-zend-opcache 而 lerd 检查 ext-opcache",
-          "open PR 仅见 #857 dashboard 磁盘清理，不覆盖扩展名归一化",
-          "问题集中在 park 的 missing extension 比较逻辑",
-          "issue 建议审计 bundled names，不能只硬编码一个 case",
-          "本地验证可能需要 PHP/FPM 或 fixture 化 composer platform 输出"
-        ]
-      },
-      "risk": {
-        "level": "中",
-        "reason": "根因清楚，但正确修复要确认扩展名映射边界，验证环境比普通单测重"
-      },
-      "recommendation": "谨慎"
+      "recommendation": "跳过"
     },
     {
       "rank": 8,
       "repository": {
-        "owner": "PagerDuty",
-        "name": "pagerduty-mcp-server",
-        "url": "https://github.com/PagerDuty/pagerduty-mcp-server",
-        "primaryLanguage": "Python"
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 73,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-10T20:33:34Z"
+        "starsTotal": 196032,
+        "starsAdded24h": 47,
+        "lastUpdatedAt": "2026-07-11T06:48:01Z"
       },
       "health": {
-        "license": "Apache-2.0",
+        "license": "NOASSERTION",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
@@ -287,92 +278,51 @@
       },
       "opportunity": {
         "category": "测试补充",
-        "summary": "谨慎推进 #115：先加工具 schema footprint 测量/回归测试，再评估 schema 精简",
+        "summary": "跳过：启发式报告没有给出可执行的具体 Issue 或文档切口",
         "evidence": [
-          "issue #115 仍 open，提供 FastMCP list_tools() 测量脚本和具体体积数据",
-          "open PR 列表未见 schema footprint 专项修复",
-          "问题价值高，但可能涉及 Pydantic schema、tool docstring 和 wrapper model 设计",
-          "直接大改工具分组风险高，首 PR 更适合补测量基线或最重工具的安全精简",
-          "验证需要 uv/python 测试与工具 schema JSON 尺寸断言"
-        ]
-      },
-      "risk": {
-        "level": "中",
-        "reason": "范围容易膨胀；建议先做小型可量化测试 PR，而不是一次性重构所有工具 schema"
-      },
-      "recommendation": "谨慎"
-    },
-    {
-      "rank": 9,
-      "repository": {
-        "owner": "coddingtonbear",
-        "name": "obsidian-local-rest-api",
-        "url": "https://github.com/coddingtonbear/obsidian-local-rest-api",
-        "primaryLanguage": "TypeScript"
-      },
-      "popularity": {
-        "starsTotal": 2629,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-11T02:08:46Z"
-      },
-      "health": {
-        "license": "MIT",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "小 bug",
-        "summary": "跳过 #282：维护者确认根因在上游 markdown-patch，且上游 issue #15 已修复",
-        "evidence": [
-          "obsidian-local-rest-api#282 仍 open，但维护者评论说明应等待 markdown-patch 修复和依赖发布",
-          "维护者已关闭本仓 PR #287，明确不走本仓直接修复",
-          "coddingtonbear/markdown-patch#15 已在 2026-07-10 23:20 UTC 标记 fixed in fc2cd2b",
-          "当前最佳动作是等待 npm 发布或依赖自动解析，不适合重复开 PR",
-          "直接改本仓会违背维护者刚给出的方向"
+          "原报告仅引用泛化测试框架和一个 UI 描述，没有定位默认分支代码或重复 PR",
+          "超大 monorepo 的本地验证成本不符合默认低风险门槛",
+          "大型项目只应保留明确文档、示例、坏链或配置指导切口"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "根因已被上游修复，继续在消费仓提交修复会造成重复或方向冲突"
+        "reason": "缺少具体切口且验证成本重"
       },
       "recommendation": "跳过"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "repository": {
-        "owner": "escoffier-labs",
-        "name": "brigade",
-        "url": "https://github.com/escoffier-labs/brigade",
-        "primaryLanguage": "Python"
+        "owner": "Snailclimb",
+        "name": "JavaGuide",
+        "url": "https://github.com/Snailclimb/JavaGuide",
+        "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 59,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-11T02:09:04Z"
+        "starsTotal": 156948,
+        "starsAdded24h": 8,
+        "lastUpdatedAt": "2026-07-06T14:54:42Z"
       },
       "health": {
-        "license": "MIT",
+        "license": "Apache-2.0",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": true,
+        "hasContributing": false,
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "小 bug",
-        "summary": "跳过 #196：security scan 排除路径遍历问题已被 open PR #200 覆盖",
+        "category": "文档缺口",
+        "summary": "跳过：启发式结果只给出泛化文档方向，没有可验证的最小切口",
         "evidence": [
-          "issue #196 描述 exclude_paths/include_paths 应在遍历前裁剪",
-          "open PR #200 标题为 fix: bound security scanning and cache work brief health，时间为 2026-07-11",
-          "PR #200 明显覆盖 security scanning bound/exclude 类方向",
-          "继续提交同向 PR 会打扰维护者并制造重复评审",
-          "可等待 #200 合并后再看是否有后续小缺口"
+          "原报告把目录显示和英文版需求并列，没有确认维护者方向、默认分支或重复 PR",
+          "仓库体量大且内容审校依赖领域知识，不应凭 Star 和存在 workflow 自动推进",
+          "没有建立可信的本地验收命令"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "已有实时 open PR 覆盖核心问题，当前不应重复推进"
+        "reason": "缺少具体证据和本地验证路径"
       },
       "recommendation": "跳过"
     }
