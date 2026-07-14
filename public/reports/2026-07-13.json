@@ -1,0 +1,192 @@
+{
+  "date": "2026-07-13",
+  "generatedAt": "2026-07-12T21:05:29.682Z",
+  "summary": {
+    "candidateCount": 5,
+    "actionableCount": 2
+  },
+  "items": [
+    {
+      "rank": 1,
+      "repository": {
+        "owner": "posidoni",
+        "name": "shell-skill",
+        "url": "https://github.com/posidoni/shell-skill",
+        "primaryLanguage": "Shell"
+      },
+      "popularity": {
+        "starsTotal": 1,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-12T20:54:07Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "#9：补充 Bash 空 glob 默认保留字面模式的说明与成对示例",
+        "evidence": [
+          "Issue #9 由仓库 owner 创建，仍 open、无人认领且无评论，标记 documentation 与 good first issue",
+          "默认分支 292a0355 的 reference/bash.md 尚无 Globbing 章节，examples/bash 也没有 nullglob 空匹配示例",
+          "唯一开放 PR #11 处理 Issue #8 的 command -v/which 示例，与 #9 文件编号和主题不重叠",
+          "CONTRIBUTING 明确规定 good/bad 示例契约、Conventional Commits，并要求 task ci 与 task hooks",
+          "可用 task ci、task hooks、ShellCheck、shfmt、bats 和 git diff --check 本地验证"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "文档与安全示例范围明确，不改变运行时代码；主要风险是本机需具备仓库列出的六项 Shell 工具"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 2,
+      "repository": {
+        "owner": "ChulioZ",
+        "name": "game-sessions",
+        "url": "https://github.com/ChulioZ/game-sessions",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 0,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-12T20:40:45Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "#110：移除两组游戏检索提示中已过时的 provider 枚举",
+        "evidence": [
+          "Issue #110 由仓库 owner 创建，仍 open、无人认领且无评论，标记 bug 与 good first issue",
+          "默认分支 31a246e9 的 de.js/en.js 仍只列出 PlayStation Store、Steam 和 BoardGameGeek，遗漏 Nintendo 与 Xbox",
+          "当前没有开放 PR，Issue 将范围限定为四个 i18n 字符串，不改代码逻辑或其他 provider 文案",
+          "仓库有 CI、i18n parity 测试和明确验收命令 npm test、npm run lint、npm run check:syntax",
+          "可在本机完整执行 Node 测试、lint、语法检查和 git diff --check"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "仅修改英德文提示文本且验收口径由 owner 给出；主要风险是仓库尚无外部贡献合并记录"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 3,
+      "repository": {
+        "owner": "getsentry",
+        "name": "dotagents",
+        "url": "https://github.com/getsentry/dotagents",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 205,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-12T19:38:01Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "#131：让 wildcard skill dependency 的 path 字段限制扫描子目录",
+        "evidence": [
+          "Issue #131 仍 open、无人认领，标记 enhancement 与 good first issue，给出配置示例和三条验收标准",
+          "当前开放 PR #113、#107、#116 分别处理 plugin support 与依赖升级，没有直接覆盖 #131",
+          "仓库已有 discovery/resolver 测试，可为 wildcard path 增加回归覆盖",
+          "该方向涉及 skill discovery 与 resolver 行为，不是单文件文案修复"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "需要理解 named/wildcard dependency、path 与 exclude 的组合契约，改动范围和回归面高于本轮两个文本候选"
+      },
+      "recommendation": "谨慎"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "SchoolyB",
+        "name": "EZ",
+        "url": "https://github.com/SchoolyB/EZ",
+        "primaryLanguage": "C"
+      },
+      "popularity": {
+        "starsTotal": 35,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-10T08:28:19Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "跳过 #2072：标题称文档不一致，但要求改变 os.exec 公共返回值与 stdout 行为",
+        "evidence": [
+          "Issue #2072 由 owner 创建且仍 open，没有直接重复 PR",
+          "Issue 要求把 os.exec 从四返回值改为三返回值，并从捕获 stdout 改为直接继承终端",
+          "这会改变标准库公共契约和现有调用方行为，不能按低风险文档修复处理",
+          "需要全仓调用审计、兼容性判断和更广泛回归验证，超出自动化最小切口"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "公共 API 与 I/O 语义变更具有明显兼容性风险，Issue 标签不足以把它降为低风险工作"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "dmwyatt",
+        "name": "granz",
+        "url": "https://github.com/dmwyatt/granz",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 0,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-12T18:03:18Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "跳过 #77：一词文案修复依赖尚未合并的 PR #73，且本机 Rust 基线仍被 DXCORE.lib 阻塞",
+        "evidence": [
+          "Issue #77 由 owner 创建，标记 status: ready 与 good first issue，但正文明确要求等待 PR #73 合并",
+          "开放 PR #73 引入 grep 命令并保留待修文本，默认分支当前不存在最终目标代码路径",
+          "上一轮对同仓库验证确认 Windows 链接在测试启动前因缺少 DXCORE.lib 报 LNK1181",
+          "前置 PR 未落地且本地可信验证路径仍不可用，不能进入本轮实施"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "目标代码尚在开放 PR 中且本机基线验证被系统 SDK 组件阻塞"
+      },
+      "recommendation": "跳过"
+    }
+  ]
+}

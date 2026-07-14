@@ -1,0 +1,192 @@
+{
+  "date": "2026-07-12",
+  "generatedAt": "2026-07-12T01:09:16.613Z",
+  "summary": {
+    "candidateCount": 5,
+    "actionableCount": 2
+  },
+  "items": [
+    {
+      "rank": 1,
+      "repository": {
+        "owner": "emartai",
+        "name": "evalflow",
+        "url": "https://github.com/emartai/evalflow",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 1,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-11T23:30:15Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "#4：为 CLI 包声明直接使用但缺失的 click 运行时依赖，并验证干净安装",
+        "evidence": [
+          "Issue #4 由维护者创建，仍 open、无人认领且无评论，标记 good first issue、level: starter",
+          "默认分支 8950e62f 的 packages/cli/pyproject.toml 依赖中没有 click，但 CLI 直接导入并使用 click",
+          "开放 PR #3 只在 Anthropic 示例中临时显式安装 click，并明确把正式依赖修复留给独立 packaging 工作",
+          "组织贡献规则允许认领 good first issue，要求小范围改动、测试通过和 CI 绿色",
+          "可在全新 venv 中执行 editable install、导入 CLI、运行目标测试和构建包"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "改动集中在 Python 包依赖声明和必要的回归验证；主要风险是需要确认锁定下限与现有 Typer 兼容"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 2,
+      "repository": {
+        "owner": "dmwyatt",
+        "name": "granz",
+        "url": "https://github.com/dmwyatt/granz",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 0,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-12T00:35:22Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "#56：修复 Windows 上把 PowerShell 别名 ls 当成真实可执行文件的跨平台测试假设",
+        "evidence": [
+          "Issue #56 由仓库 owner 创建，仍 open、无人认领，标记 status: ready、size: s 和 good first issue",
+          "默认分支 5f517967 的 src/platform.rs 仍无条件断言 command_exists(\"ls\")",
+          "当前唯一开放 PR #58 处理搜索结果展示，与 platform 测试没有重叠",
+          "问题可在当前 Windows 环境复现，修复可用 cfg 选择 where.exe 与 ls，并保留未知命令负例",
+          "可运行目标 cargo test、完整 cargo test、cargo fmt、cargo clippy 和 git diff --check"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "只调整测试的跨平台基准命令，不改变生产行为；Windows 本机可直接验证"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 3,
+      "repository": {
+        "owner": "emartai",
+        "name": "mindr",
+        "url": "https://github.com/emartai/mindr",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 0,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-12T00:24:34Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "#15：修正生成的指令文件中的旧组织名和旧二进制名",
+        "evidence": [
+          "Issue #15 由维护者创建，仍 open、无人认领，给出明确生成器和 snapshot 范围",
+          "默认分支仍包含 ai-emart/mindr 与 mindr search 等旧引用",
+          "开放 PR #14 正在新增 GEMINI.md generator，并修改同一生成器导出与 snapshot 区域",
+          "即使方向不完全重复，当前直接实现容易与 #14 合并顺序冲突"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "与开放 PR #14 存在文件级重叠，应等待其合并或关闭后再复核默认分支"
+      },
+      "recommendation": "谨慎"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "qnicondavid",
+        "name": "world-cup-predictor",
+        "url": "https://github.com/qnicondavid/world-cup-predictor",
+        "primaryLanguage": "Java"
+      },
+      "popularity": {
+        "starsTotal": 1,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-12T00:51:06Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": false,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "示例补全",
+        "summary": "#2：为 Java CLI 增加 --help 与 --version",
+        "evidence": [
+          "Issue #2 由 owner 创建，仍 open、无人认领且没有开放 PR",
+          "需求限定在 Main.java，并给出 Maven 验收命令",
+          "仓库刚创建且只有 1 Star，缺少稳定的外部贡献与 CI 接受信号",
+          "帮助文本要求与 README 长期同步，实际范围可能需要测试结构调整"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "方向可执行，但仓库成熟度和维护者接受历史不足，优先级低于已有 CI 的候选"
+      },
+      "recommendation": "谨慎"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "valtors",
+        "name": "relay",
+        "url": "https://github.com/valtors/relay",
+        "primaryLanguage": "Go"
+      },
+      "popularity": {
+        "starsTotal": 4,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-11T23:17:11Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "示例补全",
+        "summary": "#31：增加六组 MCP 客户端与工具集合配置示例",
+        "evidence": [
+          "Issue #31 仍 open、无人认领且没有直接重复 PR",
+          "需求包含六个 JSON 文件和 README 导航，表面上是文档类改动",
+          "Issue 作者是普通 contributor 而非 owner，当前没有维护者确认或计划信号",
+          "full 配置需要准确覆盖 40 个工具，验证成本和产品语义高于普通文档补充"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "缺少维护者确认且范围较宽，自动化不应代替维护者做示例结构和产品口径决策"
+      },
+      "recommendation": "跳过"
+    }
+  ]
+}

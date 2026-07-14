@@ -1,23 +1,23 @@
 {
-  "date": "2026-07-11",
-  "generatedAt": "2026-07-11T12:39:17.959Z",
+  "date": "2026-07-14",
+  "generatedAt": "2026-07-14T09:03:06.8525345+09:00",
   "summary": {
-    "candidateCount": 9,
+    "candidateCount": 8,
     "actionableCount": 2
   },
   "items": [
     {
       "rank": 1,
       "repository": {
-        "owner": "CognizenOrg",
-        "name": "compatcanary",
-        "url": "https://github.com/CognizenOrg/compatcanary",
-        "primaryLanguage": "JavaScript"
+        "owner": "willyfh",
+        "name": "visualtorch",
+        "url": "https://github.com/willyfh/visualtorch",
+        "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 0,
+        "starsTotal": 296,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-11T11:33:16Z"
+        "lastUpdatedAt": "2026-07-13T22:46:51Z"
       },
       "health": {
         "license": "MIT",
@@ -27,37 +27,37 @@
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "小 bug",
-        "summary": "#5：新增离线 --list-probes，按 profile 输出可用 probe 且不要求 URL、model 或凭据",
+        "category": "示例补全",
+        "summary": "#172：在三组动画示例中显式展示 frame_duration、final_hold_duration 与 loop",
         "evidence": [
-          "Issue #5 仍 open、无 assignee 和评论，由维护者标记 good first issue 与 help wanted",
-          "默认分支 3b46c515 尚无 list-probes/listProbes，src/cli.js 当前会先校验在线扫描参数",
-          "开放 PR 为 0，probe/probes/list 方向搜索也无重复 PR",
-          "仓库仅约 87 个文件，已有 args、CLI、probe 数据和子进程测试模式可复用",
-          "贡献规则要求先留认领评论并提交 focused PR，不要求等待批准"
+          "Issue #172 仍 open、无人认领且无评论，由维护者创建并标记 documentation 与 good first issue",
+          "默认分支 ee5755b2 的 graph、flow、lenet_style 三个示例仍未传入三个动画参数",
+          "仅有的开放 PR #168 与 #166 分别处理 pre-commit 升级和研究展示，无同向修改",
+          "CONTRIBUTING 明确要求开始前留言认领，并给出 pre-commit、pytest 与示例脚本验证路径",
+          "本机已有 Python 3.12 和 CPU 版 Torch，可在独立目录安装开发依赖并直接运行三个示例"
         ]
       },
       "risk": {
         "level": "低",
-        "reason": "实现与验证边界清楚；主要风险是仓库较新，尚无外部贡献接受历史"
+        "reason": "只修改三个既有示例且不改变库行为；主要成本是首次安装 pre-commit 与项目开发依赖"
       },
       "recommendation": "值得继续"
     },
     {
       "rank": 2,
       "repository": {
-        "owner": "briandconnelly",
-        "name": "skills",
-        "url": "https://github.com/briandconnelly/skills",
-        "primaryLanguage": "Shell"
+        "owner": "stellar",
+        "name": "stellar-docs",
+        "url": "https://github.com/stellar/stellar-docs",
+        "primaryLanguage": "MDX"
       },
       "popularity": {
-        "starsTotal": 0,
+        "starsTotal": 131,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-08T17:25:55Z"
+        "lastUpdatedAt": "2026-07-13T20:51:52Z"
       },
       "health": {
-        "license": "NOASSERTION",
+        "license": "Apache-2.0",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": false,
@@ -65,36 +65,36 @@
       },
       "opportunity": {
         "category": "文档缺口",
-        "summary": "#51：恢复 agent-friendly-mcp 文档的一句一行规范，只插入换行且不改词语",
+        "summary": "#2580：为 cross-contract bindings 示例补上 --network testnet 参数值",
         "evidence": [
-          "Issue #51 仍 open、无人认领且无评论，由维护者本人创建并列出具体违规位置",
-          "默认分支 f8a1a4e0 仍有多句同线；历史 style commit 证明维护者认可该规范",
-          "唯一开放 PR #25 与 agent-friendly-mcp 无关，精确方向无重复 PR",
-          "AGENTS.md 只要求 Markdown 一句一行和 Conventional Commits，prek CI 最近通过",
-          "本机具备 uv、Python、Git 和 Bash，可做词序不变、JSON fence、frontmatter 与 prek 验证"
+          "Issue #2580 仍 open、无人认领且无评论，由仓库维护者创建并标记 bug、documentation 与 good first issue",
+          "默认分支 c91a1b2a 的 cross-contract.mdx 仍包含无值的 --network --contract-id 命令",
+          "当前开放 PR 中没有 #2580、cross-contract bindings 或同一文件的修复",
+          "仓库当前 main 没有根级 CONTRIBUTING 或 CLA 文件；近期外部文档 PR checks 仅含预览、安全、build 与 mdx-format，没有 CLA 门禁",
+          "本机具备 Node 24 与 pnpm 10，可运行目标 MDX prettier 检查和必要的文档构建验证"
         ]
       },
       "risk": {
-        "level": "中",
-        "reason": "cnYui/skills fork 名冲突需自定义 fork；Issue 原 JSON 验证命令在 main 已基线失败，且相邻 Issue 可能改同一文档"
+        "level": "低",
+        "reason": "单行命令文档修复且证据明确；完整 Docusaurus build 较重，但目标格式检查可本地执行"
       },
       "recommendation": "值得继续"
     },
     {
       "rank": 3,
       "repository": {
-        "owner": "zycaskevin",
-        "name": "Vault-Agent-Memory",
-        "url": "https://github.com/zycaskevin/Vault-Agent-Memory",
-        "primaryLanguage": "Python"
+        "owner": "kero168",
+        "name": "mcp-testbench",
+        "url": "https://github.com/kero168/mcp-testbench",
+        "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 41,
+        "starsTotal": 0,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-11T07:38:38Z"
+        "lastUpdatedAt": "2026-07-13T22:45:59Z"
       },
       "health": {
-        "license": "Apache-2.0",
+        "license": "MIT",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
@@ -102,102 +102,104 @@
       },
       "opportunity": {
         "category": "示例补全",
-        "summary": "#392：增加 Hermes Agent 最小可用 quickstart 与文档 smoke test",
+        "summary": "#9：增加可运行的 Python FastMCP server 示例并接入 quickstart",
         "evidence": [
-          "Issue #392 由维护者创建，仍 open、无 assignee、无开放 PR",
-          "默认分支有通用 Hermes 说明，但尚无 Issue 要求的最小 quickstart",
-          "CONTRIBUTING 明确允许小型 docs PR 直接提交，并给出 readme_command_smoke.py 验证",
-          "仓库活跃且规则清楚，示例必须使用假数据和 candidate-first 写入"
+          "Issue #9 仍 open、无人认领且无评论，明确限制为 docs + example，不改核心 runner",
+          "默认分支 quickstart 只有泛化的 python -m 示例，没有 FastMCP 服务目录或完整运行命令",
+          "开放 PR 仅为依赖升级，没有同向 Python 示例",
+          "仓库有 CI、集成测试和 CONTRIBUTING，可验证 mcp-testbench 与示例进程的协议交互"
         ]
       },
       "risk": {
         "level": "中",
-        "reason": "文档需要与 Hermes 实际配置和多个现有集成页面保持一致，范围高于本轮前两个候选"
+        "reason": "仓库尚无 Star 或 Fork，维护成熟度和外部贡献接受历史不足；示例还需明确 Python 依赖安装方式"
       },
       "recommendation": "谨慎"
     },
     {
       "rank": 4,
       "repository": {
-        "owner": "mherod",
-        "name": "resect",
-        "url": "https://github.com/mherod/resect",
+        "owner": "louissullivan4",
+        "name": "diana",
+        "url": "https://github.com/louissullivan4/diana",
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
         "starsTotal": 1,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-11T05:00:31Z"
+        "lastUpdatedAt": "2026-07-13T23:22:16Z"
       },
       "health": {
-        "license": "Other",
+        "license": "ISC",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": false,
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "小 bug",
-        "summary": "跳过 #141：另一位贡献者已经公开认领四个命令的 --json 实现",
+        "category": "文档缺口",
+        "summary": "#122：修正文档中的 Riot feature flag 与虚构 PluginContext API",
         "evidence": [
-          "Issue #141 仍 open 且默认分支尚未实现，但已有贡献者留言说明将完成同一完整范围",
-          "一次改四个命令、帮助、README 与测试，已不是最小无冲突切口",
-          "继续推进会制造社会层面的重复工作，即使当前尚无开放 PR"
+          "Issue #122 仍 open、无人认领且无评论，维护者标记 effort: XS 与 good first issue",
+          "默认分支在 Issue 创建后仍保留 USE_RIOT_API 与 registerSlashCommands 文档，与代码读取路径不一致",
+          "当前没有开放 PR 覆盖该方向，仓库也具备 CI 和较完整 Jest 测试",
+          "Issue 同时提到未读取的 defaultDiscordChannelId schema 字段，但 acceptance 只明确覆盖两项文档不一致"
         ]
       },
       "risk": {
-        "level": "高",
-        "reason": "方向已被其他贡献者认领，不能只因开放 PR 为 0 就重复实现"
+        "level": "中",
+        "reason": "Issue 的第三项涉及配置 schema 或运行时行为，范围边界不够一致，自动化不应自行决定删除还是接线"
       },
-      "recommendation": "跳过"
+      "recommendation": "谨慎"
     },
     {
       "rank": 5,
       "repository": {
-        "owner": "mrwadams",
-        "name": "stride-gpt",
-        "url": "https://github.com/mrwadams/stride-gpt",
+        "owner": "Deen-Bridge",
+        "name": "dnb-ai",
+        "url": "https://github.com/Deen-Bridge/dnb-ai",
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 1074,
+        "starsTotal": 1,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-11T06:57:57Z"
+        "lastUpdatedAt": "2026-07-13T21:05:44Z"
       },
       "health": {
         "license": "MIT",
         "hasCi": true,
-        "hasTests": true,
+        "hasTests": false,
         "hasContributing": true,
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "小 bug",
-        "summary": "跳过 #144：已有三个 ready PR 实现 --version 与 TUI 版本展示",
+        "category": "文档缺口",
+        "summary": "#19：补齐 CONTRIBUTING 与 .env.example 的剩余文档漂移",
         "evidence": [
-          "开放 PR #145、#146、#147 均明确 Fixes/Closes #144",
-          "默认分支尚未修复不代表机会仍空闲，维护者已在处理同方向贡献",
-          "提交第四个 PR 的接受概率接近零"
+          "Issue #19 仍 open、无人认领且无评论，当前没有开放 PR",
+          "默认分支 README 已包含 MIT、/ping、GEMINI_API_KEY 与 Python 3.11，但 CONTRIBUTING 仍使用 GOOGLE_AI_API_KEY 且仓库没有 .env.example",
+          "贡献规则要求先留言认领、从 dev 分支创建分支并把 PR 目标设为 dev，而非默认分支 main",
+          "Issue 属于奖励计划，验收还要求使用 Gemini API key 启动服务"
         ]
       },
       "risk": {
-        "level": "高",
-        "reason": "已有多个直接重复 PR"
+        "level": "中",
+        "reason": "贡献流程和目标分支特殊，且完整启动验收需要外部 API key；本轮禁止依赖外部密钥"
       },
-      "recommendation": "跳过"
+      "recommendation": "谨慎"
     },
     {
       "rank": 6,
       "repository": {
-        "owner": "felmonon",
-        "name": "msw-inspector",
-        "url": "https://github.com/felmonon/msw-inspector",
-        "primaryLanguage": "TypeScript"
+        "owner": "taxiway-sh",
+        "name": "taxiway",
+        "url": "https://github.com/taxiway-sh/taxiway",
+        "primaryLanguage": "Go"
       },
       "popularity": {
-        "starsTotal": 0,
+        "starsTotal": 1,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-10T11:05:35Z"
+        "lastUpdatedAt": "2026-07-13T17:35:01Z"
       },
       "health": {
         "license": "MIT",
@@ -207,35 +209,35 @@
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "示例补全",
-        "summary": "跳过 #30：已有认领评论和开放 PR #47 完整覆盖 Playwright + MSW 示例",
+        "category": "文档缺口",
+        "summary": "跳过 #52：开放 PR #62 已精确修复 e2e orphan cleanup 前缀",
         "evidence": [
-          "贡献者已在 Issue 留言认领并报告本地 npm run check 通过",
-          "开放 PR #47 标题与正文明确 Fixes #30",
-          "继续提交会直接重复现有评审"
+          "Issue #52 仍 open，但 PR #62 已把 taxiway-end-to-end- 改为 taxiway-e2e-",
+          "PR #62 同时核对并保留了仍正确的 volume pattern，完整覆盖 Issue acceptance",
+          "继续提交会制造重复评审与合并冲突"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "已有直接重复 PR"
+        "reason": "已有开放 PR 精确覆盖同一文件、同一命令和同一 Issue"
       },
       "recommendation": "跳过"
     },
     {
       "rank": 7,
       "repository": {
-        "owner": "tldr-pages",
-        "name": "tldr",
-        "url": "https://github.com/tldr-pages/tldr",
-        "primaryLanguage": "Markdown"
+        "owner": "tiluckdave",
+        "name": "hound-mcp",
+        "url": "https://github.com/tiluckdave/hound-mcp",
+        "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 63084,
+        "starsTotal": 9,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-07-11T12:28:44Z"
+        "lastUpdatedAt": "2026-07-13T19:42:05Z"
       },
       "health": {
-        "license": "Other",
+        "license": "MIT",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
@@ -243,86 +245,51 @@
       },
       "opportunity": {
         "category": "文档缺口",
-        "summary": "跳过 #14001：维护者正在同一小时连续提交 Proxmox 子命令页面",
+        "summary": "跳过 #95：维护者确认该事项已由 PR #100 处理中",
         "evidence": [
-          "开放 PR #23137 至 #23149 已覆盖 pct 多个剩余子命令",
-          "Issue 是大型追踪清单而非单一未占用切口",
-          "在维护者批量推进期间选择未勾选项容易立即冲突"
+          "Issue #95 的认领评论下，仓库 owner 明确回复该事项 already in progress over in #100",
+          "维护者引导贡献者选择其他 Issue，说明当前方向不再接受重复实现",
+          "默认分支是否已合并不改变开放 PR 存在这一硬门槛"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "同一追踪 Issue 正在高频并行推进，实时冲突风险高"
+        "reason": "维护者已明确确认同向 PR 正在处理"
       },
       "recommendation": "跳过"
     },
     {
       "rank": 8,
       "repository": {
-        "owner": "n8n-io",
-        "name": "n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "primaryLanguage": "TypeScript"
+        "owner": "qnicondavid",
+        "name": "world-cup-predictor",
+        "url": "https://github.com/qnicondavid/world-cup-predictor",
+        "primaryLanguage": "Java"
       },
       "popularity": {
-        "starsTotal": 196032,
-        "starsAdded24h": 47,
-        "lastUpdatedAt": "2026-07-11T06:48:01Z"
+        "starsTotal": 1,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-13T21:28:03Z"
       },
       "health": {
-        "license": "NOASSERTION",
+        "license": "MIT",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "测试补充",
-        "summary": "跳过：启发式报告没有给出可执行的具体 Issue 或文档切口",
-        "evidence": [
-          "原报告仅引用泛化测试框架和一个 UI 描述，没有定位默认分支代码或重复 PR",
-          "超大 monorepo 的本地验证成本不符合默认低风险门槛",
-          "大型项目只应保留明确文档、示例、坏链或配置指导切口"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "缺少具体切口且验证成本重"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 9,
-      "repository": {
-        "owner": "Snailclimb",
-        "name": "JavaGuide",
-        "url": "https://github.com/Snailclimb/JavaGuide",
-        "primaryLanguage": "JavaScript"
-      },
-      "popularity": {
-        "starsTotal": 156948,
-        "starsAdded24h": 8,
-        "lastUpdatedAt": "2026-07-06T14:54:42Z"
-      },
-      "health": {
-        "license": "Apache-2.0",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": false,
-        "issueActivity": "active"
-      },
-      "opportunity": {
         "category": "文档缺口",
-        "summary": "跳过：启发式结果只给出泛化文档方向，没有可验证的最小切口",
+        "summary": "跳过 #1：已有贡献者公开请求认领 Python requirements 工作",
         "evidence": [
-          "原报告把目录显示和英文版需求并列，没有确认维护者方向、默认分支或重复 PR",
-          "仓库体量大且内容审校依赖领域知识，不应凭 Star 和存在 workflow 自动推进",
-          "没有建立可信的本地验收命令"
+          "Issue #1 已有贡献者 vidya166 留言请求分配，当前尚未见维护者拒绝或释放",
+          "任务要求枚举全部 research 脚本依赖并用干净 venv 验证，范围超过单文件文案",
+          "为避免抢占已表达意愿的贡献者，本轮不进入实施"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "缺少具体证据和本地验证路径"
+        "reason": "已有活跃认领意向，继续推进可能造成重复劳动"
       },
       "recommendation": "跳过"
     }
