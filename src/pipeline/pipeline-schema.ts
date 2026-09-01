@@ -6,7 +6,8 @@ export const pipelineConfigSchema = z.object({
   maxPrsPerRun: z.number().int().positive(),
   leaseMinutes: z.number().int().positive(),
   stateRoot: z.string().min(1),
-  workspaceRoot: z.string().min(1)
+  workspaceRoot: z.string().min(1),
+  workspaceRetentionDays: z.number().int().nonnegative().default(7)
 });
 
 export const candidateStatusSchema = z.enum([

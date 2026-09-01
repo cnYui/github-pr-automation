@@ -10,6 +10,7 @@ import {
   publicationIntentSchema
 } from './pipeline-schema';
 import {
+  cleanWorkspace,
   closePipelineWindow,
   getNextPipelineCandidate,
   readCurrentPipelineRun,
@@ -29,6 +30,7 @@ const { values } = parseArgs({
     file: { type: 'string' },
     to: { type: 'string' },
     message: { type: 'string' },
+    days: { type: 'string' },
     'execution-file': { type: 'string' },
     'publication-file': { type: 'string' },
     'result-file': { type: 'string' }
@@ -104,8 +106,22 @@ switch (command) {
   case 'close':
     output = await closePipelineWindow(projectRoot, requireValue(values.lease, '--lease'));
     break;
+  case 'clean': {
+    let retentionDays: number | undefined;
+
+    if (values.days !== undefined) {
+      retentionDays = Number.parseInt(values.days, 10);
+
+      if (!Number.isInteger(retentionDays) || retentionDays < 0) {
+        throw new Error('--days 必须是非负整数');
+      }
+    }
+
+    output = await cleanWorkspace({ projectRoot, retentionDays });
+    break;
+  }
   default:
-    throw new Error('命令必须是 start、status、next、preflight、transition 或 close');
+    throw new Error('命令必须是 start、status、next、preflight、transition、close 或 clean');
 }
 
 process.stdout.write(`${JSON.stringify(output, null, 2)}\n`);

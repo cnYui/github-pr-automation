@@ -3,5 +3,6 @@
   "maxPrsPerRun": 2,
   "leaseMinutes": 240,
   "stateRoot": "data/pipeline",
-  "workspaceRoot": "work/opportunity-pipeline"
+  "workspaceRoot": "work/opportunity-pipeline",
+  "workspaceRetentionDays": 7
 }

@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { mkdir, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { parseReport, type ReportItem } from '../shared/report-schema';
 import { writeJsonFileAtomic } from '../shared/json-file';
@@ -408,6 +408,83 @@ export const closePipelineWindow = async (
 
   await releasePipelineLease(paths, run.runId, leaseId);
   return run;
+};
+
+export type CleanWorkspaceInput = {
+  projectRoot: string;
+  retentionDays?: number;
+  now?: Date;
+};
+
+export type CleanWorkspaceResult = {
+  workspaceRoot: string;
+  retentionDays: number;
+  removed: string[];
+  removedCount: number;
+  keptCount: number;
+  now: string;
+};
+
+const DAY_IN_MS = 86_400_000;
+
+export const cleanWorkspace = async (
+  input: CleanWorkspaceInput
+): Promise<CleanWorkspaceResult> => {
+  const projectRoot = resolve(input.projectRoot);
+  const config = await loadPipelineConfig(projectRoot);
+  const paths = createPipelinePaths(projectRoot, config);
+  const now = input.now ?? new Date();
+  const retentionDays = input.retentionDays ?? config.workspaceRetentionDays;
+
+  if (!Number.isInteger(retentionDays) || retentionDays < 0) {
+    throw new Error('保留天数必须是非负整数');
+  }
+
+  const workspaceRoot = toRelativePathInsideRoot(
+    projectRoot,
+    paths.workspaceRoot,
+    '候选仓库目录'
+  );
+  const cutoff = now.getTime() - retentionDays * DAY_IN_MS;
+  const result: CleanWorkspaceResult = {
+    workspaceRoot,
+    retentionDays,
+    removed: [],
+    removedCount: 0,
+    keptCount: 0,
+    now: now.toISOString()
+  };
+
+  let entries;
+
+  try {
+    entries = await readdir(paths.workspaceRoot, { withFileTypes: true });
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
+      return result;
+    }
+
+    throw error;
+  }
+
+  for (const entry of entries) {
+    if (!entry.isDirectory()) {
+      continue;
+    }
+
+    const directory = join(paths.workspaceRoot, entry.name);
+    const info = await stat(directory);
+
+    if (info.mtimeMs < cutoff) {
+      await rm(directory, { recursive: true, force: true });
+      result.removed.push(entry.name);
+    } else {
+      result.keptCount += 1;
+    }
+  }
+
+  result.removedCount = result.removed.length;
+  return result;
 };
 
 export const getPipelinePathsForProject = async (

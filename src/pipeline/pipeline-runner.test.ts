@@ -1,9 +1,10 @@
-import { mkdtemp, readFile, writeFile } from 'node:fs/promises';
+import { mkdir, mkdtemp, readFile, readdir, utimes, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { writeJsonFileAtomic } from '../shared/json-file';
 import type { OpportunityReport } from '../shared/report-schema';
 import {
+  cleanWorkspace,
   closePipelineWindow,
   getNextPipelineCandidate,
   getPipelinePathsForProject,
@@ -376,5 +377,45 @@ describe('pipeline runner', () => {
       resumed.run.window.id,
       new Date('2026-07-12T00:10:00.000Z')
     );
+  });
+});
+
+describe('cleanWorkspace', () => {
+  it('删除超过保留天数的克隆目录并保留较新的', async () => {
+    const project = await createProject();
+    const paths = await getPipelinePathsForProject(project.root);
+    const stale = join(paths.workspaceRoot, 'example__stale');
+    const fresh = join(paths.workspaceRoot, 'example__fresh');
+    await mkdir(stale, { recursive: true });
+    await mkdir(fresh, { recursive: true });
+    const staleTime = new Date('2026-07-01T00:00:00.000Z');
+    const freshTime = new Date('2026-07-19T00:00:00.000Z');
+    await utimes(stale, staleTime, staleTime);
+    await utimes(fresh, freshTime, freshTime);
+
+    const result = await cleanWorkspace({
+      projectRoot: project.root,
+      retentionDays: 7,
+      now: new Date('2026-07-20T00:00:00.000Z')
+    });
+
+    expect(result.removed).toEqual(['example__stale']);
+    expect(result.removedCount).toBe(1);
+    expect(result.keptCount).toBe(1);
+    expect(await readdir(paths.workspaceRoot)).toEqual(['example__fresh']);
+  });
+
+  it('缺少保留天数配置时回退到默认值且目录缺失返回空结果', async () => {
+    const project = await createProject();
+
+    const result = await cleanWorkspace({
+      projectRoot: project.root,
+      now: new Date('2026-07-20T00:00:00.000Z')
+    });
+
+    expect(result.retentionDays).toBe(7);
+    expect(result.removed).toEqual([]);
+    expect(result.removedCount).toBe(0);
+    expect(result.keptCount).toBe(0);
   });
 });
