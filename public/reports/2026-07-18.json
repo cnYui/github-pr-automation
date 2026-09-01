@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-01",
-  "generatedAt": "2026-09-01T07:56:32.970Z",
+  "date": "2026-07-18",
+  "generatedAt": "2026-07-18T09:06:29.997Z",
   "summary": {
     "candidateCount": 10,
     "actionableCount": 1
@@ -9,29 +9,29 @@
     {
       "rank": 1,
       "repository": {
-        "owner": "DietrichGebert",
-        "name": "ponytail",
-        "url": "https://github.com/DietrichGebert/ponytail",
-        "primaryLanguage": "JavaScript"
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 118962,
-        "starsAdded24h": 1,
-        "lastUpdatedAt": "2026-08-07T21:44:01Z"
+        "starsTotal": 118480,
+        "starsAdded24h": 555,
+        "lastUpdatedAt": "2026-07-17T13:52:03Z"
       },
       "health": {
         "license": "MIT",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": false,
+        "hasContributing": true,
         "issueActivity": "active"
       },
       "opportunity": {
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat: gate git writes on ponytail review",
-          "fix(pi): keep before_agent_start systemPrompt as array for OMP"
+          "fix(deeplink): preserve custom Codex config fields",
+          "fix(providers): clear filter when closing provider search"
         ]
       },
       "risk": {
@@ -49,9 +49,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 245425,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-08-31T22:18:39Z"
+        "starsTotal": 230755,
+        "starsAdded24h": 443,
+        "lastUpdatedAt": "2026-07-17T21:16:52Z"
       },
       "health": {
         "license": "MIT",
@@ -64,8 +64,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "chore: add generated skills, eval suite, and snapshot config",
-          "fix(gateguard): scope exempt globs to the active project"
+          "fix(agents): convert tools frontmatter from array to comma-separated string",
+          "feat(codex): add ECC navigation guide"
         ]
       },
       "risk": {
@@ -77,83 +77,15 @@
     {
       "rank": 3,
       "repository": {
-        "owner": "n8n-io",
-        "name": "n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "primaryLanguage": "TypeScript"
-      },
-      "popularity": {
-        "starsTotal": 202992,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-01T07:56:24Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "feat(ai-builder): Make AI Assistant capability-aware for agent changes",
-          "feat(core): Allow Instance AI to search past conversations"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 4,
-      "repository": {
-        "owner": "ohmyzsh",
-        "name": "ohmyzsh",
-        "url": "https://github.com/ohmyzsh/ohmyzsh",
-        "primaryLanguage": "Shell"
-      },
-      "popularity": {
-        "starsTotal": 189485,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-01T07:23:31Z"
-      },
-      "health": {
-        "license": "MIT",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "feat(juju): add unit and application name completion",
-          "fix(ssh-agent): create screen/tmux symlink atomically"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 5,
-      "repository": {
         "owner": "yt-dlp",
         "name": "yt-dlp",
         "url": "https://github.com/yt-dlp/yt-dlp",
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 188222,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-08-30T13:58:45Z"
+        "starsTotal": 178601,
+        "starsAdded24h": 271,
+        "lastUpdatedAt": "2026-07-14T14:14:21Z"
       },
       "health": {
         "license": "Unlicense",
@@ -166,8 +98,76 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "[build] Update 10 dependencies",
-          "[ie/rutube] Surface error messages provided by the site"
+          "tumblr: Change download URL slightly to avoid 403",
+          "[ie/MGTV] Support share URLs"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 196888,
+        "starsAdded24h": 178,
+        "lastUpdatedAt": "2026-07-18T06:41:45Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(Microsoft Outlook Trigger Node): Fetch the latest message when executing manually",
+          "feat(editor): Add review-required preference to Publish menu"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 145815,
+        "starsAdded24h": 152,
+        "lastUpdatedAt": "2026-07-18T03:39:50Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat: add per-model system prompt versioning with optional Langfuse",
+          "fix: hide redundant edit pencil on mobile in admin Models list"
         ]
       },
       "risk": {
@@ -179,15 +179,49 @@
     {
       "rank": 6,
       "repository": {
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 149207,
+        "starsAdded24h": 140,
+        "lastUpdatedAt": "2026-07-18T06:09:18Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: stream answer nodes inside iteration/loop containers",
+          "test(api): guard and document the DEBUG gevent server path (#39205)"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 7,
+      "repository": {
         "owner": "Snailclimb",
         "name": "JavaGuide",
         "url": "https://github.com/Snailclimb/JavaGuide",
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 158174,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-08-28T08:06:36Z"
+        "starsTotal": 157108,
+        "starsAdded24h": 29,
+        "lastUpdatedAt": "2026-07-06T14:54:42Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -203,8 +237,8 @@
           ".github/workflows/test.yml",
           "README.md",
           "README_EN.md",
-          "关于数组转集合方法的第六种：使用Java9的List.of()",
-          "AOP 织入（Weaving） 的表达方式或许可以描述的更易懂一些"
+          "希望可以隐藏左右的目录",
+          "JavaGuide for Enligsh version"
         ]
       },
       "risk": {
@@ -214,20 +248,20 @@
       "recommendation": "值得继续"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "repository": {
-        "owner": "langgenius",
-        "name": "dify",
-        "url": "https://github.com/langgenius/dify",
+        "owner": "google-gemini",
+        "name": "gemini-cli",
+        "url": "https://github.com/google-gemini/gemini-cli",
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 154064,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-01T07:52:23Z"
+        "starsTotal": 106047,
+        "starsAdded24h": 20,
+        "lastUpdatedAt": "2026-07-18T01:27:53Z"
       },
       "health": {
-        "license": "NOASSERTION",
+        "license": "Apache-2.0",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
@@ -237,42 +271,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(structured_output): fall back to prompt-based schema when the native path cannot consume it",
-          "refactor(console): decouple app tracing configuration"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 8,
-      "repository": {
-        "owner": "open-webui",
-        "name": "open-webui",
-        "url": "https://github.com/open-webui/open-webui",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 150548,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-01T02:20:26Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "i18n: complete Russian locale translations",
-          "fix: drain playwright route handlers before the page closes"
+          "chore/release: bump version to 0.52.0-nightly.20260718.gacae7124b",
+          "feat(pr-generator-core): add environment config parser, command executor, GitHub R…"
         ]
       },
       "risk": {
@@ -284,15 +284,15 @@
     {
       "rank": 9,
       "repository": {
-        "owner": "farion1231",
-        "name": "cc-switch",
-        "url": "https://github.com/farion1231/cc-switch",
-        "primaryLanguage": "Rust"
+        "owner": "ohmyzsh",
+        "name": "ohmyzsh",
+        "url": "https://github.com/ohmyzsh/ohmyzsh",
+        "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 130464,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-01T04:32:06Z"
+        "starsTotal": 188668,
+        "starsAdded24h": 15,
+        "lastUpdatedAt": "2026-07-12T12:52:29Z"
       },
       "health": {
         "license": "MIT",
@@ -305,8 +305,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(proxy): follow macOS system proxy changes and bypass dead loopback proxies",
-          "fix(settings): avoid launching OpenCode Desktop during env check"
+          "fix(core): support nounset startup",
+          "fix(aws): quote dirname in state file path check to handle spaces"
         ]
       },
       "risk": {
@@ -318,29 +318,29 @@
     {
       "rank": 10,
       "repository": {
-        "owner": "Graphify-Labs",
-        "name": "graphify",
-        "url": "https://github.com/Graphify-Labs/graphify",
-        "primaryLanguage": "Python"
+        "owner": "puppeteer",
+        "name": "puppeteer",
+        "url": "https://github.com/puppeteer/puppeteer",
+        "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 113134,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-08-30T15:03:47Z"
+        "starsTotal": 95318,
+        "starsAdded24h": 6,
+        "lastUpdatedAt": "2026-07-18T06:41:01Z"
       },
       "health": {
         "license": "Apache-2.0",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": false,
+        "hasContributing": true,
         "issueActivity": "active"
       },
       "opportunity": {
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "Fix Python type reference stubs across imports (#3252)",
-          "Render source_url as a link in the HTML viewer"
+          "fix: forward headers to browserURL HTTP discovery and WebSocket connection",
+          "feat: roll to Chrome 151.0.7922.34"
         ]
       },
       "risk": {

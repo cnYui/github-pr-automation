@@ -1,0 +1,351 @@
+{
+  "date": "2026-07-29",
+  "generatedAt": "2026-07-29T12:54:37.217Z",
+  "summary": {
+    "candidateCount": 10,
+    "actionableCount": 1
+  },
+  "items": [
+    {
+      "rank": 1,
+      "repository": {
+        "owner": "affaan-m",
+        "name": "ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 235233,
+        "starsAdded24h": 1147,
+        "lastUpdatedAt": "2026-07-29T01:37:41Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: address 4 ECC issues (#2574, #2598, #2600, #2608)",
+          "feat(cursor): consolidate expose fork Cursor adapter and rule-format …"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 2,
+      "repository": {
+        "owner": "Graphify-Labs",
+        "name": "graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 98108,
+        "starsAdded24h": 1017,
+        "lastUpdatedAt": "2026-07-28T09:52:46Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: resolve bare in-repo Python module imports",
+          "fix(extract): emit nodes for exported scalar bindings"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 3,
+      "repository": {
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 122196,
+        "starsAdded24h": 489,
+        "lastUpdatedAt": "2026-07-29T09:10:22Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(proxy): replace the thinking model whitelist with a capability re…",
+          "feat(presets): add XuanShu API provider"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "yt-dlp",
+        "name": "yt-dlp",
+        "url": "https://github.com/yt-dlp/yt-dlp",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 180909,
+        "starsAdded24h": 442,
+        "lastUpdatedAt": "2026-07-23T16:54:49Z"
+      },
+      "health": {
+        "license": "Unlicense",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "live preflight 发现上游 NO AI/NO LLM 政策，禁止 Agent 贡献",
+        "evidence": [
+          ".NO_AI/README.md 明确禁止 LLM/Agent 参与 issues、patches、pull requests、PR descriptions、comments 和 translations",
+          "贡献政策要求 LLM agent 拒绝与该仓库交互"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "贡献门禁明确阻止当前自动化身份参与"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 198529,
+        "starsAdded24h": 277,
+        "lastUpdatedAt": "2026-07-29T12:08:57Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat(core): Complete v1-to-v2 workflow converter (no-changelog)",
+          "ci: Fix Wrangler install in API schema publish workflow"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 6,
+      "repository": {
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 150690,
+        "starsAdded24h": 243,
+        "lastUpdatedAt": "2026-07-29T12:05:46Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: refactor account about dialog ownership",
+          "fix(plugin): preserve credentials during local replacement"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 147204,
+        "starsAdded24h": 242,
+        "lastUpdatedAt": "2026-07-27T23:39:39Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: left-edge clipping of the Open Terminal cloud icon and Account profile avatar",
+          "fix: restore per-item retrieval settings in the model editor knowledge section"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 8,
+      "repository": {
+        "owner": "Snailclimb",
+        "name": "JavaGuide",
+        "url": "https://github.com/Snailclimb/JavaGuide",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 157383,
+        "starsAdded24h": 40,
+        "lastUpdatedAt": "2026-07-28T07:12:34Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "账本中已存在同类机会的已提交 PR，本轮不重复处理",
+        "evidence": [
+          "pipeline ledger 已记录 Snailclimb/JavaGuide 同类机会 PR",
+          "近期运行已提交并合并 JavaGuide README/文档类修复"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "重复提交会打扰维护者"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 9,
+      "repository": {
+        "owner": "google-gemini",
+        "name": "gemini-cli",
+        "url": "https://github.com/google-gemini/gemini-cli",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 106233,
+        "starsAdded24h": 24,
+        "lastUpdatedAt": "2026-07-29T01:29:18Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(cli): skip diff hunk markers during @ processing",
+          "fix(vscode-ide-companion): track both Disposables in each activate() push"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 10,
+      "repository": {
+        "owner": "jose-compu",
+        "name": "cpa-agents",
+        "url": "https://github.com/jose-compu/cpa-agents",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 0,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-21T18:20:06Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": false,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "README 缺少 good-first-issue 贡献入口链接",
+        "evidence": [
+          "Issue #24 要求添加 concise Contributing blurb 和 label:\"good first issue\" filter 链接",
+          "默认分支 README.md 没有 Contributing 或 good first issue 入口",
+          "Issue #18 仍 open，CONTRIBUTING.md 尚未存在，因此本轮不链接不存在文件"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "README-only 一小段文档，可用文本搜索和 git diff --check 验证"
+      },
+      "recommendation": "值得继续"
+    }
+  ]
+}

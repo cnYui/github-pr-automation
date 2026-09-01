@@ -1,0 +1,355 @@
+{
+  "date": "2026-08-05",
+  "generatedAt": "2026-08-05T12:28:54.585Z",
+  "summary": {
+    "candidateCount": 10,
+    "actionableCount": 1
+  },
+  "items": [
+    {
+      "rank": 1,
+      "repository": {
+        "owner": "Graphify-Labs",
+        "name": "graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 102806,
+        "starsAdded24h": 4698,
+        "lastUpdatedAt": "2026-08-05T00:42:01Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "Fixed src file path in the output for accessibility",
+          "fix(typescript): avoid resolving namespace imports as workspace classes"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 2,
+      "repository": {
+        "owner": "affaan-m",
+        "name": "ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 237884,
+        "starsAdded24h": 2651,
+        "lastUpdatedAt": "2026-08-05T02:29:09Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: make GAN harness score parsing portable",
+          "feat: add OpenSpec validators, spec-miner registration, real fixtures"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 3,
+      "repository": {
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 124648,
+        "starsAdded24h": 2452,
+        "lastUpdatedAt": "2026-08-05T09:05:16Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(recovery): merge common config into the existing Live backup",
+          "fix(codex): refresh the upstream model after a provider switch"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "yt-dlp",
+        "name": "yt-dlp",
+        "url": "https://github.com/yt-dlp/yt-dlp",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 182569,
+        "starsAdded24h": 1660,
+        "lastUpdatedAt": "2026-08-04T22:58:34Z"
+      },
+      "health": {
+        "license": "Unlicense",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "[Newgrounds] Modify media URL regex due to audio player changes",
+          "[cleanup] Remove obsolete Python compatibility code"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "inkeep",
+        "name": "agents",
+        "url": "https://github.com/inkeep/agents",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 1351,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-07-31T18:43:57Z"
+      },
+      "health": {
+        "license": "Elastic-2.0 with supplemental terms",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "修复 README 中已 404 的 Inkeep Cloud waitlist 链接，改指向当前官网 demo 入口",
+        "evidence": [
+          "https://github.com/inkeep/agents/issues/3429",
+          "README.md 包含 https://inkeep.com/cloud-waitlist，live HEAD 验证返回 404",
+          "https://inkeep.com/demo 与 https://inkeep.com/enterprise 当前可访问",
+          "公开 PR 流程见 CONTRIBUTING.md，无 CLA 或先讨论门禁"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "单行文档链接修复，可用链接检查和 git diff --check 验证，无运行时代码风险"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 6,
+      "repository": {
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 151425,
+        "starsAdded24h": 735,
+        "lastUpdatedAt": "2026-08-05T11:05:27Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: offset legacy app error toasts below model controls",
+          "fix(tool-node): resolve variable nodeId and show model name in canvas summary"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 147920,
+        "starsAdded24h": 716,
+        "lastUpdatedAt": "2026-08-05T12:12:29Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat: track direct API calls in usage analytics (fixes #28059)",
+          "perf: bounded, non-blocking session pool reaper (batched HSCAN + bulk HDEL)"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 8,
+      "repository": {
+        "owner": "Snailclimb",
+        "name": "JavaGuide",
+        "url": "https://github.com/Snailclimb/JavaGuide",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 157539,
+        "starsAdded24h": 156,
+        "lastUpdatedAt": "2026-08-04T10:57:59Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "账本已有本机会 PR #2890，避免重复提交同仓同类文档修复",
+        "evidence": [
+          ".github/workflows/test.yml",
+          "README.md",
+          "README_EN.md",
+          "docker章节中关于阿里云镜像配置过时，当前阿里云镜像加速仅支持阿里云产品",
+          "小瑕疵"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "本机会账本已记录已提交 PR，重复推进会制造噪音"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 9,
+      "repository": {
+        "owner": "ohmyzsh",
+        "name": "ohmyzsh",
+        "url": "https://github.com/ohmyzsh/ohmyzsh",
+        "primaryLanguage": "Shell"
+      },
+      "popularity": {
+        "starsTotal": 189017,
+        "starsAdded24h": 143,
+        "lastUpdatedAt": "2026-08-05T11:30:21Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat(uv-env): create plugin",
+          "feat(semver-tag): add plugin to bump semver git tags"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 10,
+      "repository": {
+        "owner": "google-gemini",
+        "name": "gemini-cli",
+        "url": "https://github.com/google-gemini/gemini-cli",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 106371,
+        "starsAdded24h": 138,
+        "lastUpdatedAt": "2026-08-05T03:48:02Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(sdk): don't abort sendStream on malformed tool arguments",
+          "fix(release): handle npm dist-tag deletion failures on registries that forbid it"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    }
+  ]
+}

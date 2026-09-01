@@ -1,0 +1,356 @@
+{
+  "date": "2026-07-25",
+  "generatedAt": "2026-07-24T21:03:04.406Z",
+  "summary": {
+    "candidateCount": 10,
+    "actionableCount": 2
+  },
+  "items": [
+    {
+      "rank": 1,
+      "repository": {
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 120907,
+        "starsAdded24h": 870,
+        "lastUpdatedAt": "2026-07-24T04:52:43Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(proxy): repair Responses message item IDs",
+          "fix(usage): preserve codex rollup history through v16 migration"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 2,
+      "repository": {
+        "owner": "affaan-m",
+        "name": "ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 232872,
+        "starsAdded24h": 813,
+        "lastUpdatedAt": "2026-07-24T20:40:53Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat(skills): add contract-first collaboration workflow",
+          "feat: add explicit opt-in CLI telemetry controls"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 3,
+      "repository": {
+        "owner": "yt-dlp",
+        "name": "yt-dlp",
+        "url": "https://github.com/yt-dlp/yt-dlp",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 179885,
+        "starsAdded24h": 410,
+        "lastUpdatedAt": "2026-07-23T16:54:49Z"
+      },
+      "health": {
+        "license": "Unlicense",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "[utils] Deprecate `random_uuidv4`",
+          "[utils] Deprecate `number_of_digits`"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 197828,
+        "starsAdded24h": 395,
+        "lastUpdatedAt": "2026-07-24T21:00:27Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "evidence": [
+          ".agents/skills/spec-driven-development/SKILL.md",
+          ".claude/README.md",
+          ".claude/plugins/n8n/README.md",
+          "New production webhooks return 404 \"not registered\" despite active workflow and valid webhook_entity records",
+          "generic/unknown error when a lead already exit with a certain email address"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 150131,
+        "starsAdded24h": 377,
+        "lastUpdatedAt": "2026-07-24T16:13:35Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: use Dify's own doc_id instead of content hash for Weaviate object UUIDs",
+          "fix(api): reject trailing newlines in valid_password() validator (#39548)"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 6,
+      "repository": {
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 146619,
+        "starsAdded24h": 309,
+        "lastUpdatedAt": "2026-07-24T16:49:19Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "i18n: complete de-DE translations",
+          "feat: add execution graph visualization with Chat/Execution toggle in Overview. Useful for LangGraph"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "Snailclimb",
+        "name": "JavaGuide",
+        "url": "https://github.com/Snailclimb/JavaGuide",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 157279,
+        "starsAdded24h": 70,
+        "lastUpdatedAt": "2026-07-21T22:56:32Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "evidence": [
+          ".github/workflows/test.yml",
+          "README.md",
+          "README_EN.md",
+          "希望可以隐藏左右的目录",
+          "JavaGuide for Enligsh version"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 8,
+      "repository": {
+        "owner": "ohmyzsh",
+        "name": "ohmyzsh",
+        "url": "https://github.com/ohmyzsh/ohmyzsh",
+        "primaryLanguage": "Shell"
+      },
+      "popularity": {
+        "starsTotal": 188781,
+        "starsAdded24h": 51,
+        "lastUpdatedAt": "2026-07-23T17:38:43Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(tmux): preserve newlines when refreshing environment",
+          "feat(web-search): add 8 new search engines"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 9,
+      "repository": {
+        "owner": "google-gemini",
+        "name": "gemini-cli",
+        "url": "https://github.com/google-gemini/gemini-cli",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 106157,
+        "starsAdded24h": 35,
+        "lastUpdatedAt": "2026-07-24T20:57:00Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat(caretaker): add GCP deployment script for caretaker agent services",
+          "fix(vscode-ide-companion): stop leaking gemini.diff.accept and onDidChangeWorkspaceFolders disposables"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 10,
+      "repository": {
+        "owner": "puppeteer",
+        "name": "puppeteer",
+        "url": "https://github.com/puppeteer/puppeteer",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 95340,
+        "starsAdded24h": 9,
+        "lastUpdatedAt": "2026-07-24T10:39:18Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat(browsers): support custom logger",
+          "feat: roll to Firefox 153.0"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    }
+  ]
+}
