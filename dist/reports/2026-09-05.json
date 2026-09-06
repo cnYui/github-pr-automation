@@ -1,9 +1,9 @@
 {
-  "date": "2026-09-01",
-  "generatedAt": "2026-09-01T22:33:16.886Z",
+  "date": "2026-09-05",
+  "generatedAt": "2026-09-04T21:02:22.026Z",
   "summary": {
-    "candidateCount": 10,
-    "actionableCount": 0
+    "candidateCount": 11,
+    "actionableCount": 1
   },
   "items": [
     {
@@ -15,9 +15,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 245732,
+        "starsTotal": 248355,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-08-31T22:18:39Z"
+        "lastUpdatedAt": "2026-09-04T19:02:58Z"
       },
       "health": {
         "license": "MIT",
@@ -30,8 +30,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(deps): bump lru to 0.18.2 to patch RUSTSEC-2026-0253",
-          "fix(hooks): preserve large passthrough payloads"
+          "feat(install): add a copilot project target for skills and agents",
+          "Docs/bangla readme"
         ]
       },
       "risk": {
@@ -49,9 +49,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 203057,
+        "starsTotal": 203358,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-01T22:32:30Z"
+        "lastUpdatedAt": "2026-09-04T20:22:37Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -61,18 +61,20 @@
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
         "evidence": [
-          "chore: Bump browserslist 4.27.0 → 4.28.7 (minor) on 1.x to clear 2 Aikido findings",
-          "feat(core): Seal the eval thread-restore workflow write (no-changelog)"
+          ".agents/review-rules/README.md",
+          ".agents/review-rules/db-migrations/conventions-and-tests.md",
+          ".agents/review-rules/qa-dx/workflow-safety.md",
+          "Locked workflows"
         ]
       },
       "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
+        "level": "中",
+        "reason": "超大仓，内部 Linear 门禁与需等待团队回应，无明确低风险切口"
       },
-      "recommendation": "跳过"
+      "recommendation": "谨慎"
     },
     {
       "rank": 3,
@@ -83,9 +85,9 @@
         "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 189493,
+        "starsTotal": 189552,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-01T07:23:31Z"
+        "lastUpdatedAt": "2026-09-04T11:19:11Z"
       },
       "health": {
         "license": "MIT",
@@ -99,7 +101,7 @@
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
           "feat(juju): add unit and application name completion",
-          "fix(ssh-agent): create screen/tmux symlink atomically"
+          "feat(git): add gbls alias to list local branch names"
         ]
       },
       "risk": {
@@ -117,7 +119,7 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 188363,
+        "starsTotal": 188940,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-08-30T13:58:45Z"
       },
@@ -132,8 +134,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "WAL-aware cookie db copy",
-          "Fix metadata parsing for string type"
+          "[cleanup] Deprecate `compat_ord`",
+          "[cloudbate] Add extractor"
         ]
       },
       "risk": {
@@ -151,9 +153,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 158193,
+        "starsTotal": 158276,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-08-28T08:06:36Z"
+        "lastUpdatedAt": "2026-09-02T01:38:01Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -163,15 +165,19 @@
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
         "evidence": [
-          "Update explanation of string concatenation in JDK 9"
+          ".github/workflows/test.yml",
+          "README.md",
+          "README_EN.md",
+          "关于数组转集合方法的第六种：使用Java9的List.of()",
+          "AOP 织入（Weaving） 的表达方式或许可以描述的更易懂一些"
         ]
       },
       "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
+        "level": "中",
+        "reason": "账本已就 #2890/#2768/#2752 去重，默认分支已实现相关功能"
       },
       "recommendation": "跳过"
     },
@@ -184,9 +190,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 154120,
+        "starsTotal": 154461,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-01T22:14:09Z"
+        "lastUpdatedAt": "2026-09-04T15:37:01Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -199,8 +205,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "chore(deps-dev): bump nltk from 3.10.0 to 3.10.3 in /api",
-          "fix(rerank): honor an enabled zero score threshold"
+          "test(api): cover disabled sensitive-word avoidance extras",
+          "fix(tools): translate PluginNotFoundError to ToolProviderNotFoundError"
         ]
       },
       "risk": {
@@ -218,9 +224,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 150623,
+        "starsTotal": 150946,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-01T02:20:26Z"
+        "lastUpdatedAt": "2026-09-04T19:54:10Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -233,8 +239,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix: unregister the direct-connection stream listener on every exit",
-          "feat: clarify error when a workspace model's base model is restricted"
+          "feat: expose the login form toggle in the admin panel",
+          "fix: clean up vector data and files when deleting a knowledge directory"
         ]
       },
       "risk": {
@@ -252,9 +258,9 @@
         "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 130558,
+        "starsTotal": 131080,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-01T15:49:06Z"
+        "lastUpdatedAt": "2026-09-04T13:43:14Z"
       },
       "health": {
         "license": "MIT",
@@ -267,8 +273,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "Add Portuguese-BR localization",
-          "fix(hermes): track upstream source version"
+          "fix(linux): 修复 Wayland 混合缩放下窗口尺寸膨胀成假最大化;增加 CC_SWITCH_WEBKIT_HW 硬件加速逃生开关",
+          "fix(proxy): clamp Claude Desktop probe token limits for Copilot/Responses"
         ]
       },
       "risk": {
@@ -286,9 +292,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 119871,
+        "starsTotal": 125611,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-08-07T21:44:01Z"
+        "lastUpdatedAt": "2026-09-04T12:35:29Z"
       },
       "health": {
         "license": "MIT",
@@ -301,8 +307,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(review): let /ponytail-review take a target, including a whole branch",
-          "fix(uninstall): remove the mode flag from every host state dir"
+          "Update agent-portability.md",
+          "fix(hooks): ref the stdin fallback timer so it actually fires"
         ]
       },
       "risk": {
@@ -320,7 +326,7 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 113390,
+        "starsTotal": 114730,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-08-30T15:03:47Z"
       },
@@ -335,8 +341,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat: add Dockerized GitHub Action support (#762)",
-          "fix(csharp): apply Blazor _Imports.razor usings in the razor type resolver (#3187)"
+          "docs(skills): record the merge and agent failure modes seen in the field",
+          "fix(mcp): prevent PR tools from timing out on stdio transport"
         ]
       },
       "risk": {
@@ -344,6 +350,41 @@
         "reason": "已有相近打开中的 PR"
       },
       "recommendation": "跳过"
+    },
+    {
+      "rank": 11,
+      "repository": {
+        "owner": "Badgerati",
+        "name": "Pode",
+        "url": "https://github.com/Badgerati/Pode",
+        "primaryLanguage": "PowerShell"
+      },
+      "popularity": {
+        "starsTotal": 1057,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-03T22:23:29Z"
+      },
+      "health": {
+        "license": "mit",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "README First App 链接 404（缺 mike 版本段 /latest/）修复 issue #1787",
+        "evidence": [
+          "issue #1787: README First App 链接 https://badgerati.github.io/Pode/Getting-Started/FirstApp 返回 404",
+          "正确 URL https://badgerati.github.io/Pode/latest/Getting-Started/FirstApp/ 返回 200",
+          "README.md develop 第 41 行"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "单行 README 链接修复，404→200 可客观验证，无 CLA，目标 develop 分支"
+      },
+      "recommendation": "值得继续"
     }
   ]
 }

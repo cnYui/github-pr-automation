@@ -1,9 +1,9 @@
 {
-  "date": "2026-09-01",
-  "generatedAt": "2026-09-01T22:33:16.886Z",
+  "date": "2026-09-02",
+  "generatedAt": "2026-09-02T21:03:11.455Z",
   "summary": {
     "candidateCount": 10,
-    "actionableCount": 0
+    "actionableCount": 1
   },
   "items": [
     {
@@ -15,9 +15,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 245732,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-08-31T22:18:39Z"
+        "starsTotal": 246229,
+        "starsAdded24h": 1,
+        "lastUpdatedAt": "2026-09-02T20:52:10Z"
       },
       "health": {
         "license": "MIT",
@@ -30,8 +30,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(deps): bump lru to 0.18.2 to patch RUSTSEC-2026-0253",
-          "fix(hooks): preserve large passthrough payloads"
+          "test(hooks): avoid repeated giant wrapper payloads",
+          "chore(deps): bump @humanfs/node from 0.16.7 to 0.16.8 in the npm-security group across 1 directory"
         ]
       },
       "risk": {
@@ -49,9 +49,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 203057,
+        "starsTotal": 203164,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-01T22:32:30Z"
+        "lastUpdatedAt": "2026-09-02T20:57:31Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -64,8 +64,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "chore: Bump browserslist 4.27.0 → 4.28.7 (minor) on 1.x to clear 2 Aikido findings",
-          "feat(core): Seal the eval thread-restore workflow write (no-changelog)"
+          "docs: Document the scheduled job owner contract and pin the job lifecycle (no-changelog)",
+          " fix(Microsoft SQL Node): Add TLS server name option to credentials"
         ]
       },
       "risk": {
@@ -83,7 +83,7 @@
         "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 189493,
+        "starsTotal": 189509,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-01T07:23:31Z"
       },
@@ -117,7 +117,7 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 188363,
+        "starsTotal": 188557,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-08-30T13:58:45Z"
       },
@@ -132,8 +132,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "WAL-aware cookie db copy",
-          "Fix metadata parsing for string type"
+          "Fix metadata parsing for string type",
+          "[build] Update 10 dependencies"
         ]
       },
       "risk": {
@@ -151,9 +151,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 158193,
+        "starsTotal": 158226,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-08-28T08:06:36Z"
+        "lastUpdatedAt": "2026-09-02T01:38:01Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -163,17 +163,21 @@
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
         "evidence": [
-          "Update explanation of string concatenation in JDK 9"
+          ".github/workflows/test.yml",
+          "README.md",
+          "README_EN.md",
+          "关于数组转集合方法的第六种：使用Java9的List.of()",
+          "AOP 织入（Weaving） 的表达方式或许可以描述的更易懂一些"
         ]
       },
       "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
       },
-      "recommendation": "跳过"
+      "recommendation": "值得继续"
     },
     {
       "rank": 6,
@@ -184,9 +188,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 154120,
+        "starsTotal": 154248,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-01T22:14:09Z"
+        "lastUpdatedAt": "2026-09-02T20:01:41Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -199,8 +203,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "chore(deps-dev): bump nltk from 3.10.0 to 3.10.3 in /api",
-          "fix(rerank): honor an enabled zero score threshold"
+          "Return service unavailable for transient app token database failures",
+          "docs: align /audio-to-text 400 codes with reachable errors"
         ]
       },
       "risk": {
@@ -218,9 +222,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 150623,
+        "starsTotal": 150730,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-01T02:20:26Z"
+        "lastUpdatedAt": "2026-09-02T02:12:21Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -233,8 +237,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix: unregister the direct-connection stream listener on every exit",
-          "feat: clarify error when a workspace model's base model is restricted"
+          "fix: open grouped citation sources on click",
+          "fix: do not offer ask_user in chats that cannot resolve it"
         ]
       },
       "risk": {
@@ -252,9 +256,9 @@
         "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 130558,
+        "starsTotal": 130732,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-01T15:49:06Z"
+        "lastUpdatedAt": "2026-09-02T04:57:57Z"
       },
       "health": {
         "license": "MIT",
@@ -267,8 +271,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "Add Portuguese-BR localization",
-          "fix(hermes): track upstream source version"
+          "feat(codex): make official unified and takeover provider IDs configurable",
+          "fix(proxy): populate data array in handle_models for Claude and OpenAI client compatibility (#6922)"
         ]
       },
       "risk": {
@@ -286,7 +290,7 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 119871,
+        "starsTotal": 121280,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-08-07T21:44:01Z"
       },
@@ -301,8 +305,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(review): let /ponytail-review take a target, including a whole branch",
-          "fix(uninstall): remove the mode flag from every host state dir"
+          "fix: avoid shell execution when publishing OpenClaw skills",
+          "feat: add Kimi Code adapter (hooks template + runtime support)"
         ]
       },
       "risk": {
@@ -320,7 +324,7 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 113390,
+        "starsTotal": 113974,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-08-30T15:03:47Z"
       },
@@ -335,8 +339,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat: add Dockerized GitHub Action support (#762)",
-          "fix(csharp): apply Blazor _Imports.razor usings in the razor type resolver (#3187)"
+          "fix: enforce the 3-member hyperedge invariant at every persistence boundary",
+          "Resolve graph.json from an ancestor directory, plus two independent fixes"
         ]
       },
       "risk": {

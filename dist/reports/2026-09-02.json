@@ -1,13 +1,48 @@
 {
-  "date": "2026-09-01",
-  "generatedAt": "2026-09-01T22:33:16.886Z",
+  "date": "2026-09-02",
+  "generatedAt": "2026-09-01T22:35:00.000Z",
   "summary": {
-    "candidateCount": 10,
-    "actionableCount": 0
+    "candidateCount": 11,
+    "actionableCount": 1
   },
   "items": [
     {
       "rank": 1,
+      "repository": {
+        "owner": "hust-open-atom-club",
+        "name": "oh-dsh",
+        "url": "https://github.com/hust-open-atom-club/oh-dsh",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 299,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-08-30T09:16:08Z"
+      },
+      "health": {
+        "license": "未声明",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "修复 README.md 与 README.en.md 末尾「推荐项目/Recommended」表格中 DeepSeek Harness 的 404 链接，将 deepseek-harness/deepseek-harness 更正为真实上游 deepseek-ai/deepseek-harness（issue #192）",
+        "evidence": [
+          "issue https://github.com/hust-open-atom-club/oh-dsh/issues/192 报告链接 404，且明确给出正确上游 deepseek-ai/deepseek-harness",
+          "main 分支 README.md:228 与 README.en.md:245 仍指向 https://github.com/deepseek-harness/deepseek-harness",
+          "curl -L 验证：错误地址返回 404，deepseek-ai/deepseek-harness 返回 200，且描述 “DeepSeek Harness: Everything is a Plugin” 与表格描述一致"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "仅改两处 README 表格链接，纯文档、无逻辑改动；正确地址由 issue 明确给出并经 HTTP 校验"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 2,
       "repository": {
         "owner": "affaan-m",
         "name": "ECC",
@@ -41,7 +76,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "repository": {
         "owner": "n8n-io",
         "name": "n8n",
@@ -75,7 +110,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "repository": {
         "owner": "ohmyzsh",
         "name": "ohmyzsh",
@@ -109,7 +144,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "repository": {
         "owner": "yt-dlp",
         "name": "yt-dlp",
@@ -143,7 +178,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "repository": {
         "owner": "Snailclimb",
         "name": "JavaGuide",
@@ -176,7 +211,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "repository": {
         "owner": "langgenius",
         "name": "dify",
@@ -210,7 +245,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "repository": {
         "owner": "open-webui",
         "name": "open-webui",
@@ -244,7 +279,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 8,
+      "rank": 9,
       "repository": {
         "owner": "farion1231",
         "name": "cc-switch",
@@ -278,7 +313,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "repository": {
         "owner": "DietrichGebert",
         "name": "ponytail",
@@ -312,7 +347,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "repository": {
         "owner": "Graphify-Labs",
         "name": "graphify",

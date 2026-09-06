@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-06",
-  "generatedAt": "2026-09-05T21:14:37.678Z",
+  "date": "2026-09-04",
+  "generatedAt": "2026-09-03T21:04:20.977736Z",
   "summary": {
     "candidateCount": 11,
     "actionableCount": 1
@@ -9,49 +9,15 @@
     {
       "rank": 1,
       "repository": {
-        "owner": "DietrichGebert",
-        "name": "ponytail",
-        "url": "https://github.com/DietrichGebert/ponytail",
-        "primaryLanguage": "JavaScript"
-      },
-      "popularity": {
-        "starsTotal": 127782,
-        "starsAdded24h": 2171,
-        "lastUpdatedAt": "2026-09-04T12:35:29Z"
-      },
-      "health": {
-        "license": "MIT",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": false,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "feat(cursor): add native session-start hooks",
-          "fix(debt): include block comments in shortcut scan"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 2,
-      "repository": {
         "owner": "affaan-m",
         "name": "ECC",
         "url": "https://github.com/affaan-m/ECC",
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 249735,
-        "starsAdded24h": 1380,
-        "lastUpdatedAt": "2026-09-05T20:58:32Z"
+        "starsTotal": 247045,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-03T20:51:23Z"
       },
       "health": {
         "license": "MIT",
@@ -64,8 +30,42 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(continuous-learning-v2): require analysis completion sentinel",
-          "fix(commands): clarify overlapping command triggers"
+          "fix: avoid scanner false positive in TDD safety example",
+          "docs(rules): namespace ECC agent references with ecc: prefix"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 2,
+      "repository": {
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 203254,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-03T20:58:51Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(core): Keep a serving external secrets provider active when its replacement fails",
+          "feat(core): Redirect to SSO and disable password login when SSO is active"
         ]
       },
       "risk": {
@@ -77,29 +77,29 @@
     {
       "rank": 3,
       "repository": {
-        "owner": "Graphify-Labs",
-        "name": "graphify",
-        "url": "https://github.com/Graphify-Labs/graphify",
-        "primaryLanguage": "Python"
+        "owner": "ohmyzsh",
+        "name": "ohmyzsh",
+        "url": "https://github.com/ohmyzsh/ohmyzsh",
+        "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 115039,
-        "starsAdded24h": 309,
-        "lastUpdatedAt": "2026-09-05T00:29:44Z"
+        "starsTotal": 189534,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-01T07:23:31Z"
       },
       "health": {
-        "license": "Apache-2.0",
+        "license": "MIT",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": false,
+        "hasContributing": true,
         "issueActivity": "active"
       },
       "opportunity": {
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(watch): preserve qualified file labels in no-cluster updates",
-          "fix: resolve unmapped @/ imports in JS projects"
+          "feat(juju): add unit and application name completion",
+          "fix(ssh-agent): create screen/tmux symlink atomically"
         ]
       },
       "risk": {
@@ -117,8 +117,8 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 189195,
-        "starsAdded24h": 255,
+        "starsTotal": 188726,
+        "starsAdded24h": 0,
         "lastUpdatedAt": "2026-08-30T13:58:45Z"
       },
       "health": {
@@ -132,8 +132,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "Remove uploader from title in Twitter extractor",
-          "[utils] Deprecate `encode_compat_str`"
+          "[cloudbate] Add extractor",
+          "Fix metadata parsing for string type"
         ]
       },
       "risk": {
@@ -145,49 +145,52 @@
     {
       "rank": 5,
       "repository": {
-        "owner": "farion1231",
-        "name": "cc-switch",
-        "url": "https://github.com/farion1231/cc-switch",
-        "primaryLanguage": "Rust"
+        "owner": "Snailclimb",
+        "name": "JavaGuide",
+        "url": "https://github.com/Snailclimb/JavaGuide",
+        "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 131203,
-        "starsAdded24h": 123,
-        "lastUpdatedAt": "2026-09-05T15:29:06Z"
+        "starsTotal": 158252,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-02T01:38:01Z"
       },
       "health": {
-        "license": "MIT",
+        "license": "Apache-2.0",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": true,
+        "hasContributing": false,
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "category": "测试补充",
+        "summary": "历史已提交同向 PR，无新增低风险切口",
         "evidence": [
-          "feat(codex): add evidence-based provider model verifier",
-          "fix(ui): persist last active app across restarts"
+          ".github/workflows/test.yml",
+          "README.md",
+          "README_EN.md",
+          "关于数组转集合方法的第六种：使用Java9的List.of()",
+          "AOP 织入（Weaving） 的表达方式或许可以描述的更易懂一些"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "已有相近打开中的 PR"
+        "reason": "账本已就沉浸式阅读/目录方向去重（历史 PR #2890/#2768/#2752），live 复筛无新增可处理切口"
       },
       "recommendation": "跳过"
     },
     {
       "rank": 6,
       "repository": {
-        "owner": "n8n-io",
-        "name": "n8n",
-        "url": "https://github.com/n8n-io/n8n",
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 203468,
-        "starsAdded24h": 110,
-        "lastUpdatedAt": "2026-09-05T19:27:03Z"
+        "starsTotal": 154364,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-03T20:34:46Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -200,8 +203,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "refactor(core): Align Instance AI prompts and skill guidance (no-changelog)",
-          "fix(core): Merge system messages for strict providers"
+          "chore(deps): bump unstructured from 0.21.5 to 0.24.0 in /dify-agent",
+          "fix: close unclosed think tags around agent tool calls"
         ]
       },
       "risk": {
@@ -219,9 +222,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 151054,
-        "starsAdded24h": 108,
-        "lastUpdatedAt": "2026-09-05T03:34:34Z"
+        "starsTotal": 150831,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-03T20:19:02Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -234,8 +237,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "chore: keep OAuth token payloads out of logs",
-          "fix: stop the note editor date reading as a button"
+          "i18n: translate settings sidebar group headers (ru-RU, uk-UA)",
+          "i18n: complete the German (de-DE) translation"
         ]
       },
       "risk": {
@@ -247,86 +250,15 @@
     {
       "rank": 8,
       "repository": {
-        "owner": "langgenius",
-        "name": "dify",
-        "url": "https://github.com/langgenius/dify",
-        "primaryLanguage": "TypeScript"
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 154527,
-        "starsAdded24h": 66,
-        "lastUpdatedAt": "2026-09-05T14:52:04Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "fix(web): make isPrivateOrLocalAddress handle bracketed IPv6 and loopback ranges",
-          "fix(api): translate PluginNotFoundError / PluginDaemonNotFoundError at the ToolManager boundary"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 9,
-      "repository": {
-        "owner": "Snailclimb",
-        "name": "JavaGuide",
-        "url": "https://github.com/Snailclimb/JavaGuide",
-        "primaryLanguage": "JavaScript"
-      },
-      "popularity": {
-        "starsTotal": 158293,
-        "starsAdded24h": 17,
-        "lastUpdatedAt": "2026-09-05T12:30:20Z"
-      },
-      "health": {
-        "license": "Apache-2.0",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": false,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "测试补充",
-        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
-        "evidence": [
-          ".github/workflows/test.yml",
-          "README.md",
-          "README_EN.md",
-          "关于数组转集合方法的第六种：使用Java9的List.of()",
-          "AOP 织入（Weaving） 的表达方式或许可以描述的更易懂一些"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "改动可集中在测试或文档，且存在 CI 验证；live 复筛：账本已就 #2890/#2768/#2752 去重，无新增可处理切口"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 10,
-      "repository": {
-        "owner": "ohmyzsh",
-        "name": "ohmyzsh",
-        "url": "https://github.com/ohmyzsh/ohmyzsh",
-        "primaryLanguage": "Shell"
-      },
-      "popularity": {
-        "starsTotal": 189554,
-        "starsAdded24h": 2,
-        "lastUpdatedAt": "2026-09-05T19:54:13Z"
+        "starsTotal": 130933,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-03T18:35:19Z"
       },
       "health": {
         "license": "MIT",
@@ -339,8 +271,76 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(poetry-env): scope venv_dir to the activation function",
-          "fix(agnoster): respect conda changeps1 and escape env name"
+          "fix(proxy): extend system-proxy change detection to Windows (registry snapshot)",
+          "chore(deps): bump the cargo-deps group across 1 directory with 51 updates"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 9,
+      "repository": {
+        "owner": "DietrichGebert",
+        "name": "ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 123261,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-08-07T21:44:01Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: emit hookSpecificOutput JSON on ZCode so rules reach the model",
+          "feat: opt-in compact ruleset for subagents (PONYTAIL_SUBAGENT_RULESET=compact)"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 10,
+      "repository": {
+        "owner": "Graphify-Labs",
+        "name": "graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 114356,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-08-30T15:03:47Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "Split the JS/TS resolution filter from the AST cache gate",
+          "fix(verilog): parse SystemVerilog with tree-sitter-systemverilog"
         ]
       },
       "risk": {
@@ -352,18 +352,18 @@
     {
       "rank": 11,
       "repository": {
-        "owner": "im3sanger",
-        "name": "dndscv",
-        "url": "https://github.com/im3sanger/dndscv",
-        "primaryLanguage": "R"
+        "owner": "vdbulcke",
+        "name": "zellij-workspace",
+        "url": "https://github.com/vdbulcke/zellij-workspace",
+        "primaryLanguage": "Go"
       },
       "popularity": {
-        "starsTotal": 240,
+        "starsTotal": 0,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-08-25T09:06:03Z"
+        "lastUpdatedAt": "2026-07-31T10:03:24Z"
       },
       "health": {
-        "license": "unknown",
+        "license": "NOASSERTION",
         "hasCi": false,
         "hasTests": false,
         "hasContributing": false,
@@ -371,18 +371,17 @@
       },
       "opportunity": {
         "category": "文档缺口",
-        "summary": "README 教程链接使用不安全的 http:// htmlpreview 与内层 http:// github.com，在严格浏览器（Safari）触发混合内容拦截导致 TypeError: Load failed，应改为 https://",
+        "summary": "README 中 cosign 安装链接失效（404），按 issue #9 修正为 sigstore 现行 200 链接",
         "evidence": [
-          "https://github.com/im3sanger/dndscv/issues/113",
-          "README.md L48: http://htmlpreview.github.io/?http://github.com/im3sanger/dndscv/blob/master/vignettes/dNdScv.html",
-          "README.md L60: http://htmlpreview.github.io/?http://github.com/im3sanger/dndscv/blob/master/vignettes/buildref.html",
-          "vignettes/dNdScv.html 与 vignettes/buildref.html 均返回 200",
-          "https 变体在浏览器中可正常渲染"
+          "issue #9: Broken link to cosign installation in the readme (2026-09-03)",
+          "README.md L75 指向 https://docs.sigstore.dev/cosign/installation/（curl -L 返回 404）",
+          "正确链接 https://docs.sigstore.dev/cosign/system_config/installation/（curl -L 返回 200）",
+          "仓库无开放 PR、无 CONTRIBUTING/CLA 门禁，issue open 无 assignee"
         ]
       },
       "risk": {
         "level": "低",
-        "reason": "仅改 README 两处链接协议为 https，不动代码；已在浏览器验证 https 变体正常渲染"
+        "reason": "单文件单行 README 文档链接修正，客观可 curl 验证，无 CLA/构建风险"
       },
       "recommendation": "值得继续"
     }

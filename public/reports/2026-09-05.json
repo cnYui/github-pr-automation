@@ -1,8 +1,8 @@
 {
-  "date": "2026-09-06",
-  "generatedAt": "2026-09-05T21:14:37.678Z",
+  "date": "2026-09-05",
+  "generatedAt": "2026-09-05T21:02:50.551Z",
   "summary": {
-    "candidateCount": 11,
+    "candidateCount": 10,
     "actionableCount": 1
   },
   "items": [
@@ -311,9 +311,9 @@
       },
       "risk": {
         "level": "低",
-        "reason": "改动可集中在测试或文档，且存在 CI 验证；live 复筛：账本已就 #2890/#2768/#2752 去重，无新增可处理切口"
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
       },
-      "recommendation": "跳过"
+      "recommendation": "值得继续"
     },
     {
       "rank": 10,
@@ -348,43 +348,6 @@
         "reason": "已有相近打开中的 PR"
       },
       "recommendation": "跳过"
-    },
-    {
-      "rank": 11,
-      "repository": {
-        "owner": "im3sanger",
-        "name": "dndscv",
-        "url": "https://github.com/im3sanger/dndscv",
-        "primaryLanguage": "R"
-      },
-      "popularity": {
-        "starsTotal": 240,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-08-25T09:06:03Z"
-      },
-      "health": {
-        "license": "unknown",
-        "hasCi": false,
-        "hasTests": false,
-        "hasContributing": false,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "README 教程链接使用不安全的 http:// htmlpreview 与内层 http:// github.com，在严格浏览器（Safari）触发混合内容拦截导致 TypeError: Load failed，应改为 https://",
-        "evidence": [
-          "https://github.com/im3sanger/dndscv/issues/113",
-          "README.md L48: http://htmlpreview.github.io/?http://github.com/im3sanger/dndscv/blob/master/vignettes/dNdScv.html",
-          "README.md L60: http://htmlpreview.github.io/?http://github.com/im3sanger/dndscv/blob/master/vignettes/buildref.html",
-          "vignettes/dNdScv.html 与 vignettes/buildref.html 均返回 200",
-          "https 变体在浏览器中可正常渲染"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "仅改 README 两处链接协议为 https，不动代码；已在浏览器验证 https 变体正常渲染"
-      },
-      "recommendation": "值得继续"
     }
   ]
 }
