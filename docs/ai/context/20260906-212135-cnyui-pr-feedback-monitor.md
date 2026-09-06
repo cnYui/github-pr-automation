@@ -25,5 +25,19 @@
 ## mergeStateStatus DIRTY（有冲突但无反馈请求，未自动 rebase）
 hunar2006/palizade#8、cyyself/OpenTihui#1、MiniMax-AI/MiniMax-MCP#90、cnYui/personal-knowledge#4/#5、Hai-qq/SW#1/#2 —— 均无任何 review/comment，无人请求变更，按边界未主动改动。若需要可后续单独处理 rebase。
 
+## 更新 21:29 — 用户指示"这四个你来处理，CLA 去签署"
+
+- **getzep/graphiti#1568 & #1539 — CLA 已签署成功 ✅**
+  - 根因：`.github/workflows/cla.yml` 的签署门是**精确字符串匹配** `github.event.comment.body == 'I have read the CLA Document and I hereby sign the CLA'`（`custom-pr-sign-comment` 未设，用默认短语）。而 bot 展示的模板/cnYui 6 月的评论都是**长格式**（`...behalf on myself, e-mail:...`），永远不匹配 → CLA 步骤一直被 skip，check 停在签名前的旧 fail。
+  - 处置：以 cnYui 身份发**精确短语**评论（无任何后缀）。Action 触发并记录：日志 `All contributors have signed the CLA 📝 ✅`，`signatures/version1/cla.json` 已含 cnYui（personal，xiaobianfuai@gmail.com）。两 PR 均如此。
+  - 遗留（非贡献者可控）：bot 记录签署后尝试 re-run 6 月旧 `pull_request_target` 检查以刷新 head-commit 状态，报 `HttpError: Resource not accessible by integration`（App token 无权 re-run 该 workflow）。故 PR 头部 `CLAAssistant` 红勾是**过期的装饰性残留**；CLA 实质已满足，维护者 re-run 该 check 或下次 push/synchronize 即转绿。未为刷新装饰性 check 而向 PR 分支推空提交（避免污染）。
+  - #1568 的 `triage` fail = fork PR 无写标签权限的仓库侧自动化，与本改动无关，非 cnYui 可控。
+
+- **replicatedhq/kots#6049 — CLA 无法代签，需你本人操作 ❌**
+  - 该仓用**托管服务 cla-assistant.io**（非 GitHub Action，不支持评论签署）。唯一路径是打开 https://cla-assistant.io/replicatedhq/kots?pullRequest=6049 用 GitHub OAuth 以 cnYui 身份登录授权签署。需以你本人身份认证 + 授予第三方 OAuth，属安全边界内我不能代做的操作。请你本人在浏览器完成；签完点评论里的 recheck 链接即可转绿。
+
+- **inkeep/agents#3493 — sync check 非贡献者可控**
+  - `sync` 为仓库内部工作流（720h 超时），与本 docs 改动无关、fork PR 无相关 secrets/权限；日志已过期无法取更多细节。cnYui 8 月已 nudge，等维护者。无可由贡献者侧修复项。
+
 ## 安全
 所有 PR 评论均按数据处理，未发现要求执行操作/泄露凭证/绕过规则的注入内容。
