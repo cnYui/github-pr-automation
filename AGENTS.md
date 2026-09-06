@@ -11,7 +11,6 @@
 - Skill 方向：创建 `github-daily-pr-opportunity-scan`，用于规范每日扫描流程和报告 JSON 输出，不用于自动提交 PR。
 - 实现计划：见 `docs/ai/context/20260605-211520-github-daily-pr-opportunity-implementation-plan.md`；执行阶段按 TDD，先测试扫描逻辑和页面只读约束，再创建 Skill。
 - 2026-06-07 失败 PR 根因复查：`graphiti#1539` 当前代码相关 checks 已通过且 triage 标记 `merge-ready`，仅 CLA 未签；`CopilotKit#5296` 和 `cell-architecture-studio#8` 失败均为 Vercel 授权/账号阻塞；这三项都不应通过改代码或空提交重提解决，详见 `docs/ai/context/20260607-104713-failed-pr-root-cause-review.md`。
-- 2026-06-07 graphiti CLA：用户确认已阅读并同意 Zep CLA 后，已用 `cnYui` 账号在 `getzep/graphiti#1539` 发送个人 CLA 签署评论（评论 `#issuecomment-4641187179`）；即时核对时 CLA check 仍停留在旧 failure，等待 bot 刷新，详见 `docs/ai/context/20260607-113201-graphiti-pr-1539-cla-signature.md`。
 - 2026-07-11 候选实施复核修正：`speckit-companion#419` 与 `Aegis#2` 虽仍 open 且无重复 PR，但已被上游直接提交修复；后续机会扫描必须同时检查默认分支实现状态，不能只看 issue/PR 状态。本轮分别改为 README 安装命令跟进和 `ProfileManager` 启动回归测试。
 - 2026-07-11 主控仓库方向：将仓库改名为 `github-pr-automation`，保留扫描、执行、编排三个独立 Skill，由一个 cron 在同一次运行中串联；仓内 `skills/` 是 Skill 唯一源码，安装目录只作为同步产物。
 - 2026-07-11 自动执行授权：`值得继续` 只允许进入 live preflight；复核通过后允许 clone、fork、修改、验证、commit、push 和创建 PR，禁止自动 merge。内部记录使用中文，上游内容遵循目标仓库的主要沟通语言。
