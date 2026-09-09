@@ -1,37 +1,37 @@
 {
-  "date": "2026-09-06",
-  "generatedAt": "2026-09-05T21:14:37.678Z",
+  "date": "2026-09-09",
+  "generatedAt": "2026-09-09T21:02:31.048Z",
   "summary": {
-    "candidateCount": 11,
-    "actionableCount": 1
+    "candidateCount": 10,
+    "actionableCount": 3
   },
   "items": [
     {
       "rank": 1,
       "repository": {
-        "owner": "DietrichGebert",
-        "name": "ponytail",
-        "url": "https://github.com/DietrichGebert/ponytail",
-        "primaryLanguage": "JavaScript"
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 127782,
-        "starsAdded24h": 2171,
-        "lastUpdatedAt": "2026-09-04T12:35:29Z"
+        "starsTotal": 151471,
+        "starsAdded24h": 1,
+        "lastUpdatedAt": "2026-09-09T20:56:48Z"
       },
       "health": {
-        "license": "MIT",
+        "license": "NOASSERTION",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": false,
+        "hasContributing": true,
         "issueActivity": "active"
       },
       "opportunity": {
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(cursor): add native session-start hooks",
-          "fix(debt): include block comments in shortcut scan"
+          "fix: render mentions whose ID contains spaces or parentheses as chips",
+          "fix: stop streaming the raw reasoning tag into the thinking panel"
         ]
       },
       "risk": {
@@ -49,9 +49,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 249735,
-        "starsAdded24h": 1380,
-        "lastUpdatedAt": "2026-09-05T20:58:32Z"
+        "starsTotal": 255070,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-09T19:00:49Z"
       },
       "health": {
         "license": "MIT",
@@ -64,8 +64,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(continuous-learning-v2): require analysis completion sentinel",
-          "fix(commands): clarify overlapping command triggers"
+          "fix(block-no-verify): treat a git command line quoted as data as data, not a command",
+          "fix(gateguard): match destructive SQL passed to a database client in a quoted argument"
         ]
       },
       "risk": {
@@ -77,29 +77,29 @@
     {
       "rank": 3,
       "repository": {
-        "owner": "Graphify-Labs",
-        "name": "graphify",
-        "url": "https://github.com/Graphify-Labs/graphify",
-        "primaryLanguage": "Python"
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 115039,
-        "starsAdded24h": 309,
-        "lastUpdatedAt": "2026-09-05T00:29:44Z"
+        "starsTotal": 203870,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-09T20:50:35Z"
       },
       "health": {
-        "license": "Apache-2.0",
+        "license": "NOASSERTION",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": false,
+        "hasContributing": true,
         "issueActivity": "active"
       },
       "opportunity": {
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(watch): preserve qualified file labels in no-cluster updates",
-          "fix: resolve unmapped @/ imports in JS projects"
+          "fix(core): Trust the CA from GIT_SSL_CAINFO for source control HTTPS remotes",
+          "fix(core): Stop an unreachable external secrets provider from blocking startup"
         ]
       },
       "risk": {
@@ -117,8 +117,8 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 189195,
-        "starsAdded24h": 255,
+        "starsTotal": 189984,
+        "starsAdded24h": 0,
         "lastUpdatedAt": "2026-08-30T13:58:45Z"
       },
       "health": {
@@ -129,31 +129,34 @@
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
         "evidence": [
-          "Remove uploader from title in Twitter extractor",
-          "[utils] Deprecate `encode_compat_str`"
+          ".NO_AI/README.md",
+          ".github/workflows/build.yml",
+          ".github/workflows/challenge-tests.yml",
+          "[youtube:search] Make `playlist_count` available after whole playlist is extracted, even if `--lazy-playlist` is used",
+          "[youtube] Download subtitle of original language, not auto-dubbed ones"
         ]
       },
       "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
       },
-      "recommendation": "跳过"
+      "recommendation": "值得继续"
     },
     {
       "rank": 5,
       "repository": {
-        "owner": "farion1231",
-        "name": "cc-switch",
-        "url": "https://github.com/farion1231/cc-switch",
-        "primaryLanguage": "Rust"
+        "owner": "ohmyzsh",
+        "name": "ohmyzsh",
+        "url": "https://github.com/ohmyzsh/ohmyzsh",
+        "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 131203,
-        "starsAdded24h": 123,
-        "lastUpdatedAt": "2026-09-05T15:29:06Z"
+        "starsTotal": 189646,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-09T19:46:42Z"
       },
       "health": {
         "license": "MIT",
@@ -166,8 +169,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(codex): add evidence-based provider model verifier",
-          "fix(ui): persist last active app across restarts"
+          "feat(cli): add interactive theme browser",
+          "feat(opencode): add completion and opc aliases"
         ]
       },
       "risk": {
@@ -179,116 +182,14 @@
     {
       "rank": 6,
       "repository": {
-        "owner": "n8n-io",
-        "name": "n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "primaryLanguage": "TypeScript"
-      },
-      "popularity": {
-        "starsTotal": 203468,
-        "starsAdded24h": 110,
-        "lastUpdatedAt": "2026-09-05T19:27:03Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "refactor(core): Align Instance AI prompts and skill guidance (no-changelog)",
-          "fix(core): Merge system messages for strict providers"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 7,
-      "repository": {
-        "owner": "open-webui",
-        "name": "open-webui",
-        "url": "https://github.com/open-webui/open-webui",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 151054,
-        "starsAdded24h": 108,
-        "lastUpdatedAt": "2026-09-05T03:34:34Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "chore: keep OAuth token payloads out of logs",
-          "fix: stop the note editor date reading as a button"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 8,
-      "repository": {
-        "owner": "langgenius",
-        "name": "dify",
-        "url": "https://github.com/langgenius/dify",
-        "primaryLanguage": "TypeScript"
-      },
-      "popularity": {
-        "starsTotal": 154527,
-        "starsAdded24h": 66,
-        "lastUpdatedAt": "2026-09-05T14:52:04Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "fix(web): make isPrivateOrLocalAddress handle bracketed IPv6 and loopback ranges",
-          "fix(api): translate PluginNotFoundError / PluginDaemonNotFoundError at the ToolManager boundary"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 9,
-      "repository": {
         "owner": "Snailclimb",
         "name": "JavaGuide",
         "url": "https://github.com/Snailclimb/JavaGuide",
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 158293,
-        "starsAdded24h": 17,
+        "starsTotal": 158406,
+        "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-05T12:30:20Z"
       },
       "health": {
@@ -305,28 +206,97 @@
           ".github/workflows/test.yml",
           "README.md",
           "README_EN.md",
-          "关于数组转集合方法的第六种：使用Java9的List.of()",
-          "AOP 织入（Weaving） 的表达方式或许可以描述的更易懂一些"
+          "关于文章 `ai/agent/mcp.md` 的 MCP 2026-07-28 版本跟进",
+          "关于数组转集合方法的第六种：使用Java9的List.of()"
         ]
       },
       "risk": {
         "level": "低",
-        "reason": "改动可集中在测试或文档，且存在 CI 验证；live 复筛：账本已就 #2890/#2768/#2752 去重，无新增可处理切口"
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 155233,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-09T20:36:53Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "chore(codeowners): assign dify-agent to Yanli",
+          "feat(i18n): add Azerbaijani (az-AZ) translation"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
       },
       "recommendation": "跳过"
     },
     {
-      "rank": 10,
+      "rank": 8,
       "repository": {
-        "owner": "ohmyzsh",
-        "name": "ohmyzsh",
-        "url": "https://github.com/ohmyzsh/ohmyzsh",
-        "primaryLanguage": "Shell"
+        "owner": "DietrichGebert",
+        "name": "ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 189554,
-        "starsAdded24h": 2,
-        "lastUpdatedAt": "2026-09-05T19:54:13Z"
+        "starsTotal": 133294,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-07T16:27:01Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "quiet"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "evidence": [
+          ".github/workflows/publish.yml",
+          ".github/workflows/test.yml",
+          "README.es.md"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 9,
+      "repository": {
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 131959,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-09T14:14:10Z"
       },
       "health": {
         "license": "MIT",
@@ -339,8 +309,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(poetry-env): scope venv_dir to the activation function",
-          "fix(agnoster): respect conda changeps1 and escape env name"
+          "feat(proxy): add opt-in conversation system conversion",
+          "feat(proxy): stamp x-opencode-session for OpenCode Go upstream"
         ]
       },
       "risk": {
@@ -350,41 +320,38 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 11,
+      "rank": 10,
       "repository": {
-        "owner": "im3sanger",
-        "name": "dndscv",
-        "url": "https://github.com/im3sanger/dndscv",
-        "primaryLanguage": "R"
+        "owner": "Graphify-Labs",
+        "name": "graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 240,
+        "starsTotal": 116372,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-08-25T09:06:03Z"
+        "lastUpdatedAt": "2026-09-09T13:58:48Z"
       },
       "health": {
-        "license": "unknown",
-        "hasCi": false,
-        "hasTests": false,
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
         "hasContributing": false,
         "issueActivity": "active"
       },
       "opportunity": {
         "category": "文档缺口",
-        "summary": "README 教程链接使用不安全的 http:// htmlpreview 与内层 http:// github.com，在严格浏览器（Safari）触发混合内容拦截导致 TypeError: Load failed，应改为 https://",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "https://github.com/im3sanger/dndscv/issues/113",
-          "README.md L48: http://htmlpreview.github.io/?http://github.com/im3sanger/dndscv/blob/master/vignettes/dNdScv.html",
-          "README.md L60: http://htmlpreview.github.io/?http://github.com/im3sanger/dndscv/blob/master/vignettes/buildref.html",
-          "vignettes/dNdScv.html 与 vignettes/buildref.html 均返回 200",
-          "https 变体在浏览器中可正常渲染"
+          "fix(markdown): resolve same-page wikilink heading anchors (#3333)",
+          "fix(extract): emit a calls self-edge for direct recursion (#3350)"
         ]
       },
       "risk": {
-        "level": "低",
-        "reason": "仅改 README 两处链接协议为 https，不动代码；已在浏览器验证 https 变体正常渲染"
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
       },
-      "recommendation": "值得继续"
+      "recommendation": "跳过"
     }
   ]
 }
