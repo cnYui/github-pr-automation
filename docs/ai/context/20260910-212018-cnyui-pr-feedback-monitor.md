@@ -15,6 +15,15 @@
 - 状态：线程最后一条为维护者请求，cnYui 尚未回复。**与上一轮记录一致，仍等待用户。** 未重复评论（无签名情况下的纯回复无法推进此事）。
 - 用户下一步：在本地配置并向 GitHub 注册 cnYui 的签名密钥后，对该分支提交重签名（`git rebase --exec 'git commit --amend --no-edit -S' origin/main` 或等价方式）并 force-push；或在 PR 中与维护者沟通签名要求的替代方案。
 
+## 更新（同日 21:28，blocker 已解决）
+用户当场完成签名密钥注册后，已代为处理 akash#3817：
+- 用户操作：`gh auth refresh -s admin:ssh_signing_key` 后 `gh ssh-key add ~/.ssh/id_ed25519.pub --type signing`（把既有 ed25519 公钥注册为 GitHub 签名密钥）。
+- 本机全局配置：`gpg.format=ssh`、`user.signingkey=~/.ssh/id_ed25519.pub`、`commit.gpgsign=true`（今后 cnYui 提交默认签名）。
+- 在临时目录 clone fork 分支，对唯一提交 `git commit --amend --no-edit -S` 重签，`git push --force-with-lease`：`e1b0e68` → `5ff9e1d`（内容未变，仅加签名）。
+- GitHub API 确认 `verification.verified=true, reason=valid`。CI 已在新 head 重跑。
+- 已回复维护者 baktun14：https://github.com/akash-network/console/pull/3817#issuecomment-5618674343
+- **结论：此前的「待用户签名」blocker 已清除，PR 回到等待维护者 review 状态。**
+
 ## 无新反馈 / 已处理（26 个，摘要）
 - **ECC #3013**：cnYui 已回复 Greptile/CodeRabbit 自动审查（09-08），无新反馈。
 - **fluid #6187**：仅机器人（fluid-e2e-bot ok-to-test 门禁、codecov、sonar）；需上游成员 `/ok-to-test` 放行，属外部门禁，无人工可操作反馈。
