@@ -1,22 +1,24 @@
-# cnYui PR 反馈巡检运行记录 — 2026-09-24
+# cnYui PR 反馈巡检 — 2026-09-24
 
-## 概况
-- 认证：`gh` 已认证为 **cnYui**，token scopes 含 `repo`/`workflow`，具备跨仓读写权限。
-- 范围：`gh search prs --author cnYui --state open` 得 **40 个 open PR**（全部 OPEN，无合并/关闭）。
-- 结论：**本轮无新增可处理反馈**。未评论、未改代码、未推送任何 PR 分支。
+## 概要
+- 认证：`gh auth status` 确认为 cnYui，token scopes 含 `repo`/`workflow`，具备跨仓读写权限。
+- 巡检范围：`gh search prs --author cnYui --state open` 得 40 个 open PR，全部核验（review/issue comments、requested changes、checks、mergeable_state、合并/关闭状态）。
+- 本轮**新增可处理反馈仅 1 条**（numpyro#2286），已自动修复+推送+回复。其余 39 个 PR 要么最后一条已是 cnYui 回复、要么在等待维护者、要么为已知死路，均无需动作。
 
-## 核验方法
-对每个 PR 拉取 issue comments、reviews（含 state）、inline review comments 的最后一条作者与时间，判定最后一条相关反馈是否已是 cnYui 本人回复；对更新最新的外部 PR 额外核对 `gh pr checks` 与 reviews 状态。
+## 已自动修复并推送
+### pyro-ppl/numpyro#2286 — Dagum 分布数学文档
+- 反馈：维护者 @Qazalbash 于 2026-09-24 提交 `CHANGES_REQUESTED`，附 5 条 inline `suggestion`（LaTeX 记号：CDF/log_prob/mean/variance 改用 `\left(\frac{...}{...}\right)` 与 `\frac` 取代 `\tfrac` / `(x/b)`）。
+- 处理：在临时目录检出 `doc/gh-2187-dagum`，逐条精确应用 5 条建议（仅改 docstring 数学块；维护者未标注的 PDF 行 5760 保持不变，最小改动）。
+- 验证：`python -m py_compile numpyro/distributions/continuous.py` 通过；`git diff` 与 5 条 suggestion 逐字一致。
+- 提交：`cc4d77d`（SSH 签名），已 push 到 cnYui fork 分支 `doc/gh-2187-dagum`。
+- 回复：https://github.com/pyro-ppl/numpyro/pull/2286#issuecomment-5813900376
 
-## 判定结果
-每个 PR 的最新“人类”反馈均属以下三类之一，无需新动作：
-- **cnYui 本人已是最后回复**：ECC#3013、inside-deep-learning#22、inkeep/agents#3493、Wei-Shaw/sub2api#3453、CLIProxyAPI#3802、cua#1873、graphiti#1568、graphiti#1539、gitingest#583。
-- **仅机器人产物（非可处理反馈）**：fluid#6187（codecov 覆盖率报告）、ECC#3013（greptile，且已在其后回复）、CLIProxyAPI#3802 / cua#1873（codex / coderabbit，均已回复其后）。
-- **维护者 approve、无变更请求**：caracal-pipeline/stimela#614（JSKenyon APPROVED 2026-09-18）。
-- 其余 PR（含 cnYui 自有仓 sub2api#55、yui.web#62/#63/#64/#65、bili-station#1，及 skpro#1146/1148/1157/1158/1142、sktime#11246 等）无任何 review / 评论线程，最近的 updatedAt 来自 push/CI，无外部反馈。
+## 无需动作（抽样说明）
+- **最后一条已是 cnYui 回复**：inkeep/agents#3493（催办）、coderamp-labs/gitingest#583（keep-open）、trycua/cua#1873、affaan-m/ECC#3013、PilotLeoYan/inside-deep-learning#22、router-for-me/CLIProxyAPI#3802（已 Fixed）。
+- **已批准/等待维护者合并**：caracal-pipeline/stimela#614（JSKenyon APPROVED，无 change request）、fluid-cloudnative/fluid#6187（等 member lgtm，仅 bot 评论）。
+- **等待 review、无新反馈**：sktime/sktime#11246、sktime/skpro#1158/1157/1148/1146/1142、anthropics/skills#1281、thinking-machines-lab/tinker-cookbook#741 等。
+- **已知死路（记忆）**：getzep/graphiti#1568/#1539（CLAAssistant 6 月陈旧 check-run，重签无效，跳过）。
+- **cnYui 自有仓**：sub2api#55、yui.web#62–65、bili-station#1、personal-knowledge#4/#5 等，无外部反馈。
 
-## 值得留意（非本轮可处理）
-- **caracal-pipeline/stimela#614**：已被维护者 approve，但 `build` 在所有 Python 版本 fail。经核查失败原因是仓库既有的 `ruff` lint 报错（`tests/test_backends.py`、`test_recipe.py`、`test_backend_validation_singularity_native.py` 等），与本 PR 唯一改动 `docs/source/fundamentals/include.rst` 无关，属于仓库既有环境问题，非 cnYui 在此 docs PR 中应/可修复；`mergeable_state=unstable`，等待维护者合并。无需动作。
-
-## 安全
-本轮未在任何 PR 评论中发现指令注入 / 索取凭证 / 越权访问等内容。
+## 备注
+- 主控仓工作区含大量未提交改动与未跟踪文件；本次仅 `git add` 本运行记录单文件后提交，未触碰任何其他改动。
