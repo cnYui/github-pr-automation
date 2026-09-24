@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-24",
-  "generatedAt": "2026-09-24T01:02:15.591Z",
+  "date": "2026-09-25",
+  "generatedAt": "2026-09-24T21:08:33.848Z",
   "summary": {
     "candidateCount": 11,
     "actionableCount": 1
@@ -9,118 +9,15 @@
     {
       "rank": 1,
       "repository": {
-        "owner": "pyro-ppl",
-        "name": "numpyro",
-        "url": "https://github.com/pyro-ppl/numpyro",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 2756,
-        "starsAdded24h": 1,
-        "lastUpdatedAt": "2026-09-23T17:39:54Z"
-      },
-      "health": {
-        "license": "Apache-2.0",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "为 Dagum 分布补数学文档（类级 PDF/CDF 说明、:param: 与六个方法级 docstring），meta-issue #2187",
-        "evidence": [
-          "meta-issue #2187 中 `Dagum` 未勾选且无认领",
-          "默认分支 numpyro/distributions/continuous.py 的 Dagum docstring 位于 __init__、缺 :param: 与 log_prob/cdf/icdf/sample/mean/variance 方法级 docstring",
-          "同构已合并 PR #2279(Poisson)/#2284(Gompertz) 佐证维护者接受该文档方向"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "纯文档改动，Apache-2.0 无 CLA/DCO，公式可逐行对照实现核验，本地 ruff+py_compile 可验"
-      },
-      "recommendation": "值得继续"
-    },
-    {
-      "rank": 2,
-      "repository": {
-        "owner": "open-webui",
-        "name": "open-webui",
-        "url": "https://github.com/open-webui/open-webui",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 152945,
-        "starsAdded24h": 1,
-        "lastUpdatedAt": "2026-09-23T13:47:04Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "fix: restore tags after unarchiving all chats and remove unused ones after deleting all chats",
-          "fix: refresh an expiring OAuth token once across workers and replicas"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 3,
-      "repository": {
-        "owner": "farion1231",
-        "name": "cc-switch",
-        "url": "https://github.com/farion1231/cc-switch",
-        "primaryLanguage": "Rust"
-      },
-      "popularity": {
-        "starsTotal": 135632,
-        "starsAdded24h": 1,
-        "lastUpdatedAt": "2026-09-23T14:32:19Z"
-      },
-      "health": {
-        "license": "MIT",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "feat(usage): add model token and cost share charts",
-          "fix(usage): dedupe Codex request model aliases"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 4,
-      "repository": {
         "owner": "affaan-m",
         "name": "ECC",
         "url": "https://github.com/affaan-m/ECC",
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 266193,
+        "starsTotal": 266780,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-22T23:09:59Z"
+        "lastUpdatedAt": "2026-09-24T16:52:48Z"
       },
       "health": {
         "license": "MIT",
@@ -133,8 +30,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(opencode): add OpenCode 2 support (dual V1/V2 plugin entrypoint)",
-          "feat(antigravity): elevate Google Antigravity to Tier 1 native plugin and lifecycle hooks"
+          "feat(profiles): production acceptance for lean@1/full@1 with hybrid auto-selection",
+          "fix(mcp): pin chrome-devtools-mcp to 1.10.1 instead of @latest"
         ]
       },
       "risk": {
@@ -144,7 +41,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 5,
+      "rank": 2,
       "repository": {
         "owner": "n8n-io",
         "name": "n8n",
@@ -152,9 +49,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 205806,
+        "starsTotal": 205883,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-24T00:59:39Z"
+        "lastUpdatedAt": "2026-09-24T21:04:40Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -164,21 +61,23 @@
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
         "evidence": [
-          "feat(core): Save, update and undo a preference over MCP (no-changelog)",
-          "feat(core): Add a durable FIFO queue for agent messages"
+          ".agents/review-rules/README.md",
+          ".agents/review-rules/db-migrations/conventions-and-tests.md",
+          ".agents/review-rules/qa-dx/workflow-safety.md",
+          "MCP can create switch node with multi-condition rules, but UI cannot"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "已有相近打开中的 PR"
+        "reason": "CLA + issue-first 门禁，且 typo 类改动会被拒（恒定 blocker，见项目记忆），live 复筛不进入队列"
       },
       "recommendation": "跳过"
     },
     {
-      "rank": 6,
+      "rank": 3,
       "repository": {
         "owner": "yt-dlp",
         "name": "yt-dlp",
@@ -186,7 +85,7 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 193227,
+        "starsTotal": 193406,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-16T07:48:51Z"
       },
@@ -198,21 +97,24 @@
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
         "evidence": [
-          "[ie/soop] Fix multi-part subscription VOD downloads",
-          "[test] Update WebSocket server hang workaround"
+          ".NO_AI/README.md",
+          ".github/workflows/build.yml",
+          ".github/workflows/challenge-tests.yml",
+          "Can i load premium Youtube formats in new version yt_dlp?",
+          "can not download youtube video because age-limit"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "已有相近打开中的 PR"
+        "reason": "根目录 .NO_AI/README.md 硬禁任何 LLM/AI agent 贡献，违者封禁（永久 blocked）"
       },
       "recommendation": "跳过"
     },
     {
-      "rank": 7,
+      "rank": 4,
       "repository": {
         "owner": "ohmyzsh",
         "name": "ohmyzsh",
@@ -220,7 +122,7 @@
         "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 189890,
+        "starsTotal": 189913,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-23T00:57:31Z"
       },
@@ -235,8 +137,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(git): add alias `gsnut` for 'git status --untracked-files=no'",
-          "feat(sops): introduce sops plugin"
+          "feat(claude): add plugin for Claude Code with completion",
+          "fix: keep completion temp files out of $fpath"
         ]
       },
       "risk": {
@@ -246,7 +148,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 8,
+      "rank": 5,
       "repository": {
         "owner": "Snailclimb",
         "name": "JavaGuide",
@@ -254,7 +156,7 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 158845,
+        "starsTotal": 158857,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-22T09:58:35Z"
       },
@@ -280,7 +182,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 9,
+      "rank": 6,
       "repository": {
         "owner": "langgenius",
         "name": "dify",
@@ -288,9 +190,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 157007,
+        "starsTotal": 157112,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-24T00:14:14Z"
+        "lastUpdatedAt": "2026-09-24T13:34:55Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -303,8 +205,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "ci(test): gate new session-mock assignments in api unit tests",
-          "fix(api): batch CSV segment imports"
+          "chore(api): remove unnecessary str calls in openapi controllers",
+          "fix(workflow): persist runs synchronously before HITL pause"
         ]
       },
       "risk": {
@@ -314,7 +216,41 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 10,
+      "rank": 7,
+      "repository": {
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 153066,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-24T19:58:50Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: stop decoding Korean and Japanese text uploads as Chinese",
+          "fix(retrieval): name the link when process/url cannot fetch it"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 8,
       "repository": {
         "owner": "DietrichGebert",
         "name": "ponytail",
@@ -322,7 +258,7 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 145025,
+        "starsTotal": 145501,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-14T14:34:56Z"
       },
@@ -337,8 +273,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(opencode): support V2 plugin API via dual V1/V2 export",
-          "feat(pi): persist the ponytail ruleset as a system-prompt section on pi >= 0.86"
+          "fix(opencode): ship a verified dual V1/V2 plugin entrypoint",
+          "Fix Codex Ponytail mode instructions"
         ]
       },
       "risk": {
@@ -348,7 +284,41 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 11,
+      "rank": 9,
+      "repository": {
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 136444,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-24T18:37:28Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat(settings): make automatic CLI version checks optional",
+          "Keep Usage shortcut visible when routing is off"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 10,
       "repository": {
         "owner": "Graphify-Labs",
         "name": "graphify",
@@ -356,7 +326,7 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 120925,
+        "starsTotal": 121190,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-23T19:25:20Z"
       },
@@ -371,8 +341,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(llm): add agy-cli backend (Antigravity CLI, key-free Gemini)",
-          "feat(config): let projects declare languages for ambiguous extensions via .graphifyrc"
+          "fix: prevent non-type nodes from hijacking C# type resolution",
+          "fix(cobol): link both endpoints of a PERFORM ... THRU range"
         ]
       },
       "risk": {
@@ -380,6 +350,42 @@
         "reason": "已有相近打开中的 PR"
       },
       "recommendation": "跳过"
+    },
+    {
+      "rank": 11,
+      "repository": {
+        "owner": "pyro-ppl",
+        "name": "numpyro",
+        "url": "https://github.com/pyro-ppl/numpyro",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 2500,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-24T21:08:33.848Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "为 SoftLaplace 分布补数学文档（meta-issue #2187 未勾选项）：类级 .. math:: PDF + log_prob/sample/cdf/icdf/mean/variance 方法级 docstring，公式逐行核对源码实现",
+        "evidence": [
+          "https://github.com/pyro-ppl/numpyro/issues/2187 checklist 中 SoftLaplace 未勾选",
+          "numpyro/distributions/continuous.py:4071 SoftLaplace 类当前仅有纯文本 log-convex 描述、无 .. math::、方法无 docstring",
+          "已合并同构 PR #2286(Dagum)/#2284(Gompertz)/#2279(Poisson) 确立文档风格",
+          "无竞品 open PR（gh search prs SoftLaplace 为空）"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "纯文档改动，Apache-2.0 无 CLA，本地可 ruff+py_compile 验证，维护者近日快速 merge 同类 PR"
+      },
+      "recommendation": "值得继续"
     }
   ]
 }
