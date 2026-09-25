@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-25",
-  "generatedAt": "2026-09-24T21:08:33.848Z",
+  "date": "2026-09-26",
+  "generatedAt": "2026-09-25T21:07:32.672346Z",
   "summary": {
     "candidateCount": 11,
     "actionableCount": 1
@@ -9,13 +9,48 @@
     {
       "rank": 1,
       "repository": {
+        "owner": "williambdean",
+        "name": "conjugate",
+        "url": "https://github.com/williambdean/conjugate",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 52,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-21T21:43:33Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "示例补全",
+        "summary": "issue #294：为 helpers.py 中缺少示例的充分统计量辅助函数补齐 Google 风格 docstring 示例",
+        "evidence": [
+          "issue #294 (good first issue, docs) 明确列出 13 个缺示例函数：gamma_inputs/beta_inputs/log_normal_inputs 等",
+          "live 核验 conjugate/helpers.py：仅 poisson_gamma_inputs/bernoulli_beta_inputs/negative_binomial_beta_inputs 有 Example，其余缺失，默认分支未修复",
+          "无重复 PR（open PR #350/#349/#343/#273/#272 均无关），MIT，无 CLA，CONTRIBUTING 明确欢迎文档贡献"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "纯 docstring 文本补全，示例为 markdown 展示型非 doctest，不改运行逻辑；make test 可本地验证不回归"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 2,
+      "repository": {
         "owner": "affaan-m",
         "name": "ECC",
         "url": "https://github.com/affaan-m/ECC",
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 266780,
+        "starsTotal": 267411,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-24T16:52:48Z"
       },
@@ -30,8 +65,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(profiles): production acceptance for lean@1/full@1 with hybrid auto-selection",
-          "fix(mcp): pin chrome-devtools-mcp to 1.10.1 instead of @latest"
+          "fix(scripts): confine plan-canvas artifact assets and escape 404 paths",
+          "fix(plan-canvas): import spawn in plan-canvas and drop unused import in control-pane"
         ]
       },
       "risk": {
@@ -41,7 +76,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "repository": {
         "owner": "n8n-io",
         "name": "n8n",
@@ -49,9 +84,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 205883,
+        "starsTotal": 205965,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-24T21:04:40Z"
+        "lastUpdatedAt": "2026-09-25T20:52:39Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -67,17 +102,18 @@
           ".agents/review-rules/README.md",
           ".agents/review-rules/db-migrations/conventions-and-tests.md",
           ".agents/review-rules/qa-dx/workflow-safety.md",
-          "MCP can create switch node with multi-condition rules, but UI cannot"
+          "Codex MCP OAuth metadata discovery fails against n8n Cloud MCP server",
+          "Queue mode: workflow static data is not reloaded for new executions since #37701 ($getWorkflowStaticData is empty on every run)"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "CLA + issue-first 门禁，且 typo 类改动会被拒（恒定 blocker，见项目记忆），live 复筛不进入队列"
+        "reason": "恒定门禁：CLA + issue-first + typo 拒绝，live 复筛判定 blocker"
       },
       "recommendation": "跳过"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "repository": {
         "owner": "yt-dlp",
         "name": "yt-dlp",
@@ -85,7 +121,7 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 193406,
+        "starsTotal": 193580,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-16T07:48:51Z"
       },
@@ -103,18 +139,18 @@
           ".NO_AI/README.md",
           ".github/workflows/build.yml",
           ".github/workflows/challenge-tests.yml",
-          "Can i load premium Youtube formats in new version yt_dlp?",
-          "can not download youtube video because age-limit"
+          "[twitter] Failed to parse JSON when extracting video from X",
+          "Add expiration date from 3Cat media metadata"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "根目录 .NO_AI/README.md 硬禁任何 LLM/AI agent 贡献，违者封禁（永久 blocked）"
+        "reason": "仓库 NO_AI 政策，禁止 AI 生成贡献，恒为死路"
       },
       "recommendation": "跳过"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "repository": {
         "owner": "ohmyzsh",
         "name": "ohmyzsh",
@@ -122,7 +158,7 @@
         "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 189913,
+        "starsTotal": 189925,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-23T00:57:31Z"
       },
@@ -148,7 +184,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "repository": {
         "owner": "Snailclimb",
         "name": "JavaGuide",
@@ -156,7 +192,7 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 158857,
+        "starsTotal": 158866,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-22T09:58:35Z"
       },
@@ -182,7 +218,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "repository": {
         "owner": "langgenius",
         "name": "dify",
@@ -190,9 +226,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 157112,
+        "starsTotal": 157205,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-24T13:34:55Z"
+        "lastUpdatedAt": "2026-09-25T16:14:18Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -205,42 +241,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "chore(api): remove unnecessary str calls in openapi controllers",
-          "fix(workflow): persist runs synchronously before HITL pause"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 7,
-      "repository": {
-        "owner": "open-webui",
-        "name": "open-webui",
-        "url": "https://github.com/open-webui/open-webui",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 153066,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-24T19:58:50Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "fix: stop decoding Korean and Japanese text uploads as Chinese",
-          "fix(retrieval): name the link when process/url cannot fetch it"
+          "refactor(api): write Redis Lua scripts as typed Python functions",
+          "fix(api): negative-DST zones (Europe/Dublin) no longer stop the schedule poller"
         ]
       },
       "risk": {
@@ -252,13 +254,47 @@
     {
       "rank": 8,
       "repository": {
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 153177,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-25T05:06:56Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: foreground sub-agents cannot use personal tool servers like Open Terminal",
+          "fix: on PostgreSQL, searching automations or filtering models by a non-ASCII word finds nothing"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 9,
+      "repository": {
         "owner": "DietrichGebert",
         "name": "ponytail",
         "url": "https://github.com/DietrichGebert/ponytail",
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 145501,
+        "starsTotal": 145949,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-14T14:34:56Z"
       },
@@ -273,8 +309,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(opencode): ship a verified dual V1/V2 plugin entrypoint",
-          "Fix Codex Ponytail mode instructions"
+          "chore: drop unused assets and pi-extension tests from the npm package",
+          "Fix: update Hermes-agent hooks to remove duplicated ponytail context"
         ]
       },
       "risk": {
@@ -284,7 +320,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "repository": {
         "owner": "farion1231",
         "name": "cc-switch",
@@ -292,9 +328,9 @@
         "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 136444,
+        "starsTotal": 136828,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-24T18:37:28Z"
+        "lastUpdatedAt": "2026-09-25T15:05:10Z"
       },
       "health": {
         "license": "MIT",
@@ -307,8 +343,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(settings): make automatic CLI version checks optional",
-          "Keep Usage shortcut visible when routing is off"
+          "feat(provider): add Cheaper Inference presets",
+          "fix: keep preset search query when clicking form fields below"
         ]
       },
       "risk": {
@@ -318,7 +354,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "repository": {
         "owner": "Graphify-Labs",
         "name": "graphify",
@@ -326,9 +362,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 121190,
+        "starsTotal": 121429,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-23T19:25:20Z"
+        "lastUpdatedAt": "2026-09-25T15:33:45Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -341,8 +377,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix: prevent non-type nodes from hijacking C# type resolution",
-          "fix(cobol): link both endpoints of a PERFORM ... THRU range"
+          "fix(julia): extract macro definitions and @enum types",
+          "fix(fortran): link type-bound procedures to their derived type"
         ]
       },
       "risk": {
@@ -350,42 +386,6 @@
         "reason": "已有相近打开中的 PR"
       },
       "recommendation": "跳过"
-    },
-    {
-      "rank": 11,
-      "repository": {
-        "owner": "pyro-ppl",
-        "name": "numpyro",
-        "url": "https://github.com/pyro-ppl/numpyro",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 2500,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-24T21:08:33.848Z"
-      },
-      "health": {
-        "license": "Apache-2.0",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "为 SoftLaplace 分布补数学文档（meta-issue #2187 未勾选项）：类级 .. math:: PDF + log_prob/sample/cdf/icdf/mean/variance 方法级 docstring，公式逐行核对源码实现",
-        "evidence": [
-          "https://github.com/pyro-ppl/numpyro/issues/2187 checklist 中 SoftLaplace 未勾选",
-          "numpyro/distributions/continuous.py:4071 SoftLaplace 类当前仅有纯文本 log-convex 描述、无 .. math::、方法无 docstring",
-          "已合并同构 PR #2286(Dagum)/#2284(Gompertz)/#2279(Poisson) 确立文档风格",
-          "无竞品 open PR（gh search prs SoftLaplace 为空）"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "纯文档改动，Apache-2.0 无 CLA，本地可 ruff+py_compile 验证，维护者近日快速 merge 同类 PR"
-      },
-      "recommendation": "值得继续"
     }
   ]
 }
