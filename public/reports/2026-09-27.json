@@ -1,8 +1,8 @@
 {
-  "date": "2026-09-26",
-  "generatedAt": "2026-09-26T21:04:45.859Z",
+  "date": "2026-09-27",
+  "generatedAt": "2026-09-26T21:12:54.985Z",
   "summary": {
-    "candidateCount": 10,
+    "candidateCount": 11,
     "actionableCount": 1
   },
   "items": [
@@ -106,10 +106,10 @@
         ]
       },
       "risk": {
-        "level": "低",
-        "reason": "改动可集中在测试或文档，且存在 CI 验证"
+        "level": "高",
+        "reason": "仓库根目录存在 .NO_AI/ 明确拒绝 AI 生成贡献，贡献门禁=blocked"
       },
-      "recommendation": "值得继续"
+      "recommendation": "跳过"
     },
     {
       "rank": 4,
@@ -348,6 +348,42 @@
         "reason": "已有相近打开中的 PR"
       },
       "recommendation": "跳过"
+    },
+    {
+      "rank": 11,
+      "repository": {
+        "owner": "sktime",
+        "name": "skpro",
+        "url": "https://github.com/sktime/skpro",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 265,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-25T07:53:39Z"
+      },
+      "health": {
+        "license": "BSD-3-Clause",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "示例补全",
+        "summary": "good-first-issue #1135：为缺少 docstring 用法示例的 scikit-base 对象补 numpydoc Examples 并移除 test_class_has_doctest_example 跳过标签。ConstraintViolation 指标当前无示例、无开放 PR、issue 评论区未被认领。",
+        "evidence": [
+          "skpro/metrics/_constraint_violation.py 含 tests:skip_by_name:[\"test_class_has_doctest_example\"] 且 docstring 无 >>>",
+          "issue #1135 open (good first issue)",
+          "open PR 列表未覆盖 ConstraintViolation",
+          "兄弟指标 EmpiricalCoverage PR #1155 提供已被接受的示例风格"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "仅改单个指标 docstring 与标签，本地可用 pytest 运行 doctest 验证，无 CLA"
+      },
+      "recommendation": "值得继续"
     }
   ]
 }

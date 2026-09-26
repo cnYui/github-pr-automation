@@ -1,48 +1,13 @@
 {
   "date": "2026-09-26",
-  "generatedAt": "2026-09-25T21:07:32.672346Z",
+  "generatedAt": "2026-09-26T21:04:45.859Z",
   "summary": {
-    "candidateCount": 11,
+    "candidateCount": 10,
     "actionableCount": 1
   },
   "items": [
     {
       "rank": 1,
-      "repository": {
-        "owner": "williambdean",
-        "name": "conjugate",
-        "url": "https://github.com/williambdean/conjugate",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 52,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-21T21:43:33Z"
-      },
-      "health": {
-        "license": "MIT",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "示例补全",
-        "summary": "issue #294：为 helpers.py 中缺少示例的充分统计量辅助函数补齐 Google 风格 docstring 示例",
-        "evidence": [
-          "issue #294 (good first issue, docs) 明确列出 13 个缺示例函数：gamma_inputs/beta_inputs/log_normal_inputs 等",
-          "live 核验 conjugate/helpers.py：仅 poisson_gamma_inputs/bernoulli_beta_inputs/negative_binomial_beta_inputs 有 Example，其余缺失，默认分支未修复",
-          "无重复 PR（open PR #350/#349/#343/#273/#272 均无关），MIT，无 CLA，CONTRIBUTING 明确欢迎文档贡献"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "纯 docstring 文本补全，示例为 markdown 展示型非 doctest，不改运行逻辑；make test 可本地验证不回归"
-      },
-      "recommendation": "值得继续"
-    },
-    {
-      "rank": 2,
       "repository": {
         "owner": "affaan-m",
         "name": "ECC",
@@ -50,8 +15,8 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 267411,
-        "starsAdded24h": 0,
+        "starsTotal": 267889,
+        "starsAdded24h": 2,
         "lastUpdatedAt": "2026-09-24T16:52:48Z"
       },
       "health": {
@@ -76,7 +41,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 3,
+      "rank": 2,
       "repository": {
         "owner": "n8n-io",
         "name": "n8n",
@@ -84,9 +49,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 205965,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-25T20:52:39Z"
+        "starsTotal": 206045,
+        "starsAdded24h": 1,
+        "lastUpdatedAt": "2026-09-26T20:54:23Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -96,24 +61,21 @@
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "测试补充",
-        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          ".agents/review-rules/README.md",
-          ".agents/review-rules/db-migrations/conventions-and-tests.md",
-          ".agents/review-rules/qa-dx/workflow-safety.md",
-          "Codex MCP OAuth metadata discovery fails against n8n Cloud MCP server",
-          "Queue mode: workflow static data is not reloaded for new executions since #37701 ($getWorkflowStaticData is empty on every run)"
+          "refactor(core): Extract webhook additional data setup (no-changelog)",
+          "fix(nodes): Propagate MCP tool errors"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "恒定门禁：CLA + issue-first + typo 拒绝，live 复筛判定 blocker"
+        "reason": "已有相近打开中的 PR"
       },
       "recommendation": "跳过"
     },
     {
-      "rank": 4,
+      "rank": 3,
       "repository": {
         "owner": "yt-dlp",
         "name": "yt-dlp",
@@ -121,7 +83,7 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 193580,
+        "starsTotal": 193753,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-16T07:48:51Z"
       },
@@ -139,18 +101,18 @@
           ".NO_AI/README.md",
           ".github/workflows/build.yml",
           ".github/workflows/challenge-tests.yml",
-          "[twitter] Failed to parse JSON when extracting video from X",
-          "Add expiration date from 3Cat media metadata"
+          "Multiple sources shown when attempting to install with winget, possible malicious lookalike package",
+          "[youporn] for https sources yt-dlp says \"410 gone\""
         ]
       },
       "risk": {
-        "level": "高",
-        "reason": "仓库 NO_AI 政策，禁止 AI 生成贡献，恒为死路"
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
       },
-      "recommendation": "跳过"
+      "recommendation": "值得继续"
     },
     {
-      "rank": 5,
+      "rank": 4,
       "repository": {
         "owner": "ohmyzsh",
         "name": "ohmyzsh",
@@ -158,7 +120,7 @@
         "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 189925,
+        "starsTotal": 189949,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-23T00:57:31Z"
       },
@@ -173,8 +135,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(claude): add plugin for Claude Code with completion",
-          "fix: keep completion temp files out of $fpath"
+          "feat(nvm): put default node on PATH in lazy mode",
+          "fix(lib): protect omz_urlencode's zparseopts specs from global aliases"
         ]
       },
       "risk": {
@@ -184,7 +146,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "repository": {
         "owner": "Snailclimb",
         "name": "JavaGuide",
@@ -192,7 +154,7 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 158866,
+        "starsTotal": 158892,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-22T09:58:35Z"
       },
@@ -218,7 +180,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 7,
+      "rank": 6,
       "repository": {
         "owner": "langgenius",
         "name": "dify",
@@ -226,9 +188,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 157205,
+        "starsTotal": 157277,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-25T16:14:18Z"
+        "lastUpdatedAt": "2026-09-26T18:41:17Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -241,8 +203,42 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "refactor(api): write Redis Lua scripts as typed Python functions",
-          "fix(api): negative-DST zones (Europe/Dublin) no longer stop the schedule poller"
+          "fix(tools): apply path-level OpenAPI parameters to custom tool operations",
+          "chore(api): bump minimum supported Python to 3.13"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 153247,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-26T03:28:13Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "refac: check the owner's role before continuing a chat after a subagent finishes",
+          "fix: backslashes in uploaded HTML files turn into line breaks or break the upload"
         ]
       },
       "risk": {
@@ -254,47 +250,13 @@
     {
       "rank": 8,
       "repository": {
-        "owner": "open-webui",
-        "name": "open-webui",
-        "url": "https://github.com/open-webui/open-webui",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 153177,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-25T05:06:56Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "fix: foreground sub-agents cannot use personal tool servers like Open Terminal",
-          "fix: on PostgreSQL, searching automations or filtering models by a non-ASCII word finds nothing"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 9,
-      "repository": {
         "owner": "DietrichGebert",
         "name": "ponytail",
         "url": "https://github.com/DietrichGebert/ponytail",
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 145949,
+        "starsTotal": 146436,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-14T14:34:56Z"
       },
@@ -309,8 +271,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "chore: drop unused assets and pi-extension tests from the npm package",
-          "Fix: update Hermes-agent hooks to remove duplicated ponytail context"
+          "Port the OpenCode plugin to the OpenCode 2 plugin API",
+          "fix(pi): expand the skill aliases and forward their arguments"
         ]
       },
       "risk": {
@@ -320,7 +282,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 10,
+      "rank": 9,
       "repository": {
         "owner": "farion1231",
         "name": "cc-switch",
@@ -328,9 +290,9 @@
         "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 136828,
+        "starsTotal": 137154,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-25T15:05:10Z"
+        "lastUpdatedAt": "2026-09-26T07:36:23Z"
       },
       "health": {
         "license": "MIT",
@@ -343,8 +305,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(provider): add Cheaper Inference presets",
-          "fix: keep preset search query when clicking form fields below"
+          "feat(settings): add Codex repair tools for the plugin store and auth.json",
+          "feat: add BeatAPI Codex provider preset"
         ]
       },
       "risk": {
@@ -354,7 +316,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 11,
+      "rank": 10,
       "repository": {
         "owner": "Graphify-Labs",
         "name": "graphify",
@@ -362,9 +324,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 121429,
+        "starsTotal": 121654,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-25T15:33:45Z"
+        "lastUpdatedAt": "2026-09-26T18:16:59Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -377,8 +339,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(julia): extract macro definitions and @enum types",
-          "fix(fortran): link type-bound procedures to their derived type"
+          "fix(python): resolve nested scan-root imports via namespace projection (#3843)",
+          "feat(mcp): improve retrieval quality with phrase bonus, community coherence, and evidence-first truncation (#3810)"
         ]
       },
       "risk": {
