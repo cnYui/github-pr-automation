@@ -1,8 +1,8 @@
 {
-  "date": "2026-09-26",
-  "generatedAt": "2026-09-26T21:04:45.859Z",
+  "date": "2026-09-28",
+  "generatedAt": "2026-09-27T21:08:13.926Z",
   "summary": {
-    "candidateCount": 10,
+    "candidateCount": 11,
     "actionableCount": 1
   },
   "items": [
@@ -15,8 +15,8 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 267889,
-        "starsAdded24h": 2,
+        "starsTotal": 268337,
+        "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-24T16:52:48Z"
       },
       "health": {
@@ -30,8 +30,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(scripts): confine plan-canvas artifact assets and escape 404 paths",
-          "fix(plan-canvas): import spawn in plan-canvas and drop unused import in control-pane"
+          "feat: add custom OG social preview image for ECC",
+          "docs: fix prerequisites in manual install examples"
         ]
       },
       "risk": {
@@ -49,9 +49,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 206045,
-        "starsAdded24h": 1,
-        "lastUpdatedAt": "2026-09-26T20:54:23Z"
+        "starsTotal": 206126,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-27T20:29:01Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -64,8 +64,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "refactor(core): Extract webhook additional data setup (no-changelog)",
-          "fix(nodes): Propagate MCP tool errors"
+          "refactor(core): Separate webhook no-response callback (no-changelog)",
+          "test: Remove redundant E2E page loads and the fixed reset delay (no-changelog)"
         ]
       },
       "risk": {
@@ -83,9 +83,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 193753,
+        "starsTotal": 193954,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-16T07:48:51Z"
+        "lastUpdatedAt": "2026-09-27T20:17:39Z"
       },
       "health": {
         "license": "Unlicense",
@@ -96,20 +96,20 @@
       },
       "opportunity": {
         "category": "测试补充",
-        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "summary": "根目录 .NO_AI/README.md 硬禁任何 LLM/AI agent 贡献，违者封禁",
         "evidence": [
           ".NO_AI/README.md",
           ".github/workflows/build.yml",
           ".github/workflows/challenge-tests.yml",
-          "Multiple sources shown when attempting to install with winget, possible malicious lookalike package",
+          "Why is the language used in the generated file name different from the language of the webpage title after downloading?",
           "[youporn] for https sources yt-dlp says \"410 gone\""
         ]
       },
       "risk": {
-        "level": "低",
-        "reason": "改动可集中在测试或文档，且存在 CI 验证"
+        "level": "高",
+        "reason": "live 复筛：.NO_AI 明确禁止 AI 代理贡献，永久 blocked"
       },
-      "recommendation": "值得继续"
+      "recommendation": "跳过"
     },
     {
       "rank": 4,
@@ -120,9 +120,9 @@
         "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 189949,
+        "starsTotal": 189961,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-23T00:57:31Z"
+        "lastUpdatedAt": "2026-09-27T12:53:47Z"
       },
       "health": {
         "license": "MIT",
@@ -135,8 +135,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(nvm): put default node on PATH in lazy mode",
-          "fix(lib): protect omz_urlencode's zparseopts specs from global aliases"
+          "chore(deps): bump github/codeql-action/upload-sarif from 4.38.0 to 4.38.2 in the gha-minor group",
+          "chore(deps): bump idna from 3.19 to 3.20 in /.github/workflows/dependencies in the py-minor group"
         ]
       },
       "risk": {
@@ -154,7 +154,7 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 158892,
+        "starsTotal": 158914,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-22T09:58:35Z"
       },
@@ -188,9 +188,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 157277,
+        "starsTotal": 157337,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-26T18:41:17Z"
+        "lastUpdatedAt": "2026-09-27T17:19:54Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -203,8 +203,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(tools): apply path-level OpenAPI parameters to custom tool operations",
-          "chore(api): bump minimum supported Python to 3.13"
+          "refactor(web): redesign icon picker and clarify autocomplete highlighting",
+          "refactor(api): inject TextToSpeechVoiceQuery into agent TTS voices via the decorator"
         ]
       },
       "risk": {
@@ -222,9 +222,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 153247,
+        "starsTotal": 153361,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-26T03:28:13Z"
+        "lastUpdatedAt": "2026-09-27T20:14:39Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -237,8 +237,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "refac: check the owner's role before continuing a chat after a subagent finishes",
-          "fix: backslashes in uploaded HTML files turn into line breaks or break the upload"
+          "fix: new chat keeps showing \"New Chat\" until reload when it is titled with its first message",
+          "refac: only open web, mail, phone and relative file links"
         ]
       },
       "risk": {
@@ -256,7 +256,7 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 146436,
+        "starsTotal": 146870,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-14T14:34:56Z"
       },
@@ -290,7 +290,7 @@
         "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 137154,
+        "starsTotal": 137477,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-26T07:36:23Z"
       },
@@ -305,8 +305,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(settings): add Codex repair tools for the plugin store and auth.json",
-          "feat: add BeatAPI Codex provider preset"
+          "feat(ui): add brand SVGs for self-hosted gateway presets + RFC 0001",
+          "feat(codex): self-hosted llm-gateway-go presets + end-to-end catalog regression"
         ]
       },
       "risk": {
@@ -324,9 +324,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 121654,
+        "starsTotal": 121853,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-26T18:16:59Z"
+        "lastUpdatedAt": "2026-09-27T20:42:29Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -339,8 +339,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(python): resolve nested scan-root imports via namespace projection (#3843)",
-          "feat(mcp): improve retrieval quality with phrase bonus, community coherence, and evidence-first truncation (#3810)"
+          "fix(ingest): rewrite only the host when normalizing a tweet URL for oEmbed",
+          "fix(detect): keep foreign manifest keys in their own path syntax"
         ]
       },
       "risk": {
@@ -348,6 +348,41 @@
         "reason": "已有相近打开中的 PR"
       },
       "recommendation": "跳过"
+    },
+    {
+      "rank": 11,
+      "repository": {
+        "owner": "pyro-ppl",
+        "name": "numpyro",
+        "url": "https://github.com/pyro-ppl/numpyro",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 2757,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-24T16:02:44Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "meta-issue #2187：为 Delta 分布补数学说明与方法级 docstring（当前完全无 docstring）",
+        "evidence": [
+          "issues/2187 清单中 Delta 仍未勾选（Categorical/Delta/Geometric/Multinomial 均未做）",
+          "numpyro/distributions/distribution.py:1363 class Delta 无类级/方法级 docstring",
+          "同构切口 Poisson #2279 / Gompertz #2284 / Dagum #2286 已被维护者合并"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "纯文档增量、Apache-2.0 无 CLA、可本地 ruff+py_compile 验证、无重复 PR"
+      },
+      "recommendation": "值得继续"
     }
   ]
 }
