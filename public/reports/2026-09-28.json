@@ -1,37 +1,37 @@
 {
   "date": "2026-09-28",
-  "generatedAt": "2026-09-27T21:08:13.926Z",
+  "generatedAt": "2026-09-28T23:28:28.523Z",
   "summary": {
-    "candidateCount": 11,
-    "actionableCount": 1
+    "candidateCount": 10,
+    "actionableCount": 3
   },
   "items": [
     {
       "rank": 1,
       "repository": {
-        "owner": "affaan-m",
-        "name": "ECC",
-        "url": "https://github.com/affaan-m/ECC",
+        "owner": "DietrichGebert",
+        "name": "ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 268337,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-24T16:52:48Z"
+        "starsTotal": 147535,
+        "starsAdded24h": 1,
+        "lastUpdatedAt": "2026-09-14T14:34:56Z"
       },
       "health": {
         "license": "MIT",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": true,
+        "hasContributing": false,
         "issueActivity": "active"
       },
       "opportunity": {
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat: add custom OG social preview image for ECC",
-          "docs: fix prerequisites in manual install examples"
+          "fix: keep Ponytail diffs scoped",
+          "Port the OpenCode plugin to the OpenCode 2 plugin API"
         ]
       },
       "risk": {
@@ -43,15 +43,52 @@
     {
       "rank": 2,
       "repository": {
+        "owner": "affaan-m",
+        "name": "ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 268965,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-28T11:26:13Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "evidence": [
+          ".adal/README.md",
+          ".agents/skills/agent-introspection-debugging/SKILL.md",
+          ".agents/skills/agent-introspection-debugging/agents/openai.yaml",
+          "ECC Not installing",
+          "[Copilot]"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 3,
+      "repository": {
         "owner": "n8n-io",
         "name": "n8n",
         "url": "https://github.com/n8n-io/n8n",
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 206126,
+        "starsTotal": 206221,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-27T20:29:01Z"
+        "lastUpdatedAt": "2026-09-28T22:45:13Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -61,21 +98,23 @@
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
         "evidence": [
-          "refactor(core): Separate webhook no-response callback (no-changelog)",
-          "test: Remove redundant E2E page loads and the fixed reset delay (no-changelog)"
+          ".agents/review-rules/README.md",
+          ".agents/review-rules/db-migrations/conventions-and-tests.md",
+          ".agents/review-rules/qa-dx/workflow-safety.md",
+          "Vulnerability report form (n8n.io/report-a-vulnerability) fails on submit: \"Edge Function returned a non-2xx status code\""
         ]
       },
       "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
       },
-      "recommendation": "跳过"
+      "recommendation": "值得继续"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "repository": {
         "owner": "yt-dlp",
         "name": "yt-dlp",
@@ -83,9 +122,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 193954,
+        "starsTotal": 194152,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-27T20:17:39Z"
+        "lastUpdatedAt": "2026-09-27T22:09:13Z"
       },
       "health": {
         "license": "Unlicense",
@@ -96,23 +135,23 @@
       },
       "opportunity": {
         "category": "测试补充",
-        "summary": "根目录 .NO_AI/README.md 硬禁任何 LLM/AI agent 贡献，违者封禁",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
         "evidence": [
           ".NO_AI/README.md",
           ".github/workflows/build.yml",
           ".github/workflows/challenge-tests.yml",
-          "Why is the language used in the generated file name different from the language of the webpage title after downloading?",
-          "[youporn] for https sources yt-dlp says \"410 gone\""
+          "support downloading from upscrolled.com",
+          "How to download video with age"
         ]
       },
       "risk": {
-        "level": "高",
-        "reason": "live 复筛：.NO_AI 明确禁止 AI 代理贡献，永久 blocked"
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
       },
-      "recommendation": "跳过"
+      "recommendation": "值得继续"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "repository": {
         "owner": "ohmyzsh",
         "name": "ohmyzsh",
@@ -120,9 +159,9 @@
         "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 189961,
+        "starsTotal": 189981,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-27T12:53:47Z"
+        "lastUpdatedAt": "2026-09-28T11:22:49Z"
       },
       "health": {
         "license": "MIT",
@@ -135,8 +174,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "chore(deps): bump github/codeql-action/upload-sarif from 4.38.0 to 4.38.2 in the gha-minor group",
-          "chore(deps): bump idna from 3.19 to 3.20 in /.github/workflows/dependencies in the py-minor group"
+          "fix(sops): correct completion command",
+          "docs(drush): fix `drdmp` expansion in README"
         ]
       },
       "risk": {
@@ -146,7 +185,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "repository": {
         "owner": "Snailclimb",
         "name": "JavaGuide",
@@ -154,7 +193,7 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 158914,
+        "starsTotal": 158938,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-22T09:58:35Z"
       },
@@ -180,7 +219,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "repository": {
         "owner": "langgenius",
         "name": "dify",
@@ -188,9 +227,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 157337,
+        "starsTotal": 157431,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-27T17:19:54Z"
+        "lastUpdatedAt": "2026-09-28T19:04:10Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -203,42 +242,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "refactor(web): redesign icon picker and clarify autocomplete highlighting",
-          "refactor(api): inject TextToSpeechVoiceQuery into agent TTS voices via the decorator"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 7,
-      "repository": {
-        "owner": "open-webui",
-        "name": "open-webui",
-        "url": "https://github.com/open-webui/open-webui",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 153361,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-27T20:14:39Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "fix: new chat keeps showing \"New Chat\" until reload when it is titled with its first message",
-          "refac: only open web, mail, phone and relative file links"
+          "fix(rag): detect encoding when the sample ends inside a multi-byte character",
+          "chore(deps): bump undici to 8.11.2"
         ]
       },
       "risk": {
@@ -250,29 +255,29 @@
     {
       "rank": 8,
       "repository": {
-        "owner": "DietrichGebert",
-        "name": "ponytail",
-        "url": "https://github.com/DietrichGebert/ponytail",
-        "primaryLanguage": "JavaScript"
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 146870,
+        "starsTotal": 153453,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-14T14:34:56Z"
+        "lastUpdatedAt": "2026-09-28T03:59:54Z"
       },
       "health": {
-        "license": "MIT",
+        "license": "NOASSERTION",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": false,
+        "hasContributing": true,
         "issueActivity": "active"
       },
       "opportunity": {
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "Port the OpenCode plugin to the OpenCode 2 plugin API",
-          "fix(pi): expand the skill aliases and forward their arguments"
+          "fix: OpenAPI tool servers stop working when plugins are disabled",
+          "fix: question and answer vanish from the chat when a background sub-agent finishes before the answer"
         ]
       },
       "risk": {
@@ -290,9 +295,9 @@
         "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 137477,
+        "starsTotal": 138111,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-26T07:36:23Z"
+        "lastUpdatedAt": "2026-09-28T08:22:09Z"
       },
       "health": {
         "license": "MIT",
@@ -305,8 +310,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(ui): add brand SVGs for self-hosted gateway presets + RFC 0001",
-          "feat(codex): self-hosted llm-gateway-go presets + end-to-end catalog regression"
+          "fix(proxy): strip inline <think>/<thinking> blocks on the Claude SSE path",
+          "fix(usage): keep Gemini streaming model attribution and accept Vertex token counts"
         ]
       },
       "risk": {
@@ -324,9 +329,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 121853,
+        "starsTotal": 122148,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-27T20:42:29Z"
+        "lastUpdatedAt": "2026-09-28T08:28:51Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -339,8 +344,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(ingest): rewrite only the host when normalizing a tweet URL for oEmbed",
-          "fix(detect): keep foreign manifest keys in their own path syntax"
+          "fix(vbnet): resolve type/module-qualified calls to their target method",
+          "fix(razor): extract methods from @functions blocks, not just @code"
         ]
       },
       "risk": {
@@ -348,41 +353,6 @@
         "reason": "已有相近打开中的 PR"
       },
       "recommendation": "跳过"
-    },
-    {
-      "rank": 11,
-      "repository": {
-        "owner": "pyro-ppl",
-        "name": "numpyro",
-        "url": "https://github.com/pyro-ppl/numpyro",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 2757,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-24T16:02:44Z"
-      },
-      "health": {
-        "license": "Apache-2.0",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "meta-issue #2187：为 Delta 分布补数学说明与方法级 docstring（当前完全无 docstring）",
-        "evidence": [
-          "issues/2187 清单中 Delta 仍未勾选（Categorical/Delta/Geometric/Multinomial 均未做）",
-          "numpyro/distributions/distribution.py:1363 class Delta 无类级/方法级 docstring",
-          "同构切口 Poisson #2279 / Gompertz #2284 / Dagum #2286 已被维护者合并"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "纯文档增量、Apache-2.0 无 CLA、可本地 ruff+py_compile 验证、无重复 PR"
-      },
-      "recommendation": "值得继续"
     }
   ]
 }
