@@ -1,85 +1,13 @@
 {
-  "date": "2026-09-29",
-  "generatedAt": "2026-09-28T23:38:36.181Z",
+  "date": "2026-09-30",
+  "generatedAt": "2026-09-29T21:23:38.004Z",
   "summary": {
     "candidateCount": 12,
-    "actionableCount": 2
+    "actionableCount": 1
   },
   "items": [
     {
       "rank": 1,
-      "repository": {
-        "owner": "sktime",
-        "name": "skpro",
-        "url": "https://github.com/sktime/skpro",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 336,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-27T21:13:01Z"
-      },
-      "health": {
-        "license": "BSD-3-Clause",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "示例补全",
-        "summary": "为 AUCalibration 指标 docstring 补充可运行 numpydoc 用法示例并移除 doctest 跳过标记（issue #1135）",
-        "evidence": [
-          "skpro/metrics/_aucc.py 携带 tests:skip_by_name test_class_has_doctest_example",
-          "issue #1135 good first issue/documentation",
-          "模板 PR #1154(CRPS)/#1152(LogLoss) 同族风格",
-          "AUCalibration 无 >>> 示例且无重复 PR"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "仅在 docstring 增加示例并移除跳过标记，doctest 本地可完整验证"
-      },
-      "recommendation": "值得继续"
-    },
-    {
-      "rank": 2,
-      "repository": {
-        "owner": "sktime",
-        "name": "skpro",
-        "url": "https://github.com/sktime/skpro",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 336,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-27T21:13:01Z"
-      },
-      "health": {
-        "license": "BSD-3-Clause",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "示例补全",
-        "summary": "为 LinearizedLogLoss 指标 docstring 补充可运行 numpydoc 用法示例并移除 doctest 跳过标记（issue #1135）",
-        "evidence": [
-          "skpro/metrics/_logloss_linearized.py 携带 tests:skip_by_name test_class_has_doctest_example",
-          "issue #1135 good first issue/documentation",
-          "模板 PR #1154(CRPS)/#1152(LogLoss) 同族风格",
-          "LinearizedLogLoss 无 >>> 示例且无重复 PR"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "仅在 docstring 增加示例并移除跳过标记，doctest 本地可完整验证"
-      },
-      "recommendation": "值得继续"
-    },
-    {
-      "rank": 3,
       "repository": {
         "owner": "DietrichGebert",
         "name": "ponytail",
@@ -87,7 +15,7 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 147535,
+        "starsTotal": 148138,
         "starsAdded24h": 1,
         "lastUpdatedAt": "2026-09-14T14:34:56Z"
       },
@@ -102,8 +30,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix: keep Ponytail diffs scoped",
-          "Port the OpenCode plugin to the OpenCode 2 plugin API"
+          "docs: add a 20-second launch video to the README",
+          "feat: add V2 plugin entrypoint"
         ]
       },
       "risk": {
@@ -113,7 +41,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 4,
+      "rank": 2,
       "repository": {
         "owner": "affaan-m",
         "name": "ECC",
@@ -121,119 +49,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 268965,
+        "starsTotal": 269575,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-28T11:26:13Z"
-      },
-      "health": {
-        "license": "MIT",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "测试补充",
-        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
-        "evidence": [
-          ".adal/README.md",
-          ".agents/skills/agent-introspection-debugging/SKILL.md",
-          ".agents/skills/agent-introspection-debugging/agents/openai.yaml",
-          "ECC Not installing",
-          "[Copilot]"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "live preflight：#3214 已在默认分支修复(claude-scope-migration.js 已移除 --config)；#3236 属安装流程中风险重构；仓库 100+ open PR 积压且 AI 门禁繁重，无干净最小切口"
-      },
-      "recommendation": "谨慎"
-    },
-    {
-      "rank": 5,
-      "repository": {
-        "owner": "n8n-io",
-        "name": "n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "primaryLanguage": "TypeScript"
-      },
-      "popularity": {
-        "starsTotal": 206221,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-28T22:45:13Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "测试补充",
-        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
-        "evidence": [
-          ".agents/review-rules/README.md",
-          ".agents/review-rules/db-migrations/conventions-and-tests.md",
-          ".agents/review-rules/qa-dx/workflow-safety.md",
-          "Vulnerability report form (n8n.io/report-a-vulnerability) fails on submit: \"Edge Function returned a non-2xx status code\""
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "live preflight：CLA + issue-first + typo 拒绝恒定门禁，历史已多次确认为 blocker"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 6,
-      "repository": {
-        "owner": "yt-dlp",
-        "name": "yt-dlp",
-        "url": "https://github.com/yt-dlp/yt-dlp",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 194152,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-27T22:09:13Z"
-      },
-      "health": {
-        "license": "Unlicense",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "测试补充",
-        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
-        "evidence": [
-          ".NO_AI/README.md",
-          ".github/workflows/build.yml",
-          ".github/workflows/challenge-tests.yml",
-          "support downloading from upscrolled.com",
-          "How to download video with age"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "live preflight：仓库根 .NO_AI/README.md 明确禁止 AI 生成贡献"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 7,
-      "repository": {
-        "owner": "ohmyzsh",
-        "name": "ohmyzsh",
-        "url": "https://github.com/ohmyzsh/ohmyzsh",
-        "primaryLanguage": "Shell"
-      },
-      "popularity": {
-        "starsTotal": 189981,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-28T11:22:49Z"
+        "lastUpdatedAt": "2026-09-29T19:08:37Z"
       },
       "health": {
         "license": "MIT",
@@ -246,8 +64,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(sops): correct completion command",
-          "docs(drush): fix `drdmp` expansion in README"
+          "docs: add a 20-second launch video to the README",
+          "chore: align repo config with Claude Code best practices"
         ]
       },
       "risk": {
@@ -257,7 +75,109 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 8,
+      "rank": 3,
+      "repository": {
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 206297,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-29T19:30:55Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "test(Dropbox Node): Add coverage for file, folder, and search operations (no-changelog)",
+          "fix(core): Apply the credential type policy to credential tests and probes"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "yt-dlp",
+        "name": "yt-dlp",
+        "url": "https://github.com/yt-dlp/yt-dlp",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 194353,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-27T22:09:13Z"
+      },
+      "health": {
+        "license": "Unlicense",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "[ie/odnoklassniki] Fix boosty direct link extraction",
+          "[ie/youtube] Fix `tv_downgraded` client identification"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "ohmyzsh",
+        "name": "ohmyzsh",
+        "url": "https://github.com/ohmyzsh/ohmyzsh",
+        "primaryLanguage": "Shell"
+      },
+      "popularity": {
+        "starsTotal": 189988,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-29T15:38:41Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat!: Add support for \"iw\" command",
+          "fix(dirhistory): fix typo in push_future duplicate check"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 6,
       "repository": {
         "owner": "Snailclimb",
         "name": "JavaGuide",
@@ -265,7 +185,7 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 158938,
+        "starsTotal": 158959,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-22T09:58:35Z"
       },
@@ -291,7 +211,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 9,
+      "rank": 7,
       "repository": {
         "owner": "langgenius",
         "name": "dify",
@@ -299,9 +219,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 157431,
+        "starsTotal": 157522,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-28T19:04:10Z"
+        "lastUpdatedAt": "2026-09-29T16:22:52Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -314,8 +234,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(rag): detect encoding when the sample ends inside a multi-byte character",
-          "chore(deps): bump undici to 8.11.2"
+          "fix(api): use per-credential cache for tool dynamic-select options",
+          "fix: clear incompatible defaults when switching to file inputs"
         ]
       },
       "risk": {
@@ -325,7 +245,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 10,
+      "rank": 8,
       "repository": {
         "owner": "open-webui",
         "name": "open-webui",
@@ -333,9 +253,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 153453,
+        "starsTotal": 153552,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-28T03:59:54Z"
+        "lastUpdatedAt": "2026-09-29T16:25:29Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -348,8 +268,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix: OpenAPI tool servers stop working when plugins are disabled",
-          "fix: question and answer vanish from the chat when a background sub-agent finishes before the answer"
+          "fix: replies stop reaching other instances when the Redis user is limited by an ACL",
+          "perf: use the faster JSON encoder by default"
         ]
       },
       "risk": {
@@ -359,7 +279,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 11,
+      "rank": 9,
       "repository": {
         "owner": "farion1231",
         "name": "cc-switch",
@@ -367,9 +287,9 @@
         "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 138111,
+        "starsTotal": 138627,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-28T08:22:09Z"
+        "lastUpdatedAt": "2026-09-29T16:22:35Z"
       },
       "health": {
         "license": "MIT",
@@ -382,8 +302,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(proxy): strip inline <think>/<thinking> blocks on the Claude SSE path",
-          "fix(usage): keep Gemini streaming model attribution and accept Vertex token counts"
+          "feat(icons): add Aimy provider icon (aimy)",
+          "fix(sessions): support OpenCode V2 SQLite schema in session manager"
         ]
       },
       "risk": {
@@ -393,7 +313,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 12,
+      "rank": 10,
       "repository": {
         "owner": "Graphify-Labs",
         "name": "graphify",
@@ -401,9 +321,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 122148,
+        "starsTotal": 122424,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-28T08:28:51Z"
+        "lastUpdatedAt": "2026-09-29T18:42:58Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -416,8 +336,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(vbnet): resolve type/module-qualified calls to their target method",
-          "fix(razor): extract methods from @functions blocks, not just @code"
+          "fix(java): resolve calls to inherited methods and super",
+          "fix(manifest): treat virtual-workspace-root Cargo.toml as skipped by design (#3910)"
         ]
       },
       "risk": {
@@ -425,6 +345,76 @@
         "reason": "已有相近打开中的 PR"
       },
       "recommendation": "跳过"
+    },
+    {
+      "rank": 11,
+      "repository": {
+        "owner": "sktime",
+        "name": "skpro",
+        "url": "https://github.com/sktime/skpro",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 336,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-27T21:13:01Z"
+      },
+      "health": {
+        "license": "BSD-3-Clause",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "示例补全",
+        "summary": "为 OnlineDontRefit 补充 docstring 用法示例并移除 doctest 跳过标记（issue #1135）",
+        "evidence": [
+          "issue #1135 主动征集为所有 estimator 补充可执行 docstring 示例",
+          "OnlineDontRefit 当前带 tests:skip_by_name=[test_class_has_doctest_example] 跳过标记，缺少 Examples 段",
+          "同族 OnlineRefit/OnlineRefitEveryN 已按同一模式提交（本机 PR #1148），DontRefit 为未覆盖的第三个 sibling"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "开放 PR #1140（一 PR 覆盖多 estimator：GaussianProcess/DummyProbaRegressor/SklearnProbaReg/OnlineDontRefit）已含 OnlineDontRefit 示例并移除同一跳过标记，属重复方向；已撤回本机误创建的 #1180"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 12,
+      "repository": {
+        "owner": "pyro-ppl",
+        "name": "numpyro",
+        "url": "https://github.com/pyro-ppl/numpyro",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 2500,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-29T21:23:38.004Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "为 ZeroInflatedPoisson 补充 PMF/均值/方差数学说明 docstring（issue #2187）",
+        "evidence": [
+          "issue #2187 主动征集为各分布补数学说明 docstring",
+          "ZeroInflatedPoisson 当前仅 2 行参数 docstring，缺 PMF/均值/方差公式",
+          "同文件 HurdleProbs 已有 r-string .. math:: 富文档可对照风格；本机 #2279/#2284/#2286/#2288/#2291 同模式已全部 merged"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "纯类级 docstring 数学说明；公式逐行核对 ZeroInflatedProbs 实现（log_prob/mean/variance）；ruff check+format+py_compile 全过；无覆盖该类的开放 PR"
+      },
+      "recommendation": "值得继续"
     }
   ]
 }
