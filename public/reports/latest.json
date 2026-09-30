@@ -1,47 +1,13 @@
 {
-  "date": "2026-09-30",
-  "generatedAt": "2026-09-29T21:23:38.004Z",
+  "date": "2026-10-01",
+  "generatedAt": "2026-09-30T23:51:04.861Z",
   "summary": {
-    "candidateCount": 12,
+    "candidateCount": 11,
     "actionableCount": 1
   },
   "items": [
     {
       "rank": 1,
-      "repository": {
-        "owner": "DietrichGebert",
-        "name": "ponytail",
-        "url": "https://github.com/DietrichGebert/ponytail",
-        "primaryLanguage": "JavaScript"
-      },
-      "popularity": {
-        "starsTotal": 148138,
-        "starsAdded24h": 1,
-        "lastUpdatedAt": "2026-09-14T14:34:56Z"
-      },
-      "health": {
-        "license": "MIT",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": false,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "docs: add a 20-second launch video to the README",
-          "feat: add V2 plugin entrypoint"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 2,
       "repository": {
         "owner": "affaan-m",
         "name": "ECC",
@@ -49,9 +15,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 269575,
+        "starsTotal": 270143,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-29T19:08:37Z"
+        "lastUpdatedAt": "2026-09-30T18:45:04Z"
       },
       "health": {
         "license": "MIT",
@@ -64,8 +30,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "docs: add a 20-second launch video to the README",
-          "chore: align repo config with Claude Code best practices"
+          "fix: integrate reviewed contributor fixes and catalog additions",
+          "fix(package): publish scripts/github-coordination.js for the /epic-* commands"
         ]
       },
       "risk": {
@@ -75,7 +41,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 3,
+      "rank": 2,
       "repository": {
         "owner": "n8n-io",
         "name": "n8n",
@@ -83,9 +49,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 206297,
+        "starsTotal": 206376,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-29T19:30:55Z"
+        "lastUpdatedAt": "2026-09-30T20:13:27Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -98,8 +64,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "test(Dropbox Node): Add coverage for file, folder, and search operations (no-changelog)",
-          "fix(core): Apply the credential type policy to credential tests and probes"
+          "fix(ai-builder): Remove the Context7 docs lookup from the eval mock (no-changelog)",
+          "fix(GitLab Trigger Node): Safely handle 404 in checkExists without TypeError"
         ]
       },
       "risk": {
@@ -109,7 +75,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 4,
+      "rank": 3,
       "repository": {
         "owner": "yt-dlp",
         "name": "yt-dlp",
@@ -117,7 +83,7 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 194353,
+        "starsTotal": 194553,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-27T22:09:13Z"
       },
@@ -143,7 +109,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 5,
+      "rank": 4,
       "repository": {
         "owner": "ohmyzsh",
         "name": "ohmyzsh",
@@ -151,7 +117,7 @@
         "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 189988,
+        "starsTotal": 190005,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-29T15:38:41Z"
       },
@@ -166,8 +132,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat!: Add support for \"iw\" command",
-          "fix(dirhistory): fix typo in push_future duplicate check"
+          "fix(history-substring-search): correct seperator typo in comments",
+          "feat!: Add support for \"iw\" command"
         ]
       },
       "risk": {
@@ -177,7 +143,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 6,
+      "rank": 5,
       "repository": {
         "owner": "Snailclimb",
         "name": "JavaGuide",
@@ -185,7 +151,7 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 158959,
+        "starsTotal": 158986,
         "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-22T09:58:35Z"
       },
@@ -197,11 +163,48 @@
         "issueActivity": "active"
       },
       "opportunity": {
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "evidence": [
+          ".github/workflows/test.yml",
+          "README.md",
+          "README_EN.md",
+          "邀请 javaguide 加入 GithubStarMate，让更多人发现你的作品",
+          "失效链接替换"
+        ]
+      },
+      "risk": {
+        "level": "中",
+        "reason": "159k star 中文面试文档库，无真实测试套件，扫描器「测试补充」为误判；社区饱和、无可本地验证的低风险切口"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 6,
+      "repository": {
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 157611,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-30T16:20:29Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "Fix link for Meituan ZGC article",
-          "Remove duplicated sentence in String object counting section"
+          "fix(vdb-oracle): raise when an insert fails instead of returning its id",
+          "refactor(web): move monitoring date range picker to app components"
         ]
       },
       "risk": {
@@ -213,15 +216,15 @@
     {
       "rank": 7,
       "repository": {
-        "owner": "langgenius",
-        "name": "dify",
-        "url": "https://github.com/langgenius/dify",
-        "primaryLanguage": "TypeScript"
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 157522,
+        "starsTotal": 153647,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-29T16:22:52Z"
+        "lastUpdatedAt": "2026-09-30T17:06:01Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -234,8 +237,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(api): use per-credential cache for tool dynamic-select options",
-          "fix: clear incompatible defaults when switching to file inputs"
+          "fix: audit log shows passwords that contain a double quote",
+          "fix: audit log shows passwords that contain a double quote"
         ]
       },
       "risk": {
@@ -247,29 +250,29 @@
     {
       "rank": 8,
       "repository": {
-        "owner": "open-webui",
-        "name": "open-webui",
-        "url": "https://github.com/open-webui/open-webui",
-        "primaryLanguage": "Python"
+        "owner": "DietrichGebert",
+        "name": "ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 153552,
+        "starsTotal": 149064,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-29T16:25:29Z"
+        "lastUpdatedAt": "2026-09-14T14:34:56Z"
       },
       "health": {
-        "license": "NOASSERTION",
+        "license": "MIT",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": true,
+        "hasContributing": false,
         "issueActivity": "active"
       },
       "opportunity": {
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix: replies stop reaching other instances when the Redis user is limited by an ACL",
-          "perf: use the faster JSON encoder by default"
+          "feat: add ChatGPT plugin support",
+          "fix(debt): exclude dependencies and build output from scan"
         ]
       },
       "risk": {
@@ -287,9 +290,9 @@
         "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 138627,
+        "starsTotal": 139125,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-29T16:22:35Z"
+        "lastUpdatedAt": "2026-09-30T12:06:23Z"
       },
       "health": {
         "license": "MIT",
@@ -302,8 +305,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(icons): add Aimy provider icon (aimy)",
-          "fix(sessions): support OpenCode V2 SQLite schema in session manager"
+          "feat(claude-desktop): aggregate provider routing across providers",
+          "feat(mcp): sync MCP servers to Pi"
         ]
       },
       "risk": {
@@ -321,9 +324,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 122424,
+        "starsTotal": 122773,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-29T18:42:58Z"
+        "lastUpdatedAt": "2026-09-30T19:53:37Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -336,8 +339,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(java): resolve calls to inherited methods and super",
-          "fix(manifest): treat virtual-workspace-root Cargo.toml as skipped by design (#3910)"
+          "feat(prs): export human-readable review artifacts",
+          "fix(skillgen): pass root= to extract() in Step 3 Part A (#3727)"
         ]
       },
       "risk": {
@@ -368,51 +371,17 @@
       },
       "opportunity": {
         "category": "示例补全",
-        "summary": "为 OnlineDontRefit 补充 docstring 用法示例并移除 doctest 跳过标记（issue #1135）",
+        "summary": "为 SPLL 生存分析概率指标补充 numpydoc 可执行示例并移除 test_class_has_doctest_example 跳过标记（推进 umbrella #1135）",
         "evidence": [
-          "issue #1135 主动征集为所有 estimator 补充可执行 docstring 示例",
-          "OnlineDontRefit 当前带 tests:skip_by_name=[test_class_has_doctest_example] 跳过标记，缺少 Examples 段",
-          "同族 OnlineRefit/OnlineRefitEveryN 已按同一模式提交（本机 PR #1148），DontRefit 为未覆盖的第三个 sibling"
-        ]
-      },
-      "risk": {
-        "level": "中",
-        "reason": "开放 PR #1140（一 PR 覆盖多 estimator：GaussianProcess/DummyProbaRegressor/SklearnProbaReg/OnlineDontRefit）已含 OnlineDontRefit 示例并移除同一跳过标记，属重复方向；已撤回本机误创建的 #1180"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 12,
-      "repository": {
-        "owner": "pyro-ppl",
-        "name": "numpyro",
-        "url": "https://github.com/pyro-ppl/numpyro",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 2500,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-09-29T21:23:38.004Z"
-      },
-      "health": {
-        "license": "Apache-2.0",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "为 ZeroInflatedPoisson 补充 PMF/均值/方差数学说明 docstring（issue #2187）",
-        "evidence": [
-          "issue #2187 主动征集为各分布补数学说明 docstring",
-          "ZeroInflatedPoisson 当前仅 2 行参数 docstring，缺 PMF/均值/方差公式",
-          "同文件 HurdleProbs 已有 r-string .. math:: 富文档可对照风格；本机 #2279/#2284/#2286/#2288/#2291 同模式已全部 merged"
+          "skpro/metrics/survival/_spll.py 类 docstring 缺 >>> 示例",
+          "_tags 含 tests:skip_by_name: [\"test_class_has_doctest_example\"]",
+          "umbrella issue #1135 公开征集此类示例",
+          "该指标仅依赖 numpy/pandas/skpro 核心，可本地 doctest 验证"
         ]
       },
       "risk": {
         "level": "低",
-        "reason": "纯类级 docstring 数学说明；公式逐行核对 ZeroInflatedProbs 实现（log_prob/mean/variance）；ruff check+format+py_compile 全过；无覆盖该类的开放 PR"
+        "reason": "仅新增 docstring 示例并移除对应 skip 标记，无逻辑改动，本地 doctest 可验证"
       },
       "recommendation": "值得继续"
     }
