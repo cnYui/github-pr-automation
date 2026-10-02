@@ -1,0 +1,385 @@
+{
+  "date": "2026-09-15",
+  "generatedAt": "2026-09-14T21:10:00.086Z",
+  "summary": {
+    "candidateCount": 11,
+    "actionableCount": 1
+  },
+  "items": [
+    {
+      "rank": 1,
+      "repository": {
+        "owner": "affaan-m",
+        "name": "ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 258316,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-14T04:55:52Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(security): security follow-ups for worker, installer, claw, hooks",
+          "fix(opencode): write hook results through the output contract"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 2,
+      "repository": {
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 204300,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-14T21:01:28Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "quiet"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "evidence": [
+          ".agents/review-rules/README.md",
+          ".agents/review-rules/db-migrations/conventions-and-tests.md",
+          ".agents/review-rules/qa-dx/workflow-safety.md"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "恒定 CLA + issue-first + typo 拒绝门禁，历史反复确认为 blocker，扫描器启发式误判为值得继续"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 3,
+      "repository": {
+        "owner": "yt-dlp",
+        "name": "yt-dlp",
+        "url": "https://github.com/yt-dlp/yt-dlp",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 191158,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-08-30T13:58:45Z"
+      },
+      "health": {
+        "license": "Unlicense",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "Use safari user agent for web_embedded client",
+          "[ie/knowledge.ca] Add extractor"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "ohmyzsh",
+        "name": "ohmyzsh",
+        "url": "https://github.com/ohmyzsh/ohmyzsh",
+        "primaryLanguage": "Shell"
+      },
+      "popularity": {
+        "starsTotal": 189713,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-14T19:43:54Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat(dotenv): support loading multiple dotenv files",
+          "fix(globalias): preserve quoted words and assignment values"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "Snailclimb",
+        "name": "JavaGuide",
+        "url": "https://github.com/Snailclimb/JavaGuide",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 158541,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-05T12:30:20Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "docs(ai): update MCP 2026-07-28 revision details"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 6,
+      "repository": {
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 155716,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-14T13:20:49Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(api): validate Start node variables before saving and publishing",
+          "fix(web): apply partner header mobile layout outside standalone mode"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 152037,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-14T20:04:27Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: index the pending knowledge files query that saturates large Postgres instances",
+          "refac: re-check access for the lifetime of a terminal session"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 8,
+      "repository": {
+        "owner": "DietrichGebert",
+        "name": "ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 138311,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-14T14:34:56Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: require a quoted value for Hermes mode-filter examples",
+          "fix(hermes): honor default-mode config with a UTF-8 BOM"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 9,
+      "repository": {
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 132838,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-14T09:09:19Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "Fix (gemini): update integration to Google Antigravity with backward compatibility",
+          "fix(proxy): keep reasoning effort for muse-spark models"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 10,
+      "repository": {
+        "owner": "Graphify-Labs",
+        "name": "graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 116711,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-12T21:24:20Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "docs: update Korean README translation",
+          "Preserve mathematical notation in semantic extraction"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 11,
+      "repository": {
+        "owner": "FreshCode-Org",
+        "name": "freshdata",
+        "url": "https://github.com/FreshCode-Org/freshdata",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 5,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-14T20:49:01Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "QualityReport.to_markdown 的 Actions 表未转义列名中的竖线/换行导致错列(#338)",
+        "evidence": [
+          "issue #338: QualityReport.to_markdown breaks the Actions table when a column name contains |",
+          "src/freshdata/enterprise/metrics.py:136 _md_table_row 未转义单元格；:364 仅对 description 手工转义竖线",
+          "本地复现: 列名 a|b 使数据行出现 5 个单元格而表头 4 个"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "单函数 Markdown 转义修复，改动局限于 metrics.py 且有 pytest 本地验证，无 CLA/issue-first 门禁"
+      },
+      "recommendation": "值得继续"
+    }
+  ]
+}

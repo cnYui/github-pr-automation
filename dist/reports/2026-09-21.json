@@ -1,0 +1,391 @@
+{
+  "date": "2026-09-21",
+  "generatedAt": "2026-09-21T00:55:47.066Z",
+  "summary": {
+    "candidateCount": 11,
+    "actionableCount": 3
+  },
+  "items": [
+    {
+      "rank": 1,
+      "repository": {
+        "owner": "affaan-m",
+        "name": "ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 263739,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-20T19:37:57Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "Update README with install health check instructions",
+          "Enforce signed release provenance gates"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 2,
+      "repository": {
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 205477,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-21T00:52:45Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(core): Release the expression isolate when the webhook response ends",
+          "fix(Snowflake Node): Send failed statements to the error output"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 3,
+      "repository": {
+        "owner": "yt-dlp",
+        "name": "yt-dlp",
+        "url": "https://github.com/yt-dlp/yt-dlp",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 192363,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-16T07:48:51Z"
+      },
+      "health": {
+        "license": "Unlicense",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "evidence": [
+          ".NO_AI/README.md",
+          ".github/workflows/build.yml",
+          ".github/workflows/challenge-tests.yml",
+          "can't download age-restricted video using by own cookies or bgutil:cli-0.8.1.",
+          "Add flag to prevent video downloads entirely when no supported JS runtime is present"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "ohmyzsh",
+        "name": "ohmyzsh",
+        "url": "https://github.com/ohmyzsh/ohmyzsh",
+        "primaryLanguage": "Shell"
+      },
+      "popularity": {
+        "starsTotal": 189852,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-20T15:14:29Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat(glab): add GitLab CLI completions",
+          "fix(frontend-search): use fallback search for dead dartlang docs URL"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "Snailclimb",
+        "name": "JavaGuide",
+        "url": "https://github.com/Snailclimb/JavaGuide",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 158739,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-20T05:27:51Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "evidence": [
+          ".github/workflows/test.yml",
+          "README.md",
+          "README_EN.md",
+          "关于数组转集合方法的第六种：使用Java9的List.of()",
+          "AOP 织入（Weaving） 的表达方式或许可以描述的更易懂一些"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 6,
+      "repository": {
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 156636,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-21T00:54:25Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat(cli): difyctl v2 over the server catalog",
+          "ci(e2e): reduce core Redis readiness wait"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 152642,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-19T22:03:15Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: apply the new text to speech engine's default voice and model when the engine changes",
+          "fix: show a code run's error output alongside what it printed"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 8,
+      "repository": {
+        "owner": "DietrichGebert",
+        "name": "ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 143068,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-14T14:34:56Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(grok): make Ponytail discoverable through its marketplace",
+          "Agent Plugins 1.0 compliant structure, starting with Copilot"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 9,
+      "repository": {
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 133829,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-20T14:27:20Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(startup): enter lightweight mode on silent startup",
+          "fix(proxy): preserve max effort for GPT-5.6 and GPT-6 Astra"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 10,
+      "repository": {
+        "owner": "Graphify-Labs",
+        "name": "graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 119902,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-20T17:53:37Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "docs: update SECURITY.md supported version table to 0.9.x",
+          "Warn before a corpus-wide rewrite when the manifest matches nothing (issue 2654)"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 11,
+      "repository": {
+        "owner": "sktime",
+        "name": "skpro",
+        "url": "https://github.com/sktime/skpro",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 336,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-15T17:59:55Z"
+      },
+      "health": {
+        "license": "BSD-3-Clause",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "示例补全",
+        "summary": "为 IntervalWidth 指标补充 docstring 用法示例并移除 doctest 跳过标记（issue #1135）",
+        "evidence": [
+          "issue #1135 [ENH] add at least one usage example to docstrings of estimators（open, good first issue, documentation）",
+          "IntervalWidth 类无 doctest 示例且 _tags 带 tests:skip_by_name=test_class_has_doctest_example 跳过标记",
+          "无覆盖 IntervalWidth 的已开 PR（已核对全部 open PR 列表）"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "仅新增 numpydoc Examples 示例并移除跳过标记，无逻辑改动；本地 doctest 与 test_all_estimators 目标测试可验证"
+      },
+      "recommendation": "值得继续"
+    }
+  ]
+}

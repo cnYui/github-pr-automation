@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-02",
-  "generatedAt": "2026-10-01T23:43:39.218Z",
+  "date": "2026-10-03",
+  "generatedAt": "2026-10-02T21:04:54.285Z",
   "summary": {
     "candidateCount": 12,
     "actionableCount": 2
@@ -15,9 +15,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 150461,
-        "starsAdded24h": 119,
-        "lastUpdatedAt": "2026-09-14T14:34:56Z"
+        "starsTotal": 151629,
+        "starsAdded24h": 1168,
+        "lastUpdatedAt": "2026-10-02T16:22:48Z"
       },
       "health": {
         "license": "MIT",
@@ -30,8 +30,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(hermes): respect gateway command parsing and control guard",
-          "fix(benchmarks): isolate reuse scorer import state"
+          "refactor(plugins): use flatMap for command and skill readers",
+          "fix(hermes): respect gateway command parsing and control guard"
         ]
       },
       "risk": {
@@ -49,30 +49,28 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 270695,
-        "starsAdded24h": 61,
-        "lastUpdatedAt": "2026-10-01T22:54:28Z"
+        "starsTotal": 271162,
+        "starsAdded24h": 467,
+        "lastUpdatedAt": "2026-10-02T02:01:14Z"
       },
       "health": {
         "license": "MIT",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
-        "issueActivity": "quiet"
+        "issueActivity": "active"
       },
       "opportunity": {
-        "category": "测试补充",
-        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          ".adal/README.md",
-          ".agents/skills/agent-introspection-debugging/SKILL.md",
-          ".agents/skills/agent-introspection-debugging/agents/openai.yaml",
-          "live 复筛（2026-10-02）：gh 查询 affaan-m/ECC 开放 PR 共 222 个，licenseInfo 为空"
+          "test: isolate HOME in state-store CLI tests",
+          "feat(skills): add test regression workflows"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "live 复筛：开放 PR 达 222 个严重积压、仓库无 LICENSE，且既往复核确认其测试类 issue（#3214）已在默认分支修复；扫描器的「测试补充」证据只是无关文件名，无可落地切口"
+        "reason": "已有相近打开中的 PR"
       },
       "recommendation": "跳过"
     },
@@ -85,9 +83,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 123076,
-        "starsAdded24h": 29,
-        "lastUpdatedAt": "2026-09-30T19:53:37Z"
+        "starsTotal": 123307,
+        "starsAdded24h": 231,
+        "lastUpdatedAt": "2026-10-02T16:20:43Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -100,8 +98,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(skills): persist durable uv and pipx interpreters",
-          "fix(report): surface JavaScript files without structural symbols"
+          "fix(extract): keep recursive calls when merging C# partial classes",
+          "fix(elixir): scope unqualified calls to imported and used modules"
         ]
       },
       "risk": {
@@ -119,8 +117,8 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 194793,
-        "starsAdded24h": 15,
+        "starsTotal": 194994,
+        "starsAdded24h": 201,
         "lastUpdatedAt": "2026-09-27T22:09:13Z"
       },
       "health": {
@@ -134,8 +132,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "[ie/afreecatv] Ensure SOOP vods get their proper ID in all cases",
-          "[ie/odnoklassniki] Fix boosty direct link extraction"
+          "[ie/XiaoHongShu] Explicitly handle xhslink.com redirects",
+          "[ie/afreecatv] Ensure SOOP vods get their proper ID in all cases"
         ]
       },
       "risk": {
@@ -147,18 +145,18 @@
     {
       "rank": 5,
       "repository": {
-        "owner": "n8n-io",
-        "name": "n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "primaryLanguage": "TypeScript"
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 206469,
-        "starsAdded24h": 14,
-        "lastUpdatedAt": "2026-10-01T23:11:49Z"
+        "starsTotal": 139552,
+        "starsAdded24h": 180,
+        "lastUpdatedAt": "2026-10-02T17:45:32Z"
       },
       "health": {
-        "license": "NOASSERTION",
+        "license": "MIT",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
@@ -168,8 +166,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(editor): Remove the one-click connector for the ChatGPT MCP client",
-          "fix(core): Apply removed fields when the Agent Builder patches agent config"
+          "feat(sessions): collapse project groups by default and cache session scans",
+          "fix(usage): move usage-stat writes off tokio workers with spawn_blocking"
         ]
       },
       "risk": {
@@ -187,9 +185,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 153754,
-        "starsAdded24h": 9,
-        "lastUpdatedAt": "2026-10-01T17:26:14Z"
+        "starsTotal": 153804,
+        "starsAdded24h": 50,
+        "lastUpdatedAt": "2026-10-02T04:50:55Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -202,8 +200,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix: chat freezes when reopened after tool calls with some Responses API providers",
-          "fix: model picker still shows a model as loaded right after Eject"
+          "fix: line breaks in chat messages disappear after reloading the page",
+          "fix: mixed Arabic and English lines in a message all take the first line's direction"
         ]
       },
       "risk": {
@@ -215,68 +213,70 @@
     {
       "rank": 7,
       "repository": {
-        "owner": "langgenius",
-        "name": "dify",
-        "url": "https://github.com/langgenius/dify",
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 157692,
-        "starsAdded24h": 6,
-        "lastUpdatedAt": "2026-10-01T15:33:04Z"
+        "starsTotal": 206509,
+        "starsAdded24h": 40,
+        "lastUpdatedAt": "2026-10-02T20:57:50Z"
       },
       "health": {
         "license": "NOASSERTION",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
-        "issueActivity": "active"
+        "issueActivity": "quiet"
       },
       "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
         "evidence": [
-          "fix(workflow): sync conversation variables after iteration frames",
-          "fix(api): keep MCP tools/call responses alive while the app runs"
+          ".agents/review-rules/README.md",
+          ".agents/review-rules/db-migrations/conventions-and-tests.md",
+          ".agents/review-rules/qa-dx/workflow-safety.md"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "已有相近打开中的 PR"
+        "reason": "live 复筛下调：既往复核确认该仓门禁/既有 PR 属恒定阻塞（n8n：CLA+issue-first；JavaGuide：既往 PR/误判），直接跳过"
       },
       "recommendation": "跳过"
     },
     {
       "rank": 8,
       "repository": {
-        "owner": "farion1231",
-        "name": "cc-switch",
-        "url": "https://github.com/farion1231/cc-switch",
-        "primaryLanguage": "Rust"
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 139372,
-        "starsAdded24h": 4,
-        "lastUpdatedAt": "2026-10-01T18:41:18Z"
+        "starsTotal": 157727,
+        "starsAdded24h": 35,
+        "lastUpdatedAt": "2026-10-02T20:45:55Z"
       },
       "health": {
-        "license": "MIT",
+        "license": "NOASSERTION",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
-        "issueActivity": "active"
+        "issueActivity": "quiet"
       },
       "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "category": "小 bug",
+        "summary": "仓库验证依赖重型环境，不适合作为默认低风险候选",
         "evidence": [
-          "fix(codex): raise OAuth client identity to 0.159.0 for GPT-6.1 Sol",
-          "chore(deps): bump the cargo-deps group across 1 directory with 56 updates"
+          ".devcontainer/Dockerfile",
+          ".dockerignore",
+          ".github/workflows/deploy-agent.yml"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "已有相近打开中的 PR"
+        "reason": "需要重型基础设施或专有环境才能验证"
       },
       "recommendation": "跳过"
     },
@@ -289,8 +289,8 @@
         "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 190028,
-        "starsAdded24h": 1,
+        "starsTotal": 190040,
+        "starsAdded24h": 12,
         "lastUpdatedAt": "2026-09-29T15:38:41Z"
       },
       "health": {
@@ -323,9 +323,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 159006,
-        "starsAdded24h": 1,
-        "lastUpdatedAt": "2026-09-22T09:58:35Z"
+        "starsTotal": 159005,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-10-02T00:38:41Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -335,16 +335,19 @@
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
         "evidence": [
-          "修改两处表述 Update Redis transaction explanation in documentation",
-          "Fix link for Meituan ZGC article"
+          ".github/workflows/test.yml",
+          "README.md",
+          "README_EN.md",
+          "失效链接替换",
+          "关于数组转集合方法的第六种：使用Java9的List.of()"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "已有相近打开中的 PR"
+        "reason": "live 复筛下调：既往复核确认该仓门禁/既有 PR 属恒定阻塞（n8n：CLA+issue-first；JavaGuide：既往 PR/误判），直接跳过"
       },
       "recommendation": "跳过"
     },
@@ -371,12 +374,12 @@
       "recommendation": "值得继续",
       "opportunity": {
         "category": "文档缺口",
-        "summary": "为 numpyro OrderedLogistic 类补充累积 logit（比例优势）PMF 数学说明与参数文档，推进 umbrella #2187（该类目前仅有一句话 docstring）",
+        "summary": "为 numpyro RelaxedBernoulliLogits/RelaxedBernoulli 补充 Logistic-sigmoid 变换的密度与参数数学说明，推进 umbrella #2187（该类与工厂函数目前完全没有 docstring）",
         "evidence": [
-          "numpyro/distributions/discrete.py 的 OrderedLogistic 类 docstring 仅一句话加参考文献，无 PMF/累积 logit 公式",
-          "umbrella issue pyro-ppl/numpyro#2187 清单中 OrderedLogistic 未勾选，开放 PR 与全部 PR 搜索均无人认领",
-          "实现经 SimplexToOrderedTransform(predictor).inv(cutpoints) 得 probs，公式 P(Y=k)=σ(c_k−η)−σ(c_{k−1}−η) 可逐行核对",
-          "我方既往同类 PR（#2279/#2284/#2286/#2288/#2291/#2294）均已被维护者合并"
+          "numpyro/distributions/continuous.py 的 RelaxedBernoulliLogits 与 RelaxedBernoulli 无任何 docstring",
+          "umbrella issue pyro-ppl/numpyro#2187 清单中 RelaxedBernoulli/RelaxedBernoulliLogits 未勾选，开放 PR 与全部 PR 搜索无人认领",
+          "实现为 Logistic(logits/T,1/T) 经 SigmoidTransform，密度可用 jax 与 log_prob 逐点数值核对",
+          "我方既往同类 PR 均已被维护者合并"
         ]
       },
       "risk": {
@@ -407,11 +410,11 @@
       "recommendation": "值得继续",
       "opportunity": {
         "category": "文档缺口",
-        "summary": "为 numpyro ZeroInflatedNegativeBinomial2 工厂函数补充 PMF/均值/方差数学说明与参数文档，推进 umbrella #2187（该函数目前完全没有 docstring）",
+        "summary": "为 numpyro LowRankMultivariateNormal 补充低秩+对角协方差、PDF、Woodbury/矩阵行列式引理说明，推进 umbrella #2187（该类目前完全没有 docstring）",
         "evidence": [
-          "numpyro/distributions/conjugate.py 的 ZeroInflatedNegativeBinomial2 无任何 docstring，而兄弟 HurdleNegativeBinomial2 与 ZeroInflatedPoisson 已有完整数学文档",
-          "umbrella issue pyro-ppl/numpyro#2187 清单中 ZeroInflatedNegativeBinomial2 未勾选，开放 PR 与全部 PR 搜索均无人认领",
-          "公式可对照 ZeroInflatedProbs 的 log_prob/mean/variance 与 NegativeBinomial2 实现逐行核验"
+          "numpyro/distributions/continuous.py 的 LowRankMultivariateNormal 无任何 docstring",
+          "umbrella issue #2187 清单中 LowRankMultivariateNormal 未勾选，开放 PR 与全部 PR 搜索无人认领",
+          "公式可与 log_prob/mean/variance/covariance_matrix 实现数值核对"
         ]
       },
       "risk": {

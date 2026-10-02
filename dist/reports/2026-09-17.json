@@ -1,0 +1,384 @@
+{
+  "date": "2026-09-17",
+  "generatedAt": "2026-09-17T00:12:28.144Z",
+  "summary": {
+    "candidateCount": 11,
+    "actionableCount": 1
+  },
+  "items": [
+    {
+      "rank": 1,
+      "repository": {
+        "owner": "affaan-m",
+        "name": "ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 260255,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-15T19:33:00Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(llm): forward max_tokens to Ollama num_predict",
+          "fix: correct agent location and add ecc: prefix to agent names in rules"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 2,
+      "repository": {
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 204662,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-17T00:11:48Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(core): Restore the system prompt in Instance AI LLM step debug (no-changelog)",
+          "fix(core): Enforce the credential description schema on import (no-changelog)"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 3,
+      "repository": {
+        "owner": "yt-dlp",
+        "name": "yt-dlp",
+        "url": "https://github.com/yt-dlp/yt-dlp",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 191637,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-16T07:48:51Z"
+      },
+      "health": {
+        "license": "Unlicense",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "[ie/ertecho] Add new extractor",
+          "[ie/knowledge.ca] Add extractor"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "ohmyzsh",
+        "name": "ohmyzsh",
+        "url": "https://github.com/ohmyzsh/ohmyzsh",
+        "primaryLanguage": "Shell"
+      },
+      "popularity": {
+        "starsTotal": 189754,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-16T08:47:21Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(cli): re-resolve zsh at exec time to avoid a stale command hash",
+          "feat(git): gtb alias for creating backup tag"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "Snailclimb",
+        "name": "JavaGuide",
+        "url": "https://github.com/Snailclimb/JavaGuide",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 158613,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-05T12:30:20Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "docs(ai): update MCP 2026-07-28 revision details"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 6,
+      "repository": {
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 156003,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-16T14:25:29Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(rag): keep an .xls cell that literally says N/A or NULL",
+          "fix(api): correct two stale symbol references in comments"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 152303,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-16T19:59:25Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix: index the pending knowledge files query that saturates large Postgres instances",
+          "refac: re-check access for the lifetime of a terminal session"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 8,
+      "repository": {
+        "owner": "DietrichGebert",
+        "name": "ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 140337,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-14T14:34:56Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat: add Goose adapter docs and schema guard (#880)",
+          "feat: add reuse tag to ponytail-review and ponytail-audit (#868)"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 9,
+      "repository": {
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 133211,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-15T04:33:49Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(deeplink): preserve the supplied inline Codex config on import",
+          "fix(proxy): lift additional_tools input carriers on the Codex chat conversion"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 10,
+      "repository": {
+        "owner": "Graphify-Labs",
+        "name": "graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 118452,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-16T19:41:40Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "Fix #1619 skill findings: no-cluster/force wiring, INPUT_PATH backslashes, Step 1 gate, update backup order",
+          "Refuse to spawn an extraction pool that would spawn its own (#1637)"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 11,
+      "repository": {
+        "owner": "FreshCode-Org",
+        "name": "freshdata",
+        "url": "https://github.com/FreshCode-Org/freshdata",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 5,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-09-16T23:15:42Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "小 bug",
+        "summary": "issue #458 剩余部分：detect_pii / anonymize 的 to_dict() 在 DatetimeIndex 下 json.dumps 抛 Timestamp 不可序列化（#466 已修 CleanReport/profile/fieldcheck/k-anonymity，PII 路径未覆盖）",
+        "evidence": [
+          "PIIEntity.to_dict 直接返回 metadata（含 metadata[row]=Timestamp）未做 json 兼容",
+          "MaskingEvent.to_dict 直接返回 row（DatetimeIndex 标签为 Timestamp）",
+          "本地复现：json.dumps(detect_pii(df).to_dict()) -> TypeError: Object of type Timestamp is not JSON serializable"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "单文件 to_dict 边界用既有 json_scalar 强制转换；MIT 无 CLA；本地 pytest 可验；无重复 open PR"
+      },
+      "recommendation": "值得继续"
+    }
+  ]
+}
