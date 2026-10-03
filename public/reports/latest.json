@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-03",
-  "generatedAt": "2026-10-02T21:04:54.285Z",
+  "date": "2026-10-04",
+  "generatedAt": "2026-10-03T21:10:01.286Z",
   "summary": {
-    "candidateCount": 12,
-    "actionableCount": 2
+    "candidateCount": 11,
+    "actionableCount": 1
   },
   "items": [
     {
@@ -15,23 +15,23 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 151629,
-        "starsAdded24h": 1168,
-        "lastUpdatedAt": "2026-10-02T16:22:48Z"
+        "starsTotal": 153204,
+        "starsAdded24h": 1575,
+        "lastUpdatedAt": "2026-10-03T05:12:55Z"
       },
       "health": {
         "license": "MIT",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": false,
+        "hasContributing": true,
         "issueActivity": "active"
       },
       "opportunity": {
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "refactor(plugins): use flatMap for command and skill readers",
-          "fix(hermes): respect gateway command parsing and control guard"
+          "fix(benchmarks): require runtime assertions to finish before passing",
+          "fix(benchmarks): classify conventional JS TS and Go test filenames"
         ]
       },
       "risk": {
@@ -49,8 +49,8 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 271162,
-        "starsAdded24h": 467,
+        "starsTotal": 272141,
+        "starsAdded24h": 979,
         "lastUpdatedAt": "2026-10-02T02:01:14Z"
       },
       "health": {
@@ -64,8 +64,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "test: isolate HOME in state-store CLI tests",
-          "feat(skills): add test regression workflows"
+          "fix(hooks): honor CLAUDE_CONFIG_DIR instead of writing to ~/.claude",
+          "test: isolate HOME in state-store CLI tests"
         ]
       },
       "risk": {
@@ -77,48 +77,14 @@
     {
       "rank": 3,
       "repository": {
-        "owner": "Graphify-Labs",
-        "name": "graphify",
-        "url": "https://github.com/Graphify-Labs/graphify",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 123307,
-        "starsAdded24h": 231,
-        "lastUpdatedAt": "2026-10-02T16:20:43Z"
-      },
-      "health": {
-        "license": "Apache-2.0",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "fix(extract): keep recursive calls when merging C# partial classes",
-          "fix(elixir): scope unqualified calls to imported and used modules"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 4,
-      "repository": {
         "owner": "yt-dlp",
         "name": "yt-dlp",
         "url": "https://github.com/yt-dlp/yt-dlp",
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 194994,
-        "starsAdded24h": 201,
+        "starsTotal": 195267,
+        "starsAdded24h": 273,
         "lastUpdatedAt": "2026-09-27T22:09:13Z"
       },
       "health": {
@@ -132,8 +98,42 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "[ie/XiaoHongShu] Explicitly handle xhslink.com redirects",
-          "[ie/afreecatv] Ensure SOOP vods get their proper ID in all cases"
+          "[ie/Servus] Fix extractor",
+          "[ie/TubiTv] Added a fallback api extraction"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "Graphify-Labs",
+        "name": "graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 123531,
+        "starsAdded24h": 224,
+        "lastUpdatedAt": "2026-10-02T22:12:03Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(hook-guard): name the effective graph.json when GRAPHIFY_OUT is customized",
+          "fix(opencode): load the plugin on OpenCode 2 and refresh installed copies (#3554, #3732)"
         ]
       },
       "risk": {
@@ -151,9 +151,9 @@
         "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 139552,
-        "starsAdded24h": 180,
-        "lastUpdatedAt": "2026-10-02T17:45:32Z"
+        "starsTotal": 139773,
+        "starsAdded24h": 221,
+        "lastUpdatedAt": "2026-10-03T16:17:56Z"
       },
       "health": {
         "license": "MIT",
@@ -166,8 +166,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(sessions): collapse project groups by default and cache session scans",
-          "fix(usage): move usage-stat writes off tokio workers with spawn_blocking"
+          "fix(ui): unify full-screen editor width and move MCP/prompt editing to full pages",
+          "fix(opencode): preserve untouched extra-option value types on edit"
         ]
       },
       "risk": {
@@ -185,9 +185,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 153804,
-        "starsAdded24h": 50,
-        "lastUpdatedAt": "2026-10-02T04:50:55Z"
+        "starsTotal": 153880,
+        "starsAdded24h": 76,
+        "lastUpdatedAt": "2026-10-03T13:06:04Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -200,8 +200,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix: line breaks in chat messages disappear after reloading the page",
-          "fix: mixed Arabic and English lines in a message all take the first line's direction"
+          "fix: web addresses in chat show &amp; in place of &, and links in angle brackets open the wrong address",
+          "fix: links to web addresses in chat show &amp; in place of &, and some open the wrong address"
         ]
       },
       "risk": {
@@ -219,16 +219,16 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 206509,
-        "starsAdded24h": 40,
-        "lastUpdatedAt": "2026-10-02T20:57:50Z"
+        "starsTotal": 206582,
+        "starsAdded24h": 73,
+        "lastUpdatedAt": "2026-10-03T17:44:51Z"
       },
       "health": {
         "license": "NOASSERTION",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
-        "issueActivity": "quiet"
+        "issueActivity": "active"
       },
       "opportunity": {
         "category": "测试补充",
@@ -236,12 +236,13 @@
         "evidence": [
           ".agents/review-rules/README.md",
           ".agents/review-rules/db-migrations/conventions-and-tests.md",
-          ".agents/review-rules/qa-dx/workflow-safety.md"
+          ".agents/review-rules/qa-dx/workflow-safety.md",
+          "Editor: NDV open freezes for ~20s on instances with large usable-credentials sets"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "live 复筛下调：既往复核确认该仓门禁/既有 PR 属恒定阻塞（n8n：CLA+issue-first；JavaGuide：既往 PR/误判），直接跳过"
+        "reason": "live 复筛：CLA + issue-first 恒定 blocker，下调跳过"
       },
       "recommendation": "跳过"
     },
@@ -254,29 +255,28 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 157727,
-        "starsAdded24h": 35,
-        "lastUpdatedAt": "2026-10-02T20:45:55Z"
+        "starsTotal": 157779,
+        "starsAdded24h": 52,
+        "lastUpdatedAt": "2026-10-03T15:55:10Z"
       },
       "health": {
         "license": "NOASSERTION",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
-        "issueActivity": "quiet"
+        "issueActivity": "active"
       },
       "opportunity": {
-        "category": "小 bug",
-        "summary": "仓库验证依赖重型环境，不适合作为默认低风险候选",
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          ".devcontainer/Dockerfile",
-          ".dockerignore",
-          ".github/workflows/deploy-agent.yml"
+          "refactor(api): separate pipeline template services",
+          "fix(api): serialize app access status updates"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "需要重型基础设施或专有环境才能验证"
+        "reason": "已有相近打开中的 PR"
       },
       "recommendation": "跳过"
     },
@@ -289,8 +289,8 @@
         "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 190040,
-        "starsAdded24h": 12,
+        "starsTotal": 190075,
+        "starsAdded24h": 35,
         "lastUpdatedAt": "2026-09-29T15:38:41Z"
       },
       "health": {
@@ -304,8 +304,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(history-substring-search): correct seperator typo in comments",
-          "feat!: Add support for \"iw\" command"
+          "fix(extract): preserve bzip2 archives and honor extraction destination",
+          "fix(history-substring-search): correct seperator typo in comments"
         ]
       },
       "risk": {
@@ -323,8 +323,8 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 159005,
-        "starsAdded24h": 0,
+        "starsTotal": 159016,
+        "starsAdded24h": 11,
         "lastUpdatedAt": "2026-10-02T00:38:41Z"
       },
       "health": {
@@ -347,7 +347,7 @@
       },
       "risk": {
         "level": "高",
-        "reason": "live 复筛下调：既往复核确认该仓门禁/既有 PR 属恒定阻塞（n8n：CLA+issue-first；JavaGuide：既往 PR/误判），直接跳过"
+        "reason": "live 复筛：账本已有既往 PR 去重，扫描器误判，下调跳过"
       },
       "recommendation": "跳过"
     },
@@ -374,47 +374,12 @@
       "recommendation": "值得继续",
       "opportunity": {
         "category": "文档缺口",
-        "summary": "为 numpyro RelaxedBernoulliLogits/RelaxedBernoulli 补充 Logistic-sigmoid 变换的密度与参数数学说明，推进 umbrella #2187（该类与工厂函数目前完全没有 docstring）",
+        "summary": "为 numpyro Wishart 类补充 Wishart 密度、均值与逐元素方差的数学说明，推进 umbrella #2187（该类 docstring 仅有一句话与参数说明）",
         "evidence": [
-          "numpyro/distributions/continuous.py 的 RelaxedBernoulliLogits 与 RelaxedBernoulli 无任何 docstring",
-          "umbrella issue pyro-ppl/numpyro#2187 清单中 RelaxedBernoulli/RelaxedBernoulliLogits 未勾选，开放 PR 与全部 PR 搜索无人认领",
-          "实现为 Logistic(logits/T,1/T) 经 SigmoidTransform，密度可用 jax 与 log_prob 逐点数值核对",
+          "numpyro/distributions/continuous.py 的 Wishart 类 docstring 只有一句话描述，无密度/均值/方差公式",
+          "umbrella issue pyro-ppl/numpyro#2187 清单中 Wishart 未勾选；全部 PR 搜索（含开放 PR）无人认领 Wishart 文档",
+          "公式可与 scipy.stats.wishart 及实现的 log_prob/mean/variance 逐点数值核对",
           "我方既往同类 PR 均已被维护者合并"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "仅改 docstring，无运行时逻辑；Apache-2.0、无 CLA/DCO；可用本地 jax 数值核对公式并运行 ruff"
-      }
-    },
-    {
-      "rank": 12,
-      "repository": {
-        "owner": "pyro-ppl",
-        "name": "numpyro",
-        "url": "https://github.com/pyro-ppl/numpyro",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 2758,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-10-01T17:58:42Z"
-      },
-      "health": {
-        "license": "Apache-2.0",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "recommendation": "值得继续",
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "为 numpyro LowRankMultivariateNormal 补充低秩+对角协方差、PDF、Woodbury/矩阵行列式引理说明，推进 umbrella #2187（该类目前完全没有 docstring）",
-        "evidence": [
-          "numpyro/distributions/continuous.py 的 LowRankMultivariateNormal 无任何 docstring",
-          "umbrella issue #2187 清单中 LowRankMultivariateNormal 未勾选，开放 PR 与全部 PR 搜索无人认领",
-          "公式可与 log_prob/mean/variance/covariance_matrix 实现数值核对"
         ]
       },
       "risk": {
