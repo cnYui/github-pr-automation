@@ -1,0 +1,392 @@
+{
+  "date": "2026-10-05",
+  "generatedAt": "2026-10-04T21:09:26.222Z",
+  "summary": {
+    "candidateCount": 11,
+    "actionableCount": 1
+  },
+  "items": [
+    {
+      "rank": 1,
+      "repository": {
+        "owner": "DietrichGebert",
+        "name": "ponytail",
+        "url": "https://github.com/DietrichGebert/ponytail",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 154724,
+        "starsAdded24h": 1520,
+        "lastUpdatedAt": "2026-10-03T05:12:55Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "Add ZCode support (skills via .zcode-plugin manifest)",
+          "test(hooks): skip the /bin/sh manifest checks on native Windows (#774)"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 2,
+      "repository": {
+        "owner": "affaan-m",
+        "name": "ECC",
+        "url": "https://github.com/affaan-m/ECC",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 272861,
+        "starsAdded24h": 720,
+        "lastUpdatedAt": "2026-10-02T02:01:14Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat(rails-security): add Rails security skill",
+          "fix(hooks): honor CLAUDE_CONFIG_DIR instead of writing to ~/.claude"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 3,
+      "repository": {
+        "owner": "yt-dlp",
+        "name": "yt-dlp",
+        "url": "https://github.com/yt-dlp/yt-dlp",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 195520,
+        "starsAdded24h": 253,
+        "lastUpdatedAt": "2026-09-27T22:09:13Z"
+      },
+      "health": {
+        "license": "Unlicense",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "evidence": [
+          ".NO_AI/README.md",
+          ".github/workflows/build.yml",
+          ".github/workflows/challenge-tests.yml",
+          "Reddit gifs don't work.",
+          "arte.tv: can't extract videos from some urls"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "live 复筛：已知死路（yt-dlp NO_AI 政策 / JavaGuide 无合格切口），见记忆"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "Graphify-Labs",
+        "name": "graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 123761,
+        "starsAdded24h": 230,
+        "lastUpdatedAt": "2026-10-04T20:03:07Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat: add Cursor Agent CLI backend (cursor-cli)",
+          "feat: Grok Build support (skill, AGENTS.md, hooks)"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 5,
+      "repository": {
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 139990,
+        "starsAdded24h": 217,
+        "lastUpdatedAt": "2026-10-04T15:50:40Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat(claude): Stack 模型列表行的按模型上下文窗口",
+          "test(pi): pin image input on official DeepSeek V4.1 Flash preset"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 6,
+      "repository": {
+        "owner": "ohmyzsh",
+        "name": "ohmyzsh",
+        "url": "https://github.com/ohmyzsh/ohmyzsh",
+        "primaryLanguage": "Shell"
+      },
+      "popularity": {
+        "starsTotal": 190149,
+        "starsAdded24h": 74,
+        "lastUpdatedAt": "2026-10-04T12:52:46Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "chore(deps): bump charset-normalizer from 3.5.1 to 3.5.2 in /.github/workflows/dependencies in the py-minor group",
+          "fix(copyfile): stop on clipboard failure"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 206653,
+        "starsAdded24h": 71,
+        "lastUpdatedAt": "2026-10-04T19:51:10Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(core): Keep skill activation and memory compaction from breaking the prompt cache (no-changelog)",
+          "fix(instance-ai): Use stateless OpenAI Responses"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 8,
+      "repository": {
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 153950,
+        "starsAdded24h": 70,
+        "lastUpdatedAt": "2026-10-03T13:06:04Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "i18n: fill missing ja-JP translations",
+          "fix: web addresses in chat show &amp; in place of &, and links in angle brackets open the wrong address"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 9,
+      "repository": {
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 157845,
+        "starsAdded24h": 66,
+        "lastUpdatedAt": "2026-10-04T15:17:46Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "refactor: migrate Phase 1 console API controllers to Pydantic BaseModel",
+          "refactor(api): enable strict typing for service API hit testing tests"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 10,
+      "repository": {
+        "owner": "Snailclimb",
+        "name": "JavaGuide",
+        "url": "https://github.com/Snailclimb/JavaGuide",
+        "primaryLanguage": "JavaScript"
+      },
+      "popularity": {
+        "starsTotal": 159030,
+        "starsAdded24h": 14,
+        "lastUpdatedAt": "2026-10-03T23:36:32Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": false,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "evidence": [
+          ".github/workflows/test.yml",
+          "README.md",
+          "README_EN.md",
+          "关于数组转集合方法的第六种：使用Java9的List.of()",
+          "AOP 织入（Weaving） 的表达方式或许可以描述的更易懂一些"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "live 复筛：已知死路（yt-dlp NO_AI 政策 / JavaGuide 无合格切口），见记忆"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 11,
+      "repository": {
+        "owner": "pyro-ppl",
+        "name": "numpyro",
+        "url": "https://github.com/pyro-ppl/numpyro",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 2758,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-10-01T17:58:42Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "recommendation": "值得继续",
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "为 numpyro WishartCholesky 类补充 Cholesky 因子密度（含 Jacobian）的数学说明，推进 umbrella #2187（该类 docstring 仅有参数说明，无任何公式）",
+        "evidence": [
+          "numpyro/distributions/continuous.py 的 WishartCholesky 类 docstring 仅有一句话与参数说明，无密度公式",
+          "umbrella issue pyro-ppl/numpyro#2187 清单中 WishartCholesky 未勾选；开放 PR 列表无人认领",
+          "公式可与 scipy.stats.wishart + Jacobian 及实现的 log_prob 逐点数值核对",
+          "我方既往同类 PR（含 #2322）均已被维护者合并"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "仅改 docstring，无运行时逻辑；Apache-2.0、无 CLA/DCO；可用本地 jax 数值核对公式并运行 ruff"
+      }
+    }
+  ]
+}
