@@ -10,7 +10,7 @@
 - 推荐门槛：只有低风险且切入口明确的项目标为 `值得继续`；中风险标为 `谨慎`；高风险标为 `跳过`。
 - Skill 方向：创建 `github-daily-pr-opportunity-scan`，用于规范每日扫描流程和报告 JSON 输出，不用于自动提交 PR。
 - 实现计划：见 `docs/ai/context/20260605-211520-github-daily-pr-opportunity-implementation-plan.md`；执行阶段按 TDD，先测试扫描逻辑和页面只读约束，再创建 Skill。
-- 2026-06-07 失败 PR 根因复查：`graphiti#1539` 当前代码相关 checks 已通过且 triage 标记 `merge-ready`，仅 CLA 未签；`CopilotKit#5296` 和 `cell-architecture-studio#8` 失败均为 Vercel 授权/账号阻塞；这三项都不应通过改代码或空提交重提解决，详见 `docs/ai/context/20260607-104713-failed-pr-root-cause-review.md`。
+- 2026-06-07 失败 PR 根因复查：`graphiti#1539` 当前代码相关 checks 已通过且 triage 标记 `merge-ready`，仅 CLA 未签；`CopilotKit#5296` 和 `cell-architecture-studio#8` 失败均为 Vercel 授权/账号阻塞；这三项都不应通过改代码或空提交重提解决，详见 `docs/ai/context/20260607-104713-failed-pr-root-cause-review.md`。同类历史阻塞：`inkeep/agents#3493`、`trycua/cua#1873`、`getzep/graphiti#1539/#1568` 的失败 check 属历史/账号阻塞，巡检时不自动回复、不改代码、不空提交重提。
 - 2026-07-11 候选实施复核修正：`speckit-companion#419` 与 `Aegis#2` 虽仍 open 且无重复 PR，但已被上游直接提交修复；后续机会扫描必须同时检查默认分支实现状态，不能只看 issue/PR 状态。本轮分别改为 README 安装命令跟进和 `ProfileManager` 启动回归测试。
 - 2026-07-11 主控仓库方向：将仓库改名为 `github-pr-automation`，保留扫描、执行、编排三个独立 Skill，由一个 cron 在同一次运行中串联；仓内 `skills/` 是 Skill 唯一源码，安装目录只作为同步产物。
 - 2026-07-11 自动执行授权：`值得继续` 只允许进入 live preflight；复核通过后允许 clone、fork、修改、验证、commit、push 和创建 PR，禁止自动 merge。内部记录使用中文，上游内容遵循目标仓库的主要沟通语言。
@@ -18,5 +18,3 @@
 - 2026-07-11 GitHub 工具边界：`gh` 负责认证、仓库/Fork/PR/Review/checks 等远程操作；本地修改、测试、分支、commit 和 push 必须组合 Codex、项目工具链与标准 `git`。自动化始终禁止自动 merge。
 - 2026-07-14 `destructive_command_guard` PR 阻塞：live preflight 确认该仓 LICENSE rider 明确排除 OpenAI、Anthropic 及其代理，并把分析、修改、测试和发布列为禁止使用；当前 Codex 身份不能继续生成或提交补丁，未 Fork、未改代码、未建 PR。只有取得作者 Jeffrey Emanuel 明确书面许可后才能重新复核并推进，详见 `docs/ai/context/20260714-102948-destructive-command-guard-pr-blocked-plan.md`。
 - 2026-09-06 待办合并（压缩时保留）：扫描器存在两个已知未修复缺陷——CLI 生成报告时 UTC 日期落前一日（date 覆盖偏移，报告日期可能偏移一天）、`--help` 未静默执行；二者在 2026-07-13 至 2026-07-22 多次「每日流水线运行」记录中反复出现，本次压缩移除那些运行日志时统一保留此待办，原文出处见归档文档 `docs/ai/context/20260906-104420-agents-md-compression_CN.md`。
-- 2026-09-08 PR 反馈增量巡检：以上次记录生成时间 `2026-09-08 09:23:18 +09:00` 为基线，当前 `cnYui` 有 30 个 open PR；基线后 8 个 authored PR 正常合并，无关闭未合并项。逐个回读评论、reviews 和 review-thread comments 后没有新增外部反馈、requested changes 或行级评论；`inkeep/agents#3493`、`trycua/cua#1873`、`getzep/graphiti#1539/#1568` 的失败 check 属历史阻塞，未自动回复、未修代码、未提交、未推送。详见 `docs/ai/context/20260908-131706-cnyui-pr-feedback-monitor.md`。
-- 2026-10-06 每日流水线：扫描池再度退化（ponytail/n8n/JavaGuide 全死路）→ 独立发现 numpyro #2187，创建 PR #2326（InverseWishartCholesky）；详见 `docs/ai/context/20261006-061500-daily-pr-pipeline-run.md`。
