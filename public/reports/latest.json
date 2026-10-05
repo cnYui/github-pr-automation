@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-04",
-  "generatedAt": "2026-10-03T21:10:01.286Z",
+  "date": "2026-10-06",
+  "generatedAt": "2026-10-05T21:05:44.538Z",
   "summary": {
     "candidateCount": 11,
     "actionableCount": 1
@@ -15,28 +15,31 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 153204,
-        "starsAdded24h": 1575,
-        "lastUpdatedAt": "2026-10-03T05:12:55Z"
+        "starsTotal": 155912,
+        "starsAdded24h": 1188,
+        "lastUpdatedAt": "2026-10-05T20:46:39Z"
       },
       "health": {
         "license": "MIT",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": true,
+        "hasContributing": false,
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
         "evidence": [
-          "fix(benchmarks): require runtime assertions to finish before passing",
-          "fix(benchmarks): classify conventional JS TS and Go test filenames"
+          ".github/CONTRIBUTING.md",
+          ".github/workflows/publish.yml",
+          ".github/workflows/test.yml",
+          "Hook stdout JSON is truncated on macOS after mode changes and subagent start",
+          "Ship a user-runnable benchmark to check ponytail on any model"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "已有相近打开中的 PR"
+        "reason": "live 复筛：贡献饱和（100+ open PR），记忆标记为恒无合格切口，下调跳过"
       },
       "recommendation": "跳过"
     },
@@ -49,9 +52,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 272141,
-        "starsAdded24h": 979,
-        "lastUpdatedAt": "2026-10-02T02:01:14Z"
+        "starsTotal": 273567,
+        "starsAdded24h": 706,
+        "lastUpdatedAt": "2026-10-05T04:55:16Z"
       },
       "health": {
         "license": "MIT",
@@ -64,8 +67,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(hooks): honor CLAUDE_CONFIG_DIR instead of writing to ~/.claude",
-          "test: isolate HOME in state-store CLI tests"
+          "docs: Add SerpApi as a sponsor (#3155)",
+          "fix(ci): close catalog gate holes on README project tree"
         ]
       },
       "risk": {
@@ -77,14 +80,82 @@
     {
       "rank": 3,
       "repository": {
+        "owner": "Graphify-Labs",
+        "name": "graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 124043,
+        "starsAdded24h": 282,
+        "lastUpdatedAt": "2026-10-05T19:25:23Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(export): escape every \"<\" in JSON embedded in <script> blocks",
+          "fix(skill): bind semantic merges to dispatched source ownership"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 140263,
+        "starsAdded24h": 273,
+        "lastUpdatedAt": "2026-10-05T16:08:06Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(codex): run stale-client detection outside the aggregate stack view",
+          "fix(presets): default Hermes and OpenClaw MiMo presets to mimo-v2.6-pro"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 5,
+      "repository": {
         "owner": "yt-dlp",
         "name": "yt-dlp",
         "url": "https://github.com/yt-dlp/yt-dlp",
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 195267,
-        "starsAdded24h": 273,
+        "starsTotal": 195750,
+        "starsAdded24h": 230,
         "lastUpdatedAt": "2026-09-27T22:09:13Z"
       },
       "health": {
@@ -98,76 +169,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "[ie/Servus] Fix extractor",
-          "[ie/TubiTv] Added a fallback api extraction"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 4,
-      "repository": {
-        "owner": "Graphify-Labs",
-        "name": "graphify",
-        "url": "https://github.com/Graphify-Labs/graphify",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 123531,
-        "starsAdded24h": 224,
-        "lastUpdatedAt": "2026-10-02T22:12:03Z"
-      },
-      "health": {
-        "license": "Apache-2.0",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "fix(hook-guard): name the effective graph.json when GRAPHIFY_OUT is customized",
-          "fix(opencode): load the plugin on OpenCode 2 and refresh installed copies (#3554, #3732)"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 5,
-      "repository": {
-        "owner": "farion1231",
-        "name": "cc-switch",
-        "url": "https://github.com/farion1231/cc-switch",
-        "primaryLanguage": "Rust"
-      },
-      "popularity": {
-        "starsTotal": 139773,
-        "starsAdded24h": 221,
-        "lastUpdatedAt": "2026-10-03T16:17:56Z"
-      },
-      "health": {
-        "license": "MIT",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "fix(ui): unify full-screen editor width and move MCP/prompt editing to full pages",
-          "fix(opencode): preserve untouched extra-option value types on edit"
+          "[pp/ffmpeg] Fix `ffprobe` debug label",
+          "[ie/racingtv] Add RacingTV extractor"
         ]
       },
       "risk": {
@@ -179,15 +182,50 @@
     {
       "rank": 6,
       "repository": {
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 206724,
+        "starsAdded24h": 71,
+        "lastUpdatedAt": "2026-10-05T20:41:19Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "quiet"
+      },
+      "opportunity": {
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "evidence": [
+          ".agents/review-rules/README.md",
+          ".agents/review-rules/db-migrations/conventions-and-tests.md",
+          ".agents/review-rules/qa-dx/workflow-safety.md"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "live 复筛：CLA + issue-first 门禁恒为 blocker，下调跳过"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 7,
+      "repository": {
         "owner": "open-webui",
         "name": "open-webui",
         "url": "https://github.com/open-webui/open-webui",
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 153880,
-        "starsAdded24h": 76,
-        "lastUpdatedAt": "2026-10-03T13:06:04Z"
+        "starsTotal": 154013,
+        "starsAdded24h": 63,
+        "lastUpdatedAt": "2026-10-05T19:57:08Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -200,49 +238,13 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix: web addresses in chat show &amp; in place of &, and links in angle brackets open the wrong address",
-          "fix: links to web addresses in chat show &amp; in place of &, and some open the wrong address"
+          "i18n: complete Romanian translation",
+          "i18n: fill missing sk-SK translations"
         ]
       },
       "risk": {
         "level": "高",
         "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 7,
-      "repository": {
-        "owner": "n8n-io",
-        "name": "n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "primaryLanguage": "TypeScript"
-      },
-      "popularity": {
-        "starsTotal": 206582,
-        "starsAdded24h": 73,
-        "lastUpdatedAt": "2026-10-03T17:44:51Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "测试补充",
-        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
-        "evidence": [
-          ".agents/review-rules/README.md",
-          ".agents/review-rules/db-migrations/conventions-and-tests.md",
-          ".agents/review-rules/qa-dx/workflow-safety.md",
-          "Editor: NDV open freezes for ~20s on instances with large usable-credentials sets"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "live 复筛：CLA + issue-first 恒定 blocker，下调跳过"
       },
       "recommendation": "跳过"
     },
@@ -255,28 +257,29 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 157779,
-        "starsAdded24h": 52,
-        "lastUpdatedAt": "2026-10-03T15:55:10Z"
+        "starsTotal": 157896,
+        "starsAdded24h": 51,
+        "lastUpdatedAt": "2026-10-05T20:59:02Z"
       },
       "health": {
         "license": "NOASSERTION",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
-        "issueActivity": "active"
+        "issueActivity": "quiet"
       },
       "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "category": "小 bug",
+        "summary": "仓库验证依赖重型环境，不适合作为默认低风险候选",
         "evidence": [
-          "refactor(api): separate pipeline template services",
-          "fix(api): serialize app access status updates"
+          ".devcontainer/Dockerfile",
+          ".dockerignore",
+          ".github/workflows/deploy-agent.yml"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "已有相近打开中的 PR"
+        "reason": "需要重型基础设施或专有环境才能验证"
       },
       "recommendation": "跳过"
     },
@@ -289,9 +292,9 @@
         "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 190075,
-        "starsAdded24h": 35,
-        "lastUpdatedAt": "2026-09-29T15:38:41Z"
+        "starsTotal": 190170,
+        "starsAdded24h": 21,
+        "lastUpdatedAt": "2026-10-05T06:03:13Z"
       },
       "health": {
         "license": "MIT",
@@ -304,8 +307,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(extract): preserve bzip2 archives and honor extraction destination",
-          "fix(history-substring-search): correct seperator typo in comments"
+          "fix(copyfile): stop on clipboard failure",
+          "fix(extract): preserve bzip2 archives and honor extraction destination"
         ]
       },
       "risk": {
@@ -323,9 +326,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 159016,
-        "starsAdded24h": 11,
-        "lastUpdatedAt": "2026-10-02T00:38:41Z"
+        "starsTotal": 159033,
+        "starsAdded24h": 3,
+        "lastUpdatedAt": "2026-10-03T23:36:32Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -341,13 +344,13 @@
           ".github/workflows/test.yml",
           "README.md",
           "README_EN.md",
-          "失效链接替换",
-          "关于数组转集合方法的第六种：使用Java9的List.of()"
+          "关于数组转集合方法的第六种：使用Java9的List.of()",
+          "AOP 织入（Weaving） 的表达方式或许可以描述的更易懂一些"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "live 复筛：账本已有既往 PR 去重，扫描器误判，下调跳过"
+        "reason": "live 复筛：账本已有既往 PR 去重，下调跳过"
       },
       "recommendation": "跳过"
     },
@@ -362,7 +365,7 @@
       "popularity": {
         "starsTotal": 2758,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-10-01T17:58:42Z"
+        "lastUpdatedAt": "2026-10-05T21:07:21.521Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -374,12 +377,12 @@
       "recommendation": "值得继续",
       "opportunity": {
         "category": "文档缺口",
-        "summary": "为 numpyro Wishart 类补充 Wishart 密度、均值与逐元素方差的数学说明，推进 umbrella #2187（该类 docstring 仅有一句话与参数说明）",
+        "summary": "为 numpyro InverseWishartCholesky 类补充 Cholesky 因子密度（含 Jacobian）、Bartlett 抽样与 mean/variance 说明，推进 umbrella #2187（该类 docstring 仅有参数说明，无公式）",
         "evidence": [
-          "numpyro/distributions/continuous.py 的 Wishart 类 docstring 只有一句话描述，无密度/均值/方差公式",
-          "umbrella issue pyro-ppl/numpyro#2187 清单中 Wishart 未勾选；全部 PR 搜索（含开放 PR）无人认领 Wishart 文档",
-          "公式可与 scipy.stats.wishart 及实现的 log_prob/mean/variance 逐点数值核对",
-          "我方既往同类 PR 均已被维护者合并"
+          "numpyro/distributions/continuous.py 的 InverseWishartCholesky 类 docstring 仅有一句话与参数说明，无密度公式",
+          "umbrella issue pyro-ppl/numpyro#2187 清单中 InverseWishartCholesky 未勾选；开放 PR 列表与全量 PR 搜索均无人认领",
+          "公式可与 InverseWishart 密度+Jacobian 及实现的 log_prob 逐点数值核对",
+          "我方既往同类 PR（#2322/#2325 等）均已被维护者合并"
         ]
       },
       "risk": {
