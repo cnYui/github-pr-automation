@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-06",
-  "generatedAt": "2026-10-05T21:05:44.538Z",
+  "date": "2026-10-07",
+  "generatedAt": "2026-10-06T21:03:45.701Z",
   "summary": {
     "candidateCount": 11,
-    "actionableCount": 1
+    "actionableCount": 2
   },
   "items": [
     {
@@ -15,8 +15,8 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 155912,
-        "starsAdded24h": 1188,
+        "starsTotal": 156740,
+        "starsAdded24h": 828,
         "lastUpdatedAt": "2026-10-05T20:46:39Z"
       },
       "health": {
@@ -27,19 +27,16 @@
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "测试补充",
-        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          ".github/CONTRIBUTING.md",
-          ".github/workflows/publish.yml",
-          ".github/workflows/test.yml",
-          "Hook stdout JSON is truncated on macOS after mode changes and subagent start",
-          "Ship a user-runnable benchmark to check ponytail on any model"
+          "fix(cursor-hooks): preserve similarly named user hooks",
+          "fix(pi): restore the session's mode after OMP session switches"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "live 复筛：贡献饱和（100+ open PR），记忆标记为恒无合格切口，下调跳过"
+        "reason": "已有相近打开中的 PR"
       },
       "recommendation": "跳过"
     },
@@ -52,8 +49,8 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 273567,
-        "starsAdded24h": 706,
+        "starsTotal": 274223,
+        "starsAdded24h": 656,
         "lastUpdatedAt": "2026-10-05T04:55:16Z"
       },
       "health": {
@@ -67,8 +64,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "docs: Add SerpApi as a sponsor (#3155)",
-          "fix(ci): close catalog gate holes on README project tree"
+          "fix(state-store): preserve concurrent writers with serialized snapshots",
+          "fix(opencode): avoid duplicate home plugin initialization"
         ]
       },
       "risk": {
@@ -86,9 +83,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 124043,
-        "starsAdded24h": 282,
-        "lastUpdatedAt": "2026-10-05T19:25:23Z"
+        "starsTotal": 124384,
+        "starsAdded24h": 341,
+        "lastUpdatedAt": "2026-10-06T20:08:59Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -101,8 +98,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(export): escape every \"<\" in JSON embedded in <script> blocks",
-          "fix(skill): bind semantic merges to dispatched source ownership"
+          "fix(detect): drop a previous checkout's absolute manifest keys",
+          "feat(install): add moca platform (skill to ~/.config/moca/skills)"
         ]
       },
       "risk": {
@@ -120,9 +117,9 @@
         "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 140263,
-        "starsAdded24h": 273,
-        "lastUpdatedAt": "2026-10-05T16:08:06Z"
+        "starsTotal": 140492,
+        "starsAdded24h": 229,
+        "lastUpdatedAt": "2026-10-06T14:14:49Z"
       },
       "health": {
         "license": "MIT",
@@ -135,8 +132,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(codex): run stale-client detection outside the aggregate stack view",
-          "fix(presets): default Hermes and OpenClaw MiMo presets to mimo-v2.6-pro"
+          "feat(skills): add configurable download timeouts and installation progress",
+          "docs(proxy): clarify supported SSE delimiter combinations"
         ]
       },
       "risk": {
@@ -154,8 +151,8 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 195750,
-        "starsAdded24h": 230,
+        "starsTotal": 195963,
+        "starsAdded24h": 213,
         "lastUpdatedAt": "2026-09-27T22:09:13Z"
       },
       "health": {
@@ -182,50 +179,15 @@
     {
       "rank": 6,
       "repository": {
-        "owner": "n8n-io",
-        "name": "n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "primaryLanguage": "TypeScript"
-      },
-      "popularity": {
-        "starsTotal": 206724,
-        "starsAdded24h": 71,
-        "lastUpdatedAt": "2026-10-05T20:41:19Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "quiet"
-      },
-      "opportunity": {
-        "category": "测试补充",
-        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
-        "evidence": [
-          ".agents/review-rules/README.md",
-          ".agents/review-rules/db-migrations/conventions-and-tests.md",
-          ".agents/review-rules/qa-dx/workflow-safety.md"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "live 复筛：CLA + issue-first 门禁恒为 blocker，下调跳过"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 7,
-      "repository": {
         "owner": "open-webui",
         "name": "open-webui",
         "url": "https://github.com/open-webui/open-webui",
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 154013,
-        "starsAdded24h": 63,
-        "lastUpdatedAt": "2026-10-05T19:57:08Z"
+        "starsTotal": 154092,
+        "starsAdded24h": 79,
+        "lastUpdatedAt": "2026-10-06T21:02:35Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -238,8 +200,42 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "i18n: complete Romanian translation",
-          "i18n: fill missing sk-SK translations"
+          "feat: translate model control names, descriptions and option names",
+          "fix: Cancel and Continue in the web search confirmation popup need two clicks"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 7,
+      "repository": {
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 157964,
+        "starsAdded24h": 68,
+        "lastUpdatedAt": "2026-10-06T15:12:46Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "chore(deps): bump multidict from 6.7.0 to 6.9.1 in /api",
+          "chore(deps): bump werkzeug from 3.1.6 to 3.1.9 in /api"
         ]
       },
       "risk": {
@@ -251,35 +247,34 @@
     {
       "rank": 8,
       "repository": {
-        "owner": "langgenius",
-        "name": "dify",
-        "url": "https://github.com/langgenius/dify",
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 157896,
-        "starsAdded24h": 51,
-        "lastUpdatedAt": "2026-10-05T20:59:02Z"
+        "starsTotal": 206772,
+        "starsAdded24h": 48,
+        "lastUpdatedAt": "2026-10-06T21:03:09Z"
       },
       "health": {
         "license": "NOASSERTION",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
-        "issueActivity": "quiet"
+        "issueActivity": "active"
       },
       "opportunity": {
-        "category": "小 bug",
-        "summary": "仓库验证依赖重型环境，不适合作为默认低风险候选",
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          ".devcontainer/Dockerfile",
-          ".dockerignore",
-          ".github/workflows/deploy-agent.yml"
+          "perf(core): Start a new test session when call_agent gets an unknown session ID",
+          "feat(engine): Plan partial and pinned manual runs for engine v2"
         ]
       },
       "risk": {
         "level": "高",
-        "reason": "需要重型基础设施或专有环境才能验证"
+        "reason": "已有相近打开中的 PR"
       },
       "recommendation": "跳过"
     },
@@ -292,9 +287,9 @@
         "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 190170,
-        "starsAdded24h": 21,
-        "lastUpdatedAt": "2026-10-05T06:03:13Z"
+        "starsTotal": 190197,
+        "starsAdded24h": 27,
+        "lastUpdatedAt": "2026-10-06T09:06:45Z"
       },
       "health": {
         "license": "MIT",
@@ -307,8 +302,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(copyfile): stop on clipboard failure",
-          "fix(extract): preserve bzip2 archives and honor extraction destination"
+          "fix(tmux): handle `$EDITOR` with options in `tmuxconf` alias",
+          "feat(logcli): add completion plugin"
         ]
       },
       "risk": {
@@ -326,8 +321,8 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 159033,
-        "starsAdded24h": 3,
+        "starsTotal": 159050,
+        "starsAdded24h": 17,
         "lastUpdatedAt": "2026-10-03T23:36:32Z"
       },
       "health": {
@@ -349,10 +344,10 @@
         ]
       },
       "risk": {
-        "level": "高",
-        "reason": "live 复筛：账本已有既往 PR 去重，下调跳过"
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
       },
-      "recommendation": "跳过"
+      "recommendation": "值得继续"
     },
     {
       "rank": 11,
@@ -365,7 +360,7 @@
       "popularity": {
         "starsTotal": 2758,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-10-05T21:07:21.521Z"
+        "lastUpdatedAt": "2026-10-06T23:15:44.714Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -377,12 +372,12 @@
       "recommendation": "值得继续",
       "opportunity": {
         "category": "文档缺口",
-        "summary": "为 numpyro InverseWishartCholesky 类补充 Cholesky 因子密度（含 Jacobian）、Bartlett 抽样与 mean/variance 说明，推进 umbrella #2187（该类 docstring 仅有参数说明，无公式）",
+        "summary": "为 numpyro LKJCholesky 与 LKJ 类补充密度公式（含归一化常数与 Cholesky→相关矩阵 Jacobian），推进 umbrella #2187（两类 docstring 仅有文字描述，无数学式）",
         "evidence": [
-          "numpyro/distributions/continuous.py 的 InverseWishartCholesky 类 docstring 仅有一句话与参数说明，无密度公式",
-          "umbrella issue pyro-ppl/numpyro#2187 清单中 InverseWishartCholesky 未勾选；开放 PR 列表与全量 PR 搜索均无人认领",
-          "公式可与 InverseWishart 密度+Jacobian 及实现的 log_prob 逐点数值核对",
-          "我方既往同类 PR（#2322/#2325 等）均已被维护者合并"
+          "numpyro/distributions/continuous.py 的 LKJ/LKJCholesky 类 docstring 只有文字描述与示例代码，无密度公式",
+          "umbrella issue pyro-ppl/numpyro#2187 清单中 LKJ、LKJCholesky 未勾选；全量 PR 搜索（LKJ）无人认领",
+          "公式可与实现的 log_prob 逐点数值核对，且 D=3 可数值积分验证归一化",
+          "我方既往同类 PR（#2294…#2325）均已被维护者合并"
         ]
       },
       "risk": {
