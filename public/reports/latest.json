@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-07",
-  "generatedAt": "2026-10-06T21:03:45.701Z",
+  "date": "2026-10-08",
+  "generatedAt": "2026-10-08T04:10:33.895Z",
   "summary": {
     "candidateCount": 11,
-    "actionableCount": 2
+    "actionableCount": 3
   },
   "items": [
     {
@@ -15,9 +15,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 156740,
-        "starsAdded24h": 828,
-        "lastUpdatedAt": "2026-10-05T20:46:39Z"
+        "starsTotal": 157729,
+        "starsAdded24h": 989,
+        "lastUpdatedAt": "2026-10-08T03:51:37Z"
       },
       "health": {
         "license": "MIT",
@@ -30,8 +30,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(cursor-hooks): preserve similarly named user hooks",
-          "fix(pi): restore the session's mode after OMP session switches"
+          "docs: fix OpenCode install command and config key",
+          "fix: preserve invalid Cursor hook configurations during install"
         ]
       },
       "risk": {
@@ -49,8 +49,8 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 274223,
-        "starsAdded24h": 656,
+        "starsTotal": 275012,
+        "starsAdded24h": 789,
         "lastUpdatedAt": "2026-10-05T04:55:16Z"
       },
       "health": {
@@ -64,8 +64,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(state-store): preserve concurrent writers with serialized snapshots",
-          "fix(opencode): avoid duplicate home plugin initialization"
+          "fix(deps): pin fast-uri to patched 3.1.8",
+          "feat(context): suggest skills at prompt time from a generation-bound index"
         ]
       },
       "risk": {
@@ -77,49 +77,15 @@
     {
       "rank": 3,
       "repository": {
-        "owner": "Graphify-Labs",
-        "name": "graphify",
-        "url": "https://github.com/Graphify-Labs/graphify",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 124384,
-        "starsAdded24h": 341,
-        "lastUpdatedAt": "2026-10-06T20:08:59Z"
-      },
-      "health": {
-        "license": "Apache-2.0",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "fix(detect): drop a previous checkout's absolute manifest keys",
-          "feat(install): add moca platform (skill to ~/.config/moca/skills)"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 4,
-      "repository": {
         "owner": "farion1231",
         "name": "cc-switch",
         "url": "https://github.com/farion1231/cc-switch",
         "primaryLanguage": "Rust"
       },
       "popularity": {
-        "starsTotal": 140492,
-        "starsAdded24h": 229,
-        "lastUpdatedAt": "2026-10-06T14:14:49Z"
+        "starsTotal": 141041,
+        "starsAdded24h": 549,
+        "lastUpdatedAt": "2026-10-08T03:25:57Z"
       },
       "health": {
         "license": "MIT",
@@ -132,8 +98,42 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(skills): add configurable download timeouts and installation progress",
-          "docs(proxy): clarify supported SSE delimiter combinations"
+          "ci(release): require deb and rpm signatures in latest.json check",
+          "fix(proxy): prevent optional Agent isolation from forcing worktrees"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 4,
+      "repository": {
+        "owner": "Graphify-Labs",
+        "name": "graphify",
+        "url": "https://github.com/Graphify-Labs/graphify",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 124722,
+        "starsAdded24h": 338,
+        "lastUpdatedAt": "2026-10-07T17:04:38Z"
+      },
+      "health": {
+        "license": "Apache-2.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat(cli,report): add graphify rebuild + surface pre-#1504 collision banner",
+          "fix(cluster,analyze,report): isolate AMBIGUOUS edges from top-N and modularity"
         ]
       },
       "risk": {
@@ -151,8 +151,8 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 195963,
-        "starsAdded24h": 213,
+        "starsTotal": 196232,
+        "starsAdded24h": 269,
         "lastUpdatedAt": "2026-09-27T22:09:13Z"
       },
       "health": {
@@ -166,8 +166,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "[pp/ffmpeg] Fix `ffprobe` debug label",
-          "[ie/racingtv] Add RacingTV extractor"
+          "noodlemagazine: added support for another site with same backend.",
+          "[pp/ffmpeg] Fix `ffprobe` debug label"
         ]
       },
       "risk": {
@@ -179,15 +179,15 @@
     {
       "rank": 6,
       "repository": {
-        "owner": "open-webui",
-        "name": "open-webui",
-        "url": "https://github.com/open-webui/open-webui",
-        "primaryLanguage": "Python"
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 154092,
-        "starsAdded24h": 79,
-        "lastUpdatedAt": "2026-10-06T21:02:35Z"
+        "starsTotal": 158053,
+        "starsAdded24h": 89,
+        "lastUpdatedAt": "2026-10-08T04:05:51Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -200,8 +200,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat: translate model control names, descriptions and option names",
-          "fix: Cancel and Continue in the web search confirmation popup need two clicks"
+          "refactor(api): enable strict typing for content moderation tests",
+          "fix(web): decode case-insensitive unicode escapes in streamed answers"
         ]
       },
       "risk": {
@@ -213,15 +213,15 @@
     {
       "rank": 7,
       "repository": {
-        "owner": "langgenius",
-        "name": "dify",
-        "url": "https://github.com/langgenius/dify",
-        "primaryLanguage": "TypeScript"
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 157964,
-        "starsAdded24h": 68,
-        "lastUpdatedAt": "2026-10-06T15:12:46Z"
+        "starsTotal": 154175,
+        "starsAdded24h": 83,
+        "lastUpdatedAt": "2026-10-07T22:11:44Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -234,8 +234,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "chore(deps): bump multidict from 6.7.0 to 6.9.1 in /api",
-          "chore(deps): bump werkzeug from 3.1.6 to 3.1.9 in /api"
+          "i18n: fill missing Norwegian Bokmål (nb-NO) translations",
+          "i18n: fill missing Vietnamese (vi-VN) translations"
         ]
       },
       "risk": {
@@ -253,9 +253,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 206772,
-        "starsAdded24h": 48,
-        "lastUpdatedAt": "2026-10-06T21:03:09Z"
+        "starsTotal": 206845,
+        "starsAdded24h": 73,
+        "lastUpdatedAt": "2026-10-08T03:34:35Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -265,18 +265,20 @@
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "category": "测试补充",
+        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
         "evidence": [
-          "perf(core): Start a new test session when call_agent gets an unknown session ID",
-          "feat(engine): Plan partial and pinned manual runs for engine v2"
+          ".agents/review-rules/README.md",
+          ".agents/review-rules/db-migrations/conventions-and-tests.md",
+          ".agents/review-rules/qa-dx/workflow-safety.md",
+          "Publishing silently fails and keeps serving old version when a trigger node id exceeds 36 chars (workflow_publication_trigger_status.nodeId varchar(36))"
         ]
       },
       "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
+        "level": "低",
+        "reason": "改动可集中在测试或文档，且存在 CI 验证"
       },
-      "recommendation": "跳过"
+      "recommendation": "值得继续"
     },
     {
       "rank": 9,
@@ -287,8 +289,8 @@
         "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 190197,
-        "starsAdded24h": 27,
+        "starsTotal": 190222,
+        "starsAdded24h": 25,
         "lastUpdatedAt": "2026-10-06T09:06:45Z"
       },
       "health": {
@@ -321,8 +323,8 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 159050,
-        "starsAdded24h": 17,
+        "starsTotal": 159073,
+        "starsAdded24h": 23,
         "lastUpdatedAt": "2026-10-03T23:36:32Z"
       },
       "health": {
@@ -352,37 +354,36 @@
     {
       "rank": 11,
       "repository": {
-        "owner": "pyro-ppl",
-        "name": "numpyro",
-        "url": "https://github.com/pyro-ppl/numpyro",
-        "primaryLanguage": "Python"
+        "owner": "jdefrancesco",
+        "name": "dskDitto",
+        "url": "https://github.com/jdefrancesco/dskDitto",
+        "primaryLanguage": "Go"
       },
       "popularity": {
-        "starsTotal": 2758,
+        "starsTotal": 392,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-10-06T23:15:44.714Z"
+        "lastUpdatedAt": "2026-10-08T04:11:46.325Z"
       },
       "health": {
         "license": "Apache-2.0",
-        "hasCi": true,
+        "hasCi": false,
         "hasTests": true,
-        "hasContributing": true,
+        "hasContributing": false,
         "issueActivity": "active"
       },
       "recommendation": "值得继续",
       "opportunity": {
         "category": "文档缺口",
-        "summary": "为 numpyro LKJCholesky 与 LKJ 类补充密度公式（含归一化常数与 Cholesky→相关矩阵 Jacobian），推进 umbrella #2187（两类 docstring 仅有文字描述，无数学式）",
+        "summary": "修复 README 中指向 DittoDoc.md 的失效相对链接（实际文件在 docs/DittoDoc.md），对应 issue #24",
         "evidence": [
-          "numpyro/distributions/continuous.py 的 LKJ/LKJCholesky 类 docstring 只有文字描述与示例代码，无密度公式",
-          "umbrella issue pyro-ppl/numpyro#2187 清单中 LKJ、LKJCholesky 未勾选；全量 PR 搜索（LKJ）无人认领",
-          "公式可与实现的 log_prob 逐点数值核对，且 D=3 可数值积分验证归一化",
-          "我方既往同类 PR（#2294…#2325）均已被维护者合并"
+          "README.md 第 360 行 [DittoDoc](DittoDoc.md) 指向根目录，但仓库中文件位于 docs/DittoDoc.md",
+          "issue jdefrancesco/dskDitto#24 (broken doc link) 仍 open，无关联 PR；全量开放 PR 为空",
+          "独立 live 发现（扫描池退化：仅 n8n/JavaGuide 为值得继续，均为已知死路）"
         ]
       },
       "risk": {
         "level": "低",
-        "reason": "仅改 docstring，无运行时逻辑；Apache-2.0、无 CLA/DCO；可用本地 jax 数值核对公式并运行 ruff"
+        "reason": "仅改一行文档链接；Apache-2.0、无 CLA/DCO、无 CONTRIBUTING；可用 git 校验目标文件存在"
       }
     }
   ]
