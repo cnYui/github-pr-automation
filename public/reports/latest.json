@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-08",
-  "generatedAt": "2026-10-08T04:10:33.895Z",
+  "date": "2026-10-09",
+  "generatedAt": "2026-10-08T21:03:52.567Z",
   "summary": {
     "candidateCount": 11,
-    "actionableCount": 3
+    "actionableCount": 2
   },
   "items": [
     {
@@ -15,9 +15,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 157729,
-        "starsAdded24h": 989,
-        "lastUpdatedAt": "2026-10-08T03:51:37Z"
+        "starsTotal": 158373,
+        "starsAdded24h": 644,
+        "lastUpdatedAt": "2026-10-08T16:19:55Z"
       },
       "health": {
         "license": "MIT",
@@ -30,8 +30,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "docs: fix OpenCode install command and config key",
-          "fix: preserve invalid Cursor hook configurations during install"
+          "fix(map): keep repo-controlled text and symlinked files out of the SessionStart map",
+          "docs: add Devin CLI and OpenClaw to adapter table"
         ]
       },
       "risk": {
@@ -43,14 +43,48 @@
     {
       "rank": 2,
       "repository": {
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 141335,
+        "starsAdded24h": 294,
+        "lastUpdatedAt": "2026-10-08T18:38:02Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(codex): 复用 Grok 兼容逻辑修复 GitHub Copilot Responses 422",
+          "chore(deps): bump the cargo-deps group in /src-tauri with 56 updates"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 3,
+      "repository": {
         "owner": "affaan-m",
         "name": "ECC",
         "url": "https://github.com/affaan-m/ECC",
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 275012,
-        "starsAdded24h": 789,
+        "starsTotal": 275303,
+        "starsAdded24h": 291,
         "lastUpdatedAt": "2026-10-05T04:55:16Z"
       },
       "health": {
@@ -64,42 +98,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(deps): pin fast-uri to patched 3.1.8",
-          "feat(context): suggest skills at prompt time from a generation-bound index"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 3,
-      "repository": {
-        "owner": "farion1231",
-        "name": "cc-switch",
-        "url": "https://github.com/farion1231/cc-switch",
-        "primaryLanguage": "Rust"
-      },
-      "popularity": {
-        "starsTotal": 141041,
-        "starsAdded24h": 549,
-        "lastUpdatedAt": "2026-10-08T03:25:57Z"
-      },
-      "health": {
-        "license": "MIT",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "ci(release): require deb and rpm signatures in latest.json check",
-          "fix(proxy): prevent optional Agent isolation from forcing worktrees"
+          "docs(i18n): add Arabic localization scout",
+          "feat(carriers): validate carrier runtime closure in CI"
         ]
       },
       "risk": {
@@ -117,8 +117,8 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 124722,
-        "starsAdded24h": 338,
+        "starsTotal": 124732,
+        "starsAdded24h": 10,
         "lastUpdatedAt": "2026-10-07T17:04:38Z"
       },
       "health": {
@@ -132,8 +132,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat(cli,report): add graphify rebuild + surface pre-#1504 collision banner",
-          "fix(cluster,analyze,report): isolate AMBIGUOUS edges from top-N and modularity"
+          "fix(export): strip control characters from the labels drawn into graph.svg (#4241)",
+          "fix(cache): namespace AST cache by tree-sitter grammar versions (#4236)"
         ]
       },
       "risk": {
@@ -145,14 +145,48 @@
     {
       "rank": 5,
       "repository": {
+        "owner": "n8n-io",
+        "name": "n8n",
+        "url": "https://github.com/n8n-io/n8n",
+        "primaryLanguage": "TypeScript"
+      },
+      "popularity": {
+        "starsTotal": 206722,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-10-08T20:57:59Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat(ai-builder): Report the eval harness's own model usage per case (no-changelog)",
+          "fix(ai-builder): Count eval runs that read another build's workflow as framework issues (no-changelog)"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 6,
+      "repository": {
         "owner": "yt-dlp",
         "name": "yt-dlp",
         "url": "https://github.com/yt-dlp/yt-dlp",
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 196232,
-        "starsAdded24h": 269,
+        "starsTotal": 196205,
+        "starsAdded24h": 0,
         "lastUpdatedAt": "2026-09-27T22:09:13Z"
       },
       "health": {
@@ -166,42 +200,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "noodlemagazine: added support for another site with same backend.",
-          "[pp/ffmpeg] Fix `ffprobe` debug label"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 6,
-      "repository": {
-        "owner": "langgenius",
-        "name": "dify",
-        "url": "https://github.com/langgenius/dify",
-        "primaryLanguage": "TypeScript"
-      },
-      "popularity": {
-        "starsTotal": 158053,
-        "starsAdded24h": 89,
-        "lastUpdatedAt": "2026-10-08T04:05:51Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "refactor(api): enable strict typing for content moderation tests",
-          "fix(web): decode case-insensitive unicode escapes in streamed answers"
+          "[rh:websockets] Fix connection context handling",
+          "noodlemagazine: added support for another site with same backend."
         ]
       },
       "risk": {
@@ -213,84 +213,14 @@
     {
       "rank": 7,
       "repository": {
-        "owner": "open-webui",
-        "name": "open-webui",
-        "url": "https://github.com/open-webui/open-webui",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 154175,
-        "starsAdded24h": 83,
-        "lastUpdatedAt": "2026-10-07T22:11:44Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "i18n: fill missing Norwegian Bokmål (nb-NO) translations",
-          "i18n: fill missing Vietnamese (vi-VN) translations"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 8,
-      "repository": {
-        "owner": "n8n-io",
-        "name": "n8n",
-        "url": "https://github.com/n8n-io/n8n",
-        "primaryLanguage": "TypeScript"
-      },
-      "popularity": {
-        "starsTotal": 206845,
-        "starsAdded24h": 73,
-        "lastUpdatedAt": "2026-10-08T03:34:35Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "测试补充",
-        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
-        "evidence": [
-          ".agents/review-rules/README.md",
-          ".agents/review-rules/db-migrations/conventions-and-tests.md",
-          ".agents/review-rules/qa-dx/workflow-safety.md",
-          "Publishing silently fails and keeps serving old version when a trigger node id exceeds 36 chars (workflow_publication_trigger_status.nodeId varchar(36))"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "改动可集中在测试或文档，且存在 CI 验证"
-      },
-      "recommendation": "值得继续"
-    },
-    {
-      "rank": 9,
-      "repository": {
         "owner": "ohmyzsh",
         "name": "ohmyzsh",
         "url": "https://github.com/ohmyzsh/ohmyzsh",
         "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 190222,
-        "starsAdded24h": 25,
+        "starsTotal": 190037,
+        "starsAdded24h": 0,
         "lastUpdatedAt": "2026-10-06T09:06:45Z"
       },
       "health": {
@@ -304,8 +234,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(tmux): handle `$EDITOR` with options in `tmuxconf` alias",
-          "feat(logcli): add completion plugin"
+          "fix(battery): fix regex compatibility with GNU grep in macos",
+          "feat(ollama): add CLI and public model completions"
         ]
       },
       "risk": {
@@ -315,7 +245,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 10,
+      "rank": 8,
       "repository": {
         "owner": "Snailclimb",
         "name": "JavaGuide",
@@ -323,8 +253,8 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 159073,
-        "starsAdded24h": 23,
+        "starsTotal": 158886,
+        "starsAdded24h": 0,
         "lastUpdatedAt": "2026-10-03T23:36:32Z"
       },
       "health": {
@@ -341,8 +271,8 @@
           ".github/workflows/test.yml",
           "README.md",
           "README_EN.md",
-          "关于数组转集合方法的第六种：使用Java9的List.of()",
-          "AOP 织入（Weaving） 的表达方式或许可以描述的更易懂一些"
+          "[Issue] Maven 的中央仓库构件查询网址会自动跳转到另外一个网站",
+          "关于数组转集合方法的第六种：使用Java9的List.of()"
         ]
       },
       "risk": {
@@ -352,21 +282,89 @@
       "recommendation": "值得继续"
     },
     {
-      "rank": 11,
+      "rank": 9,
       "repository": {
-        "owner": "jdefrancesco",
-        "name": "dskDitto",
-        "url": "https://github.com/jdefrancesco/dskDitto",
-        "primaryLanguage": "Go"
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 392,
+        "starsTotal": 157923,
         "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-10-08T04:11:46.325Z"
+        "lastUpdatedAt": "2026-10-08T20:12:22Z"
       },
       "health": {
-        "license": "Apache-2.0",
-        "hasCi": false,
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "fix(api): keep email-like text in Markdown link URLs when removing urls and emails",
+          "ci: Update type checker"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 10,
+      "repository": {
+        "owner": "open-webui",
+        "name": "open-webui",
+        "url": "https://github.com/open-webui/open-webui",
+        "primaryLanguage": "Python"
+      },
+      "popularity": {
+        "starsTotal": 154047,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-10-08T20:48:33Z"
+      },
+      "health": {
+        "license": "NOASSERTION",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "0.12.0",
+          "feat: translate model control names, descriptions and option names"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 11,
+      "repository": {
+        "owner": "r-lib",
+        "name": "gert",
+        "url": "https://github.com/r-lib/gert",
+        "primaryLanguage": "R"
+      },
+      "popularity": {
+        "starsTotal": 0,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-10-08T21:03:52.567Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
         "hasTests": true,
         "hasContributing": false,
         "issueActivity": "active"
@@ -374,16 +372,16 @@
       "recommendation": "值得继续",
       "opportunity": {
         "category": "文档缺口",
-        "summary": "修复 README 中指向 DittoDoc.md 的失效相对链接（实际文件在 docs/DittoDoc.md），对应 issue #24",
+        "summary": "修复 README.md 中 Debian libgit2-dev 失效链接（packages.debian.org/buster/... 返回 two or more packages specified 错误），对应 issue #284",
         "evidence": [
-          "README.md 第 360 行 [DittoDoc](DittoDoc.md) 指向根目录，但仓库中文件位于 docs/DittoDoc.md",
-          "issue jdefrancesco/dskDitto#24 (broken doc link) 仍 open，无关联 PR；全量开放 PR 为空",
-          "独立 live 发现（扫描池退化：仅 n8n/JavaGuide 为值得继续，均为已知死路）"
+          "README.md 第 36 行链接 https://packages.debian.org/buster/libgit2-dev 页面实测显示 Debian Error: two or more packages specified (libgit2-dev buster)",
+          "issue r-lib/gert#284 仍 open 且无评论；开放 PR 仅 #280 #274，均不涉及",
+          "独立 live 发现（扫描池退化：仅 JavaGuide 为值得继续且账本去重）"
         ]
       },
       "risk": {
         "level": "低",
-        "reason": "仅改一行文档链接；Apache-2.0、无 CLA/DCO、无 CONTRIBUTING；可用 git 校验目标文件存在"
+        "reason": "仅改 README 一行链接；MIT；无 CLA/DCO；链接目标可用 curl 校验"
       }
     }
   ]
