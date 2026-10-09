@@ -1,13 +1,48 @@
 {
-  "date": "2026-10-09",
-  "generatedAt": "2026-10-09T07:01:39.815Z",
+  "date": "2026-10-10",
+  "generatedAt": "2026-10-09T21:03:58.455Z",
   "summary": {
-    "candidateCount": 11,
-    "actionableCount": 3
+    "candidateCount": 10,
+    "actionableCount": 1
   },
   "items": [
     {
       "rank": 1,
+      "repository": {
+        "owner": "boost-ext",
+        "name": "sml",
+        "url": "https://github.com/boost-ext/sml",
+        "primaryLanguage": "C++"
+      },
+      "popularity": {
+        "starsTotal": 1300,
+        "starsAdded24h": 0,
+        "lastUpdatedAt": "2026-10-08T13:25:51Z"
+      },
+      "health": {
+        "license": "BSL-1.0",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "issue #719：doc/embo-2018/index.html 中 16 处链接指向已不存在的 examples/index.html（404），应指向 examples.html",
+        "evidence": [
+          "issue #719 broken link in readme",
+          "https://boost-ext.github.io/sml/examples/index.html 返回 404 而 examples.html 返回 200",
+          "doc/embo-2018/index.html 仅此文件含 16 处该链接"
+        ]
+      },
+      "risk": {
+        "level": "低",
+        "reason": "纯文档链接替换，无 CLA，无重复 PR"
+      },
+      "recommendation": "值得继续"
+    },
+    {
+      "rank": 2,
       "repository": {
         "owner": "DietrichGebert",
         "name": "ponytail",
@@ -15,8 +50,8 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 158858,
-        "starsAdded24h": 485,
+        "starsTotal": 159523,
+        "starsAdded24h": 665,
         "lastUpdatedAt": "2026-10-08T16:19:55Z"
       },
       "health": {
@@ -30,42 +65,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "bench: fix the Windows selftest crash, add an opt-in shell variant",
-          "fix: find shortcut markers in more comment styles, skip vendored code"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 2,
-      "repository": {
-        "owner": "farion1231",
-        "name": "cc-switch",
-        "url": "https://github.com/farion1231/cc-switch",
-        "primaryLanguage": "Rust"
-      },
-      "popularity": {
-        "starsTotal": 141635,
-        "starsAdded24h": 300,
-        "lastUpdatedAt": "2026-10-09T02:33:49Z"
-      },
-      "health": {
-        "license": "MIT",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "fix(codex): 补齐直连和路由切号后的旧账号缓存提示",
-          "fix(terminal): preserve WT profiles and interactive console streams"
+          "fix(opencode): preserve V2 command arguments",
+          "fix(opencode): add opt-in legacy V1 entrypoint"
         ]
       },
       "risk": {
@@ -83,9 +84,9 @@
         "primaryLanguage": "JavaScript"
       },
       "popularity": {
-        "starsTotal": 275535,
-        "starsAdded24h": 232,
-        "lastUpdatedAt": "2026-10-05T04:55:16Z"
+        "starsTotal": 275893,
+        "starsAdded24h": 358,
+        "lastUpdatedAt": "2026-10-09T20:30:25Z"
       },
       "health": {
         "license": "MIT",
@@ -98,8 +99,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(qwen): ship agent context in .qwen/QWEN.md instead of installer docs",
-          "fix: quote argument-hint values that YAML parses as arrays"
+          "fix(codex): fail closed when pre-commit cannot find ripgrep",
+          "docs(csharp): recommend AwesomeAssertions for readable assertions"
         ]
       },
       "risk": {
@@ -111,15 +112,49 @@
     {
       "rank": 4,
       "repository": {
+        "owner": "farion1231",
+        "name": "cc-switch",
+        "url": "https://github.com/farion1231/cc-switch",
+        "primaryLanguage": "Rust"
+      },
+      "popularity": {
+        "starsTotal": 141895,
+        "starsAdded24h": 260,
+        "lastUpdatedAt": "2026-10-09T14:15:15Z"
+      },
+      "health": {
+        "license": "MIT",
+        "hasCi": true,
+        "hasTests": true,
+        "hasContributing": true,
+        "issueActivity": "active"
+      },
+      "opportunity": {
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
+        "evidence": [
+          "feat(settings): preserve custom Claude Code history retention",
+          "Fix/provider stats identity"
+        ]
+      },
+      "risk": {
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
+    },
+    {
+      "rank": 5,
+      "repository": {
         "owner": "Graphify-Labs",
         "name": "graphify",
         "url": "https://github.com/Graphify-Labs/graphify",
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 124820,
-        "starsAdded24h": 88,
-        "lastUpdatedAt": "2026-10-09T02:11:46Z"
+        "starsTotal": 125005,
+        "starsAdded24h": 185,
+        "lastUpdatedAt": "2026-10-09T19:08:04Z"
       },
       "health": {
         "license": "Apache-2.0",
@@ -132,8 +167,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "fix(build): keep a method edge when a member constructs its own type",
-          "fix(csharp): give a generic and a non-generic type separate ids (#4249)"
+          "fix(csharp): type a var from the called method's return type",
+          "feat: add Xiaomi MiMo Code integration"
         ]
       },
       "risk": {
@@ -143,7 +178,7 @@
       "recommendation": "跳过"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "repository": {
         "owner": "yt-dlp",
         "name": "yt-dlp",
@@ -151,8 +186,8 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 196289,
-        "starsAdded24h": 84,
+        "starsTotal": 196436,
+        "starsAdded24h": 147,
         "lastUpdatedAt": "2026-09-27T22:09:13Z"
       },
       "health": {
@@ -166,42 +201,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "[ie/ceskatelevize] Support Déčko and ČT edu URLs, extract chapters",
-          "[ie/ceskatelevize] Fix extractor"
-        ]
-      },
-      "risk": {
-        "level": "高",
-        "reason": "已有相近打开中的 PR"
-      },
-      "recommendation": "跳过"
-    },
-    {
-      "rank": 6,
-      "repository": {
-        "owner": "langgenius",
-        "name": "dify",
-        "url": "https://github.com/langgenius/dify",
-        "primaryLanguage": "TypeScript"
-      },
-      "popularity": {
-        "starsTotal": 157966,
-        "starsAdded24h": 43,
-        "lastUpdatedAt": "2026-10-09T06:59:02Z"
-      },
-      "health": {
-        "license": "NOASSERTION",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
-        "issueActivity": "active"
-      },
-      "opportunity": {
-        "category": "文档缺口",
-        "summary": "已有相近 PR，继续推进会打扰维护者",
-        "evidence": [
-          "chore: remove console feedback export endpoint",
-          "perf(api): run controller unit tests in parallel"
+          "[OmroepFlevoland] Add extractor",
+          "[ie/ceskatelevize] Support Déčko and ČT edu URLs, extract chapters"
         ]
       },
       "risk": {
@@ -219,9 +220,9 @@
         "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 206763,
-        "starsAdded24h": 41,
-        "lastUpdatedAt": "2026-10-09T07:01:01Z"
+        "starsTotal": 206833,
+        "starsAdded24h": 70,
+        "lastUpdatedAt": "2026-10-09T21:03:45Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -234,8 +235,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "feat: Offer Gateway credits as a connection option on registry MCP servers (no-changelog)",
-          "fix(editor): Remove trailing newline from AI Assistant code blocks (no-changelog)"
+          "fix(ai-builder): Run eval Data Table nodes live against a prepared table (no-changelog)",
+          "chore(Message an Agent Node): Add output schemas (no-changelog)"
         ]
       },
       "risk": {
@@ -253,9 +254,9 @@
         "primaryLanguage": "Python"
       },
       "popularity": {
-        "starsTotal": 154081,
-        "starsAdded24h": 34,
-        "lastUpdatedAt": "2026-10-09T06:49:55Z"
+        "starsTotal": 154138,
+        "starsAdded24h": 57,
+        "lastUpdatedAt": "2026-10-09T17:57:09Z"
       },
       "health": {
         "license": "NOASSERTION",
@@ -268,8 +269,8 @@
         "category": "文档缺口",
         "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "i18n: fill missing Traditional Chinese (zh-TW) translations",
-          "i18n: fill missing Simplified Chinese (zh-CN) translations"
+          "fix: long translated menu labels show centered or spill out of their row",
+          "i18n: rework the Doge (dg-DG) voice"
         ]
       },
       "risk": {
@@ -281,39 +282,36 @@
     {
       "rank": 9,
       "repository": {
-        "owner": "Snailclimb",
-        "name": "JavaGuide",
-        "url": "https://github.com/Snailclimb/JavaGuide",
-        "primaryLanguage": "JavaScript"
+        "owner": "langgenius",
+        "name": "dify",
+        "url": "https://github.com/langgenius/dify",
+        "primaryLanguage": "TypeScript"
       },
       "popularity": {
-        "starsTotal": 158894,
-        "starsAdded24h": 8,
-        "lastUpdatedAt": "2026-10-03T23:36:32Z"
+        "starsTotal": 158006,
+        "starsAdded24h": 40,
+        "lastUpdatedAt": "2026-10-09T20:21:57Z"
       },
       "health": {
-        "license": "Apache-2.0",
+        "license": "NOASSERTION",
         "hasCi": true,
         "hasTests": true,
-        "hasContributing": false,
+        "hasContributing": true,
         "issueActivity": "active"
       },
       "opportunity": {
-        "category": "测试补充",
-        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
+        "category": "文档缺口",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          ".github/workflows/test.yml",
-          "README.md",
-          "README_EN.md",
-          "[Issue] Maven 的中央仓库构件查询网址会自动跳转到另外一个网站",
-          "关于数组转集合方法的第六种：使用Java9的List.of()"
+          "fix(api): sign file links in knowledge Hit Testing results",
+          "docs: clarify sandbox syscall allowlist behavior"
         ]
       },
       "risk": {
-        "level": "低",
-        "reason": "改动可集中在测试或文档，且存在 CI 验证"
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
       },
-      "recommendation": "值得继续"
+      "recommendation": "跳过"
     },
     {
       "rank": 10,
@@ -324,67 +322,30 @@
         "primaryLanguage": "Shell"
       },
       "popularity": {
-        "starsTotal": 190042,
-        "starsAdded24h": 5,
-        "lastUpdatedAt": "2026-10-09T05:46:48Z"
+        "starsTotal": 190055,
+        "starsAdded24h": 13,
+        "lastUpdatedAt": "2026-10-09T14:11:18Z"
       },
       "health": {
         "license": "MIT",
         "hasCi": true,
         "hasTests": true,
         "hasContributing": true,
-        "issueActivity": "quiet"
-      },
-      "opportunity": {
-        "category": "测试补充",
-        "summary": "已有测试框架，可补充 issue 暴露的边界场景",
-        "evidence": [
-          ".github/workflows/dependencies.yml",
-          ".github/workflows/dependencies/.gitignore",
-          ".github/workflows/dependencies/requirements.txt"
-        ]
-      },
-      "risk": {
-        "level": "低",
-        "reason": "改动可集中在测试或文档，且存在 CI 验证"
-      },
-      "recommendation": "值得继续"
-    },
-    {
-      "rank": 11,
-      "repository": {
-        "owner": "pyro-ppl",
-        "name": "numpyro",
-        "url": "https://github.com/pyro-ppl/numpyro",
-        "primaryLanguage": "Python"
-      },
-      "popularity": {
-        "starsTotal": 2758,
-        "starsAdded24h": 0,
-        "lastUpdatedAt": "2026-10-09T07:06:39.081Z"
-      },
-      "health": {
-        "license": "Apache-2.0",
-        "hasCi": true,
-        "hasTests": true,
-        "hasContributing": true,
         "issueActivity": "active"
       },
-      "recommendation": "值得继续",
       "opportunity": {
         "category": "文档缺口",
-        "summary": "为 numpyro ProjectedNormal 补充密度公式（d=2/3 闭式积分）与均值/众数，推进 umbrella #2187（类 docstring 仅有文字描述，无数学式）",
+        "summary": "已有相近 PR，继续推进会打扰维护者",
         "evidence": [
-          "numpyro/distributions/directional.py 的 ProjectedNormal 类 docstring 无任何密度公式",
-          "umbrella issue pyro-ppl/numpyro#2187 清单中 ProjectedNormal 未勾选；开放 PR 搜索无人认领",
-          "公式可与实现 log_prob 逐点数值核对并数值积分验证归一化",
-          "我方既往同类 PR（#2294…#2329）均已被维护者合并（#2326/#2329 于 10-09 合并）"
+          "fix(termsupport): improve Apple Terminal support",
+          "feat(gpg-agent): add `ssh-support` style to skip the gpgconf check"
         ]
       },
       "risk": {
-        "level": "低",
-        "reason": "仅改 docstring，无运行时逻辑；Apache-2.0、无 CLA/DCO；可本地 jax 数值核对公式并运行 ruff 与相关测试"
-      }
+        "level": "高",
+        "reason": "已有相近打开中的 PR"
+      },
+      "recommendation": "跳过"
     }
   ]
 }
